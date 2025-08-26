@@ -38,6 +38,7 @@ jobs:
         push-branch: 'master'
         commit-message: '✏️ Update papers automatically.'
         force-add: 'true'
+        force-push: 'true'
         files: README.md .github/ISSUE_TEMPLATE.md
 
 
