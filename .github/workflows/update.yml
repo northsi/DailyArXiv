@@ -46,3 +46,17 @@ jobs:
       uses: JasonEtco/create-an-issue@v2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Debug
+      run: |
+        echo "----- pwd -----"
+        pwd
+        echo "----- git branch -----"
+        git branch -vv
+        echo "----- git status -----"
+        git status --porcelain
+        echo "----- latest commits -----"
+        git log -n 5 --decorate --oneline
+        echo "----- show HEAD files -----"
+        git show --name-only --oneline HEAD || true
+
