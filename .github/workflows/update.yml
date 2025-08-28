@@ -31,32 +31,24 @@ jobs:
       run: |
         python main.py
 
-    - name: Commit and push changes
-      uses: github-actions-x/commit@v2.9
+    - name: Commit files if changed
+      uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        push-branch: 'master'
-        commit-message: '✏️ Update papers automatically.'
-        force-add: 'true'
-        force-push: 'true'
-        files: README.md .github/ISSUE_TEMPLATE.md
+        commit_message: "✏️ Update papers automatically."
+        file_pattern: |
+          README.md
+          .github/ISSUE_TEMPLATE.md
 
+    - name: Verify commit & push
+      run: |
+        echo "----- git status after commit -----"
+        git status --porcelain
+        echo "----- recent commits -----"
+        git log -n 5 --oneline --decorate
+        git remote -v
 
     - name: Create an issue to notify
       uses: JasonEtco/create-an-issue@v2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Debug
-      run: |
-        echo "----- pwd -----"
-        pwd
-        echo "----- git branch -----"
-        git branch -vv
-        echo "----- git status -----"
-        git status --porcelain
-        echo "----- latest commits -----"
-        git log -n 5 --decorate --oneline
-        echo "----- show HEAD files -----"
-        git show --name-only --oneline HEAD || true
 
