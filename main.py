@@ -22,7 +22,7 @@ with open("README.md", "r") as f:
     # if last_update_date == current_date:
         # sys.exit("Already updated today!")
 
-keywords = ["Superconductivity", "spin glasses", "flat band", "spin liquids"] # TODO add more keywords
+keywords = ["Superconductivity", "spin glasses", "flat band", "spin liquids", "kagome"] # TODO add more keywords
 
 max_result = 10 # maximum query results from arXiv API for each keyword
 issues_result = 30 # maximum papers to be included in the issue
