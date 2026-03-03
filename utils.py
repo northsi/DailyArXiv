@@ -46,7 +46,7 @@ def request_paper_with_arXiv_api(keyword: str, max_results: int, link: str = "OR
         papers.append(paper)
     return papers
 
-def filter_tags(papers: List[Dict[str, str]], target_fileds: List[str]=["physics", "cond-mat", "quant-ph", "astro-ph"]) -> List[Dict[str, str]]:
+def filter_tags(papers: List[Dict[str, str]], target_fileds: List[str]=["physics", "cond-mat"]) -> List[Dict[str, str]]:
     # filtering tags: only keep the papers in target_fileds
     results = []
     for paper in papers:
@@ -78,12 +78,96 @@ def get_daily_papers_by_keyword(keyword: str, column_names: List[str], max_resul
     return papers
 
 def generate_table(papers: List[Dict[str, str]], ignore_keys: List[str] = []) -> str:
+    if not papers:
+        return "No papers found for this keyword.\n"
+    
     formatted_papers = []
     keys = papers[0].keys()
     for paper in papers:
         # process fixed columns
         formatted_paper = EasyDict()
-        ## Title and Link
+        ## Title and Link - 添加标签样式
+        formatted_paper.Title = "**" + "[{0}]({1})".format(paper["Title"], paper["Link"]) + "**"
+        ## Process Date (format: 2021-08-01T00:00:00Z -> 2021-08-01)
+        formatted_paper.Date = paper["Date"].split("T")[0]
+        
+        # process other columns
+        for key in keys:
+            if key in ["Title", "Link", "Date"] or key in ignore_keys:
+                continue
+            elif key == "Abstract":
+                # 美化abstract折叠框
+                formatted_paper[key] = "<details><summary>📖 查看摘要</summary><p>{0}</p></details>".format(paper[key])
+            elif key == "Authors":
+                # 只显示第一作者
+                formatted_paper[key] = paper[key][0] + " et al."
+            elif key == "Tags":
+                tags = paper[key]
+                # 美化标签显示
+                tag_spans = []
+                for tag in tags[:5]:  # 最多显示5个标签
+                    tag_spans.append('<span class="tag">{0}</span>'.format(tag))
+                if len(tags) > 5:
+                    tag_spans.append('<span class="tag">+{0}</span>'.format(len(tags)-5))
+                formatted_paper[key] = " ".join(tag_spans) if tag_spans else ""
+            elif key == "Comment":
+                if paper[key] == "":
+                    formatted_paper[key] = ""
+                else:
+                    # 美化评论显示
+                    formatted_paper[key] = '<span class="comment">{0}</span>'.format(paper[key][:100] + "..." if len(paper[key]) > 100 else paper[key])
+        formatted_papers.append(formatted_paper)
+
+    # generate header - 美化表头
+    column_names_map = {
+        "Title": "📄 论文标题",
+        "Date": "📅 日期",
+        "Abstract": "📝 摘要",
+        "Comment": "💬 评论",
+        "Authors": "👥 作者",
+        "Tags": "🏷️ 标签"
+    }
+    
+    columns = list(formatted_papers[0].keys())
+    # 映射列名
+    header_columns = [column_names_map.get(col, col) for col in columns]
+    
+    # 添加emoji表头
+    header = "| " + " | ".join(header_columns) + " |"
+    header = header + "\n" + "| " + " | ".join([":---"] * len(columns)) + " |"
+    
+    # generate the body
+    body = ""
+    for paper in formatted_papers:
+        row = []
+        for key in columns:
+            value = paper[key]
+            if key == "Title":
+                value = value.replace("**", "")  # 移除加粗标记，因为markdown会自动处理
+            row.append(value)
+        body += "\n| " + " | ".join(row) + " |"
+    return header + body
+
+def back_up_files():
+    # back up README.md and ISSUE_TEMPLATE.md
+    shutil.move("README.md", "README.md.bk")
+    shutil.move(".github/ISSUE_TEMPLATE.md", ".github/ISSUE_TEMPLATE.md.bk")
+
+def restore_files():
+    # restore README.md and ISSUE_TEMPLATE.md
+    shutil.move("README.md.bk", "README.md")
+    shutil.move(".github/ISSUE_TEMPLATE.md.bk", ".github/ISSUE_TEMPLATE.md")
+
+def remove_backups():
+    # remove README.md and ISSUE_TEMPLATE.md
+    os.remove("README.md.bk")
+    os.remove(".github/ISSUE_TEMPLATE.md.bk")
+
+def get_daily_date():
+    # get beijing time in the format of "March 1, 2021"
+    beijing_timezone = pytz.timezone('Asia/Shanghai')
+    today = datetime.datetime.now(beijing_timezone)
+    return today.strftime("%B %d, %Y")        ## Title and Link
         formatted_paper.Title = "**" + "[{0}]({1})".format(paper["Title"], paper["Link"]) + "**"
         ## Process Date (format: 2021-08-01T00:00:00Z -> 2021-08-01)
         formatted_paper.Date = paper["Date"].split("T")[0]
