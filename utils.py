@@ -39,7 +39,7 @@ def request_paper_with_arXiv_api(keyword: str, max_results: int, link: str = "OR
         papers.append(paper)
     return papers
 
-def filter_tags(papers: List[Dict], target_fields: List[str] = ["physics", "cond-mat"]) -> List[Dict]:
+def filter_tags(papers: List[Dict], target_fields: List[str] = ["physics", "cond-mat", "quant-ph", "nlin"]) -> List[Dict]:
     # 修复了原版的 target_fileds 拼写错误
     results = []
     for paper in papers:
