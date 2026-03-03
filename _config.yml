@@ -1,28 +1,29 @@
 # _config.yml
 title: Daily ArXiv Papers
-description: 自动获取的最新arXiv论文 | Automatically fetched papers from arXiv
-author: Your Name
+description: Automatically fetched latest papers from arXiv
+author: Your Name # TODO: Replace with your actual name or GitHub ID
 theme: jekyll-theme-primer
 
-# 自定义导航
-header_pages:
-  - about.md
-  - README.md
-
-# 显示设置
+# Display settings
 show_downloads: false
-google_analytics:
+# google_analytics: G-XXXXXXXXXX # Commented out if not in use to avoid build warnings
 
-# 插件
+# Plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-github-metadata
   - jemoji
+  # Note: Do not include jekyll-paginate if you are not using pagination
 
-# 分页设置
-paginate: 20
-paginate_path: "/page:num/"
+# Custom navigation
+header_pages:
+  - about.md
+  # - README.md # Removed to prevent a redundant link in your navigation bar
 
-# 自定义样式
+# Pagination settings (Note: Only works for files in the _posts directory, not a single README.md)
+# paginate: 20
+# paginate_path: "/page:num/"
+
+# Custom styling
 sass:
   style: compressed
