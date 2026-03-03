@@ -35,8 +35,8 @@ except FileNotFoundError:
 keywords = ["Superconductivity", "spin glass"] # TODO add more keywords
 
 max_results_per_keyword = {
-    "Superconductivity": 15,
-    "spin glass": 5
+    "Superconductivity": 20,
+    "spin glass": 10
 }
 issues_result = 30 # maximum papers to be included in the issue
 column_names = ["Title", "Link", "Abstract", "Date", "Comment"]
