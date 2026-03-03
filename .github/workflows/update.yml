@@ -16,6 +16,18 @@ jobs:
   update_daily_papers:
     runs-on: ubuntu-latest
     steps:
+
+    - name: Sync with remote
+      run: git pull --rebase origin master
+    
+    - name: Commit files if changed
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: "✏️ Update papers automatically."
+        file_pattern: |
+          README.md
+          .github/ISSUE_TEMPLATE.md
+  
     - name: Checkout repository
       uses: actions/checkout@v3
 
