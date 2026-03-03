@@ -22,9 +22,12 @@ with open("README.md", "r") as f:
     # if last_update_date == current_date:
         # sys.exit("Already updated today!")
 
-keywords = ["Superconductivity", "spin liquids", "spin glass"] # TODO add more keywords
+keywords = ["Superconductivity", "spin glass"] # TODO add more keywords
 
-max_result = 10 # maximum query results from arXiv API for each keyword
+max_results_per_keyword = {
+    "Superconductivity": 15,
+    "spin glass": 5
+}
 issues_result = 30 # maximum papers to be included in the issue
 
 # all columns: Title, Authors, Abstract, Link, Tags, Comment, Date
@@ -52,6 +55,7 @@ for keyword in keywords:
     f_is.write("## {0}\n".format(keyword))
     if len(keyword.split()) == 1: link = "AND" # for keyword with only one word, We search for papers containing this keyword in both the title and abstract.
     else: link = "OR"
+    max_result = max_results_per_keyword[keyword]
     papers = get_daily_papers_by_keyword_with_retries(keyword, column_names, max_result, link)
     if papers is None: # failed to get papers
         print("Failed to get papers!")
