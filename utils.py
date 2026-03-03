@@ -86,8 +86,10 @@ def generate_table(papers: List[Dict[str, str]], ignore_keys: List[str] = []) ->
     for paper in papers:
         # process fixed columns
         formatted_paper = EasyDict()
-        ## Title and Link - 添加标签样式
+        
+        ## Title and Link
         formatted_paper.Title = "**" + "[{0}]({1})".format(paper["Title"], paper["Link"]) + "**"
+        
         ## Process Date (format: 2021-08-01T00:00:00Z -> 2021-08-01)
         formatted_paper.Date = paper["Date"].split("T")[0]
         
@@ -96,16 +98,16 @@ def generate_table(papers: List[Dict[str, str]], ignore_keys: List[str] = []) ->
             if key in ["Title", "Link", "Date"] or key in ignore_keys:
                 continue
             elif key == "Abstract":
-                # 美化abstract折叠框
-                formatted_paper[key] = "<details><summary>📖 查看摘要</summary><p>{0}</p></details>".format(paper[key])
+                # add show/hide button for abstract
+                formatted_paper[key] = "<details><summary>Show Abstract</summary><p>{0}</p></details>".format(paper[key])
             elif key == "Authors":
-                # 只显示第一作者
+                # only use the first author
                 formatted_paper[key] = paper[key][0] + " et al."
             elif key == "Tags":
                 tags = paper[key]
-                # 美化标签显示
+                # format tags as spans
                 tag_spans = []
-                for tag in tags[:5]:  # 最多显示5个标签
+                for tag in tags[:5]:  # show at most 5 tags
                     tag_spans.append('<span class="tag">{0}</span>'.format(tag))
                 if len(tags) > 5:
                     tag_spans.append('<span class="tag">+{0}</span>'.format(len(tags)-5))
@@ -114,25 +116,26 @@ def generate_table(papers: List[Dict[str, str]], ignore_keys: List[str] = []) ->
                 if paper[key] == "":
                     formatted_paper[key] = ""
                 else:
-                    # 美化评论显示
-                    formatted_paper[key] = '<span class="comment">{0}</span>'.format(paper[key][:100] + "..." if len(paper[key]) > 100 else paper[key])
+                    # format comment
+                    comment_text = paper[key][:100] + "..." if len(paper[key]) > 100 else paper[key]
+                    formatted_paper[key] = '<span class="comment">{0}</span>'.format(comment_text)
         formatted_papers.append(formatted_paper)
 
-    # generate header - 美化表头
+    # generate header
     column_names_map = {
-        "Title": "📄 论文标题",
-        "Date": "📅 日期",
-        "Abstract": "📝 摘要",
-        "Comment": "💬 评论",
-        "Authors": "👥 作者",
-        "Tags": "🏷️ 标签"
+        "Title": "Title",
+        "Date": "Date",
+        "Abstract": "Abstract",
+        "Comment": "Comment",
+        "Authors": "Authors",
+        "Tags": "Tags"
     }
     
     columns = list(formatted_papers[0].keys())
-    # 映射列名
+    # map column names
     header_columns = [column_names_map.get(col, col) for col in columns]
     
-    # 添加emoji表头
+    # create header
     header = "| " + " | ".join(header_columns) + " |"
     header = header + "\n" + "| " + " | ".join([":---"] * len(columns)) + " |"
     
@@ -143,7 +146,7 @@ def generate_table(papers: List[Dict[str, str]], ignore_keys: List[str] = []) ->
         for key in columns:
             value = paper[key]
             if key == "Title":
-                value = value.replace("**", "")  # 移除加粗标记，因为markdown会自动处理
+                value = value.replace("**", "")  # remove bold markers
             row.append(value)
         body += "\n| " + " | ".join(row) + " |"
     return header + body
