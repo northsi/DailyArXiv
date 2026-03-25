@@ -198,9 +198,10 @@ def remove_backups():
 def get_daily_date() -> str:
     beijing_timezone = pytz.timezone("Asia/Shanghai")
     today = datetime.datetime.now(beijing_timezone)
-    return today.strftime("%B %d, %Y")        paper.Date = entry.updated
-
-        papers.append(paper)
+    return today.strftime("%B %d, %Y")        
+    
+    paper.Date = entry.updated
+    papers.append(paper)
     return papers
 
 def filter_tags(papers: List[Dict], target_fields: List[str] = ["physics", "cond-mat", "quant-ph", "nlin"]) -> List[Dict]:
