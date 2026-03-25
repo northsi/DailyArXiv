@@ -4,63 +4,60 @@ on:
   workflow_dispatch:
   label:
     types:
-      - created # for test
+      - created  # for manual testing
   schedule:
-      - cron: '30 16 * * 0-4' # 00:30 Beijing time every Monday to Friday
+    - cron: '30 16 * * 0-4'  # 00:30 Beijing time, Mon–Fri
 
 permissions:
   contents: write
-  issues: write 
+  issues: write
 
 jobs:
   update_daily_papers:
     runs-on: ubuntu-latest
+
     steps:
-    
-    - name: Checkout repository
-      uses: actions/checkout@v3
 
-    - name: Sync with remote
-      run: git pull --rebase origin master
-    
-    - name: Commit files if changed
-      uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: "✏️ Update papers automatically."
-        file_pattern: |
-          README.md
-          .github/ISSUE_TEMPLATE.md
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
+      - name: Sync with remote
+        run: git pull --rebase origin master
 
-    - name: Install dependencies
-      run: pip install -r requirements.txt
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
 
-    - name: Update papers
-      run: |
-        python main.py
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
-    - name: Commit files if changed
-      uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: "✏️ Update papers automatically."
-        file_pattern: |
-          README.md
-          .github/ISSUE_TEMPLATE.md
+      - name: Run update script
+        env:
+          GEMINI_API_KEY:   ${{ secrets.GEMINI_API_KEY }}
+          EMAIL_SENDER:     ${{ secrets.EMAIL_SENDER }}
+          EMAIL_PASSWORD:   ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_RECIPIENT:  ${{ secrets.EMAIL_RECIPIENT }}
+          REPO_URL:         ${{ vars.REPO_URL }}
+        run: python main.py
 
-    - name: Verify commit & push
-      run: |
-        echo "----- git status after commit -----"
-        git status --porcelain
-        echo "----- recent commits -----"
-        git log -n 5 --oneline --decorate
-        git remote -v
+      - name: Commit updated files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "✏️ Update papers automatically."
+          file_pattern: |
+            README.md
+            .github/ISSUE_TEMPLATE.md
 
-    - name: Create an issue to notify
-      uses: JasonEtco/create-an-issue@v2
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Verify commit & push
+        run: |
+          echo "─── git status ───"
+          git status --porcelain
+          echo "─── recent commits ───"
+          git log -n 5 --oneline --decorate
+          git remote -v
 
+      - name: Create issue to notify
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
