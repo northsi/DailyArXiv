@@ -212,7 +212,8 @@ if email_enabled:
     except Exception as e:
         print(f"⚠️  Email sending failed (non-fatal): {e}")
 else:
-    print("Email skipped — not configured.")max_results_per_keyword = {
+    print("Email skipped — not configured.")
+    max_results_per_keyword = {
     "Superconductivity": 20,
     "spin glass": 10
 }
