@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
   label:
     types:
-      - created  # for manual testing
+      - created   # for manual test
   schedule:
-    - cron: '30 16 * * 0-4'  # 00:30 Beijing time, Mon–Fri
+    - cron: '30 16 * * 0-4'   # 00:30 Beijing time, Mon–Fri
 
 permissions:
   contents: write
@@ -17,7 +17,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -32,16 +31,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run update script
+      - name: Update papers
         env:
-          GEMINI_API_KEY:   ${{ secrets.GEMINI_API_KEY }}
-          EMAIL_SENDER:     ${{ secrets.EMAIL_SENDER }}
-          EMAIL_PASSWORD:   ${{ secrets.EMAIL_PASSWORD }}
-          EMAIL_RECIPIENT:  ${{ secrets.EMAIL_RECIPIENT }}
-          REPO_URL:         ${{ vars.REPO_URL }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          SMTP_SERVER:      ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT:        ${{ secrets.SMTP_PORT }}
+          SMTP_USER:        ${{ secrets.SMTP_USER }}
+          SMTP_PASS:        ${{ secrets.SMTP_PASS }}
+          EMAIL_TO:         ${{ secrets.EMAIL_TO }}
         run: python main.py
 
-      - name: Commit updated files
+      - name: Commit files if changed
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "✏️ Update papers automatically."
@@ -51,13 +51,13 @@ jobs:
 
       - name: Verify commit & push
         run: |
-          echo "─── git status ───"
+          echo "----- git status -----"
           git status --porcelain
-          echo "─── recent commits ───"
+          echo "----- recent commits -----"
           git log -n 5 --oneline --decorate
           git remote -v
 
-      - name: Create issue to notify
+      - name: Create an issue to notify
         uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
