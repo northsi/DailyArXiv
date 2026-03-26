@@ -1,4 +1,5 @@
 feedparser
 easydict
 pytz
-google-generativeai
+openai>=1.0.0
+markdown
