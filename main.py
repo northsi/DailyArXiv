@@ -171,7 +171,8 @@ except Exception as exc:
     sys.exit(1)
 
 remove_backups()
-print("[main] Done ✓")column_names = ["Title", "Link", "Abstract", "Date", "Comment"]
+print("[main] Done ✓")
+column_names = ["Title", "Link", "Abstract", "Date", "Comment"]
 
 # ─── Read last update date from existing README ───────────────────────────────
 
