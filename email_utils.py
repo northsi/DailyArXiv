@@ -1,111 +1,84 @@
+# email_utils.py
+import os
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from typing import Dict
 
 
-def send_email(
-    sender_email: str,
-    sender_password: str,
-    recipient_email: str,
-    subject: str,
-    body_html: str,
-    smtp_server: str = "smtp.gmail.com",
-    smtp_port: int = 587,
-) -> None:
-    """Send an HTML email using SMTP with STARTTLS (works with Gmail App Passwords)."""
-    msg = MIMEMultipart("alternative")
-    msg["Subject"] = subject
-    msg["From"] = sender_email
-    msg["To"] = recipient_email
-    msg.attach(MIMEText(body_html, "html", "utf-8"))
-
-    with smtplib.SMTP(smtp_server, smtp_port) as server:
-        server.ehlo()
-        server.starttls()
-        server.login(sender_email, sender_password)
-        server.sendmail(sender_email, recipient_email, msg.as_string())
-
-    print(f"✅ Email successfully sent to {recipient_email}")
+def _markdown_to_html(md: str) -> str:
+    """Convert markdown to HTML. Falls back to preformatted text if the
+    'markdown' package is not installed."""
+    try:
+        import markdown as md_lib
+        return md_lib.markdown(md, extensions=["tables", "nl2br"])
+    except ImportError:
+        escaped = (
+            md.replace("&", "&amp;")
+              .replace("<", "&lt;")
+              .replace(">", "&gt;")
+        )
+        return f"<pre style='font-family:sans-serif;white-space:pre-wrap'>{escaped}</pre>"
 
 
-def build_email_html(
-    topic_summaries: Dict[str, str],
-    knowledge_section: str,
-    date: str,
-    repo_url: str = "",
-) -> str:
-    """Build a styled HTML email with topic overviews and knowledge highlights."""
+def send_daily_email(subject: str, body_markdown: str) -> bool:
+    """
+    Send an HTML+plain-text email via SMTP.
 
-    topics_html = ""
-    for topic, summary in topic_summaries.items():
-        topics_html += f"""
-        <div style="margin-bottom:24px;">
-          <h3 style="margin:0 0 8px 0; color:#1a252f; font-size:16px;">{topic}</h3>
-          <p style="margin:0; color:#34495e; line-height:1.7; font-size:14px;">{summary}</p>
-        </div>
-        """
+    Required GitHub Secrets (passed as environment variables):
+        SMTP_USER   – sender email address
+        SMTP_PASS   – sender password or app-password
+        EMAIL_TO    – recipient(s), comma-separated
 
-    knowledge_html = knowledge_section.replace("\n", "<br>")
+    Optional secrets (have sensible defaults):
+        SMTP_SERVER – default: smtp.gmail.com
+        SMTP_PORT   – default: 587
+    """
+    smtp_server = os.environ.get("SMTP_SERVER", "smtp.gmail.com")
+    smtp_port   = int(os.environ.get("SMTP_PORT", "587"))
+    smtp_user   = os.environ.get("SMTP_USER", "")
+    smtp_pass   = os.environ.get("SMTP_PASS", "")
+    email_to    = os.environ.get("EMAIL_TO", "")
 
-    repo_link_html = (
-        f'<a href="{repo_url}" style="color:#2980b9; text-decoration:none;">'
-        f"View full paper details on GitHub →</a>"
-        if repo_url
-        else ""
-    )
+    if not all([smtp_user, smtp_pass, email_to]):
+        print("[Email] Credentials incomplete – skipping email notification.")
+        return False
 
-    return f"""<!DOCTYPE html>
-<html lang="en">
+    recipients = [addr.strip() for addr in email_to.split(",") if addr.strip()]
+
+    html_body = f"""<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <style>
+    body  {{ font-family: Arial, sans-serif; max-width: 820px;
+             margin: auto; padding: 24px; color: #222; }}
+    h1   {{ color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 8px; }}
+    h2   {{ color: #2980b9; margin-top: 32px; }}
+    h3   {{ color: #555; }}
+    p    {{ line-height: 1.7; }}
+    li   {{ margin-bottom: 6px; line-height: 1.6; }}
+  </style>
 </head>
-<body style="margin:0; padding:0; background-color:#f0f4f8;
-             font-family:Arial, Helvetica, sans-serif;">
-  <div style="max-width:700px; margin:30px auto; background:#ffffff;
-              border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1);
-              overflow:hidden;">
-
-    <!-- Header -->
-    <div style="background:linear-gradient(135deg,#2c3e50,#3498db);
-                padding:28px 32px;">
-      <h1 style="margin:0; color:#ffffff; font-size:22px; font-weight:700;">
-        📄 Daily arXiv Papers Update
-      </h1>
-      <p style="margin:8px 0 0 0; color:#bde0f7; font-size:13px;">
-        Date: {date}
-      </p>
-    </div>
-
-    <!-- Body -->
-    <div style="padding:28px 32px;">
-
-      <h2 style="margin:0 0 16px 0; color:#2c3e50; font-size:18px;
-                 border-bottom:2px solid #3498db; padding-bottom:8px;">
-        📋 Today's Overview by Topic
-      </h2>
-      {topics_html}
-
-      <h2 style="margin:24px 0 12px 0; color:#2c3e50; font-size:18px;
-                 border-bottom:2px solid #27ae60; padding-bottom:8px;">
-        💡 Concepts & Keywords to Learn
-      </h2>
-      <div style="background:#f8f9fa; border-left:4px solid #27ae60;
-                  padding:16px 20px; border-radius:0 6px 6px 0;
-                  color:#2d3436; font-size:13px; line-height:1.7;">
-        {knowledge_html}
-      </div>
-
-      <!-- Footer -->
-      <div style="margin-top:32px; padding-top:20px;
-                  border-top:1px solid #ecf0f1;
-                  color:#95a5a6; font-size:12px; text-align:center;">
-        {repo_link_html}<br><br>
-        This email was automatically generated by the Daily arXiv Paper Tracker.
-      </div>
-
-    </div>
-  </div>
+<body>
+{_markdown_to_html(body_markdown)}
 </body>
 </html>"""
+
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = subject
+    msg["From"]    = smtp_user
+    msg["To"]      = ", ".join(recipients)
+    msg.attach(MIMEText(body_markdown, "plain", "utf-8"))
+    msg.attach(MIMEText(html_body,     "html",  "utf-8"))
+
+    try:
+        with smtplib.SMTP(smtp_server, smtp_port) as server:
+            server.ehlo()
+            server.starttls()
+            server.login(smtp_user, smtp_pass)
+            server.sendmail(smtp_user, recipients, msg.as_string())
+        print(f"[Email] Sent to {', '.join(recipients)}.")
+        return True
+    except Exception as exc:
+        print(f"[Email] Failed to send: {exc}")
+        return False
