@@ -192,23 +192,25 @@ def remove_backups():
 def get_daily_date() -> str:
     beijing_timezone = pytz.timezone("Asia/Shanghai")
     today = datetime.datetime.now(beijing_timezone)
-    return today.strftime("%B %d, %Y")        paper = EasyDict()
-        paper.Title = remove_duplicated_spaces(entry.title.replace("\n", " "))
-        paper.Abstract = remove_duplicated_spaces(entry.summary.replace("\n", " "))
-        paper.Authors = [
-            remove_duplicated_spaces(_["name"].replace("\n", " "))
-            for _ in getattr(entry, "authors", [])
-        ]
-        paper.Link = remove_duplicated_spaces(entry.link.replace("\n", " "))
-        paper.Tags = [
-            remove_duplicated_spaces(_["term"].replace("\n", " "))
-            for _ in getattr(entry, "tags", [])
-        ]
-        paper.Comment = remove_duplicated_spaces(
-            entry.get("arxiv_comment", "").replace("\n", " ")
-        )
-        paper.Date = entry.updated
-        papers.append(paper)
+    return today.strftime("%B %d, %Y")        
+    
+    paper = EasyDict()
+    paper.Title = remove_duplicated_spaces(entry.title.replace("\n", " "))
+    paper.Abstract = remove_duplicated_spaces(entry.summary.replace("\n", " "))
+    paper.Authors = [
+        remove_duplicated_spaces(_["name"].replace("\n", " "))
+        for _ in getattr(entry, "authors", [])
+    ]
+    paper.Link = remove_duplicated_spaces(entry.link.replace("\n", " "))
+    paper.Tags = [
+        remove_duplicated_spaces(_["term"].replace("\n", " "))
+        for _ in getattr(entry, "tags", [])
+    ]
+    paper.Comment = remove_duplicated_spaces(
+        entry.get("arxiv_comment", "").replace("\n", " ")
+    )
+    paper.Date = entry.updated
+    papers.append(paper)
 
     return papers
 
