@@ -1,98 +1,125 @@
+# llm_utils.py
+import os
+import re
 import time
 from typing import List, Dict
-import google.generativeai as genai
+
+from openai import OpenAI
 
 
-def configure_gemini(api_key: str) -> None:
-    """Configure the Gemini API with the provided key."""
-    genai.configure(api_key=api_key)
+def _get_client() -> OpenAI:
+    api_key = os.environ.get("DEEPSEEK_API_KEY", "")
+    if not api_key:
+        raise EnvironmentError(
+            "DEEPSEEK_API_KEY is not set. "
+            "Add it as a GitHub secret and pass it to the workflow step."
+        )
+    return OpenAI(api_key=api_key, base_url="https://api.deepseek.com/v1")
 
 
-def get_gemini_model(model_name: str = "gemini-1.5-flash"):
-    """Return a configured Gemini GenerativeModel instance."""
-    return genai.GenerativeModel(model_name)
-
-
-def safe_generate(model, prompt: str, retries: int = 3, delay: int = 10) -> str:
-    """Generate content with retry logic to handle transient API errors."""
-    for attempt in range(retries):
+def _call_llm(
+    prompt: str,
+    model: str = "deepseek-chat",
+    max_tokens: int = 2048,
+    max_retries: int = 3,
+) -> str:
+    """Call the DeepSeek (OpenAI-compatible) API with automatic retry."""
+    client = _get_client()
+    for attempt in range(max_retries):
         try:
-            response = model.generate_content(prompt)
-            return response.text.strip()
-        except Exception as e:
-            print(f"  LLM call failed (attempt {attempt + 1}/{retries}): {e}")
-            if attempt < retries - 1:
-                time.sleep(delay)
+            response = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.5,
+                max_tokens=max_tokens,
+            )
+            return response.choices[0].message.content.strip()
+        except Exception as exc:
+            print(f"[LLM] Attempt {attempt + 1}/{max_retries} failed: {exc}")
+            if attempt < max_retries - 1:
+                time.sleep(10)
     return ""
 
 
-def summarize_papers_for_topic(papers: List[Dict], keyword: str, model) -> str:
-    """Generate a concise English overview of all papers for a given topic."""
-    if not papers:
-        return "No papers found for this topic today."
-
-    sample = papers[:10]  # limit to avoid token overflow
-    papers_text = "\n\n".join(
-        f"Title: {p.get('Title', 'N/A')}\nAbstract: {p.get('Abstract', 'N/A')}"
-        for p in sample
-    )
-
-    prompt = (
-        f'You are an expert scientific paper analyst. Below are today\'s arXiv papers on "{keyword}".\n\n'
-        f"Write a concise overview (3–5 sentences) in English summarizing:\n"
-        f"- The main research directions covered today\n"
-        f"- Any notable trends or recurring themes\n"
-        f"- What makes today's batch particularly interesting, if applicable\n\n"
-        f"Papers:\n{papers_text}\n\n"
-        f"Overview:"
-    )
-
-    return safe_generate(model, prompt)
-
-
-def translate_abstract_to_chinese(abstract: str, model) -> str:
-    """Translate a paper abstract from English to Chinese."""
-    if not abstract:
-        return ""
-
-    prompt = (
-        "Translate the following academic paper abstract from English to Chinese.\n"
-        "Maintain academic accuracy and preserve technical terminology.\n"
-        "Provide only the translation without any additional commentary.\n\n"
-        f"Abstract:\n{abstract}\n\n"
-        "Chinese Translation:"
-    )
-
-    return safe_generate(model, prompt)
-
-
-def generate_knowledge_section(
-    all_papers: List[Dict], keywords: List[str], model
-) -> str:
+def batch_translate_to_chinese(texts: List[str], batch_size: int = 5) -> List[str]:
     """
-    Produce a structured list of key concepts and terms from today's papers
-    that the reader should know or explore.
+    Translate a list of English abstracts into Chinese in batches.
+    Returns a list of translated strings in the same order as the input.
+    Batching reduces API round-trips significantly.
+    """
+    results = [""] * len(texts)
+
+    for batch_start in range(0, len(texts), batch_size):
+        batch = texts[batch_start : batch_start + batch_size]
+        numbered_input = "\n\n".join(
+            f"[{i + 1}] {text}" for i, text in enumerate(batch)
+        )
+        prompt = (
+            f"请将以下 {len(batch)} 段英文学术摘要逐一翻译为中文，保持专业术语准确。\n"
+            "严格按照如下格式输出，每条以编号开头，只输出翻译内容，不要有任何额外说明：\n"
+            "[1] <第一段翻译>\n[2] <第二段翻译>\n……\n\n"
+            f"{numbered_input}"
+        )
+        raw = _call_llm(prompt, max_tokens=3000)
+
+        # Parse the numbered output robustly
+        matches = re.findall(r"\[(\d+)\]\s*([\s\S]*?)(?=\[\d+\]|$)", raw)
+        for num_str, translation in matches:
+            idx = int(num_str) - 1
+            if 0 <= idx < len(batch):
+                results[batch_start + idx] = translation.strip()
+
+        time.sleep(3)  # Respect API rate limits
+
+    return results
+
+
+def summarize_topic(keyword: str, papers: List[Dict]) -> str:
+    """
+    Generate an introductory overview paragraph (in English) for a topic's
+    papers. Returns a plain-text/markdown paragraph.
+    """
+    if not papers:
+        return f"*No papers found for '{keyword}' today.*"
+
+    paper_snippets = "\n\n".join(
+        f"{i + 1}. **{p.get('Title', '')}**\n   {p.get('Abstract', '')[:400]}…"
+        for i, p in enumerate(papers)
+    )
+    prompt = (
+        f"You are an expert in condensed matter physics and materials science.\n"
+        f"Below are today's arXiv papers on the topic \"{keyword}\".\n"
+        "Write a concise overview paragraph (4–6 sentences) in English summarising "
+        "the main research themes, methodological trends, and notable findings "
+        "across these papers. Be informative and precise. "
+        "Do NOT enumerate the papers individually.\n\n"
+        f"Papers:\n{paper_snippets}\n\nOverview:"
+    )
+    return _call_llm(prompt, max_tokens=600)
+
+
+def extract_key_concepts(all_papers: List[Dict]) -> str:
+    """
+    Identify 6–10 important technical keywords / concepts from all today's
+    papers and return a markdown-formatted explanation list.
     """
     if not all_papers:
-        return "No papers available to extract concepts from today."
+        return "*Not enough papers to extract concepts today.*"
 
-    sample = all_papers[:15]  # limit to avoid token overflow
-    papers_text = "\n\n".join(
-        f"Title: {p.get('Title', 'N/A')}\nAbstract: {p.get('Abstract', 'N/A')}"
-        for p in sample
+    sample = all_papers[:20]  # Stay within token budget
+    paper_snippets = "\n".join(
+        f"{i + 1}. {p.get('Title', '')}: {p.get('Abstract', '')[:250]}…"
+        for i, p in enumerate(sample)
     )
-    topics_str = " and ".join(keywords)
-
     prompt = (
-        f"You are an expert in {topics_str}. "
-        f"Based on today's arXiv papers listed below, identify the key concepts, "
-        f"techniques, and terms that a researcher should understand or explore.\n\n"
-        f"Provide:\n"
-        f"1. 6–10 key technical terms or concepts prominently featured today\n"
-        f"2. A brief (1–2 sentence) plain-language explanation of each\n"
-        f"3. A short note on why each is relevant based on today's papers\n\n"
-        f"Papers:\n{papers_text}\n\n"
-        f"Key Concepts & Keywords:"
+        "You are an expert researcher in physics and condensed matter science.\n"
+        "Based on today's arXiv papers listed below, identify 6–10 important "
+        "technical keywords, methods, or physical concepts that are central to "
+        "understanding these papers.\n"
+        "For each item provide:\n"
+        "- The term in **bold** (include the Chinese name in parentheses)\n"
+        "- A concise 1–2 sentence explanation of what it is and why it matters\n\n"
+        "Format the output as a markdown bulleted list.\n\n"
+        f"Papers:\n{paper_snippets}"
     )
-
-    return safe_generate(model, prompt)
+    return _call_llm(prompt, max_tokens=1200)
