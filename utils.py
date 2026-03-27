@@ -237,20 +237,20 @@ def get_daily_papers_by_keyword(
     return [{col: paper.get(col, "") for col in column_names} for paper in papers]
 
 
-def get_daily_papers_by_keyword_with_retries(
-    keyword: str,
-    column_names: List[str],
-    max_result: int,
-    link: str = "OR",
-    retries: int = 6,
-) -> List[Dict]:
+def get_daily_papers_by_keyword_with_retries(keyword, column_names, max_result, link, retries=5, delay=30):
     for attempt in range(retries):
-        papers = get_daily_papers_by_keyword(keyword, column_names, max_result, link)
-        if papers:
-            return papers
-        print(f"Unexpected empty list for '{keyword}', retrying ({attempt + 1}/{retries})...")
-        time.sleep(60)
-    return None
+        try:
+            return get_daily_papers_by_keyword(keyword, column_names, max_result, link)
+        except urllib.error.HTTPError as e:
+            if e.code in (503, 429, 502):  
+                print(f"[warn] HTTP {e.code} on attempt {attempt+1}/{retries}, retrying in {delay}s …")
+                time.sleep(delay)
+            else:
+                raise  
+        except Exception as e:
+            print(f"[warn] Attempt {attempt+1}/{retries} failed: {e}, retrying in {delay}s …")
+            time.sleep(delay)
+    return None 
 
 
 def generate_table(papers: List[Dict], ignore_keys: List[str] = None) -> str:
