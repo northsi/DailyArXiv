@@ -1,6 +1,8 @@
 # main.py
 import sys
 import time
+import json
+import os
 import pytz
 from datetime import datetime
 
@@ -30,6 +32,20 @@ max_results_per_keyword = {
 issues_result = 30
 column_names = ["Title", "Link", "Abstract", "Date", "Authors"]
 
+CACHE_FILE = "paper_cache.json"
+
+# ── Cache helpers ─────────────────────────────────────────────────────────────
+
+def load_cache() -> dict:
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+def save_cache(cache: dict):
+    with open(CACHE_FILE, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+
 # ── Duplicate-run guard ───────────────────────────────────────────────────────
 
 last_update_date = ""
@@ -45,6 +61,11 @@ except FileNotFoundError:
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 back_up_files()
+
+# 加载缓存，并快照已有的链接集合（在本次运行更新缓存之前）
+paper_cache = load_cache()
+existing_links = set(paper_cache.keys())
+print(f"[debug] Cache loaded: {len(existing_links)} previously processed papers")
 
 try:
     # ── Step 1: Fetch papers from arXiv ──────────────────────────────────────
@@ -63,43 +84,57 @@ try:
             raise RuntimeError(f"Failed to fetch papers for keyword: '{keyword}'")
 
         print(f"[debug]   Got {len(papers)} papers for '{keyword}'")
-
-        # Inspect every paper for suspicious field values
-        for i, paper in enumerate(papers):
-            for key, val in paper.items():
-                if val == "" or val is None:
-                    print(f"[debug]   WARNING: paper[{i}]['{key}'] is empty/None  —  title: {paper.get('Title', 'N/A')[:60]}")
-
         keyword_papers[keyword] = papers
         time.sleep(5)
 
     all_papers = [p for papers in keyword_papers.values() for p in papers]
-    print(f"[debug] Total papers across all keywords: {len(all_papers)}")
+    print(f"[debug] Total papers fetched: {len(all_papers)}")
 
-    # ── Step 2: Translate abstracts ───────────────────────────────────────────
+    # ── Step 2: 只翻译新文献，旧文献从缓存读取 ────────────────────────────────
     print("[main] Translating abstracts …")
+    keyword_new_papers: dict = {}  # 记录每个 keyword 的新文献，Step 3 用
+
     for keyword, papers in keyword_papers.items():
-        print(f"[debug] Step 2: Translating {len(papers)} abstracts for '{keyword}' …")
-        abstracts = [p.get("Abstract", "") for p in papers]
-        print(f"[debug]   Sample abstracts[:2]: {[a[:80] for a in abstracts[:2]]}")
+        new_papers    = [p for p in papers if p.get("Link", "") not in existing_links]
+        cached_papers = [p for p in papers if p.get("Link", "") in existing_links]
 
-        translations = batch_translate_to_chinese(abstracts, batch_size=5)
-        print(f"[debug]   Got {len(translations)} translations back")
+        print(f"[debug]   '{keyword}': {len(new_papers)} new / {len(cached_papers)} from cache")
+        keyword_new_papers[keyword] = new_papers
 
-        for paper, cn in zip(papers, translations):
-            paper["Abstract_CN"] = cn
+        # 旧文献直接从缓存填入 Abstract_CN，不调用 LLM
+        for paper in cached_papers:
+            paper["Abstract_CN"] = paper_cache[paper["Link"]].get("Abstract_CN", "")
 
-    print("[debug] Step 2 complete ✓")
+        # 新文献才调用 LLM 翻译
+        if new_papers:
+            abstracts    = [p.get("Abstract", "") for p in new_papers]
+            translations = batch_translate_to_chinese(abstracts, batch_size=5)
+            for paper, cn in zip(new_papers, translations):
+                paper["Abstract_CN"] = cn
+                # 写入缓存
+                paper_cache[paper["Link"]] = {
+                    "Abstract_CN": cn,
+                    "Title": paper.get("Title", ""),
+                    "Date":  paper.get("Date",  ""),
+                }
+        else:
+            print(f"[debug]   No new abstracts for '{keyword}' — LLM call skipped ✓")
 
-    # ── Step 3: Generate topic summaries ──────────────────────────────────────
+    save_cache(paper_cache)
+    print("[debug] Step 2 complete ✓ — cache updated & saved")
+
+    # ── Step 3: 只对新文献生成 topic summary ──────────────────────────────────
     print("[main] Generating topic summaries …")
     topic_summaries: dict = {}
-    for keyword, papers in keyword_papers.items():
-        print(f"[debug] Step 3: Summarising topic '{keyword}' with {len(papers)} papers …")
-        print(f"[debug]   Paper keys available: {list(papers[0].keys()) if papers else 'NO PAPERS'}")
-        summary = summarize_topic(keyword, papers)
-        print(f"[debug]   Summary length: {len(summary)} chars")
-        topic_summaries[keyword] = summary
+    for keyword in keywords:
+        new_papers = keyword_new_papers[keyword]
+        print(f"[debug]   Summarising '{keyword}': {len(new_papers)} new papers …")
+        if new_papers:
+            topic_summaries[keyword] = summarize_topic(keyword, new_papers)
+            print(f"[debug]   Summary length: {len(topic_summaries[keyword])} chars")
+        else:
+            topic_summaries[keyword] = "*今日无新文献。*"
+            print(f"[debug]   No new papers — summary skipped ✓")
         time.sleep(2)
 
     print("[debug] Step 3 complete ✓")
@@ -108,7 +143,8 @@ try:
     print("[debug] Step 4: Composing email body …")
     email_body = f"# Daily arXiv Papers – {get_daily_date()}\n\n"
     for keyword in keywords:
-        email_body += f"## {keyword}\n\n{topic_summaries[keyword]}\n\n"
+        new_count = len(keyword_new_papers[keyword])
+        email_body += f"## {keyword} ({new_count} new today)\n\n{topic_summaries[keyword]}\n\n"
     print("[debug] Step 4 complete ✓")
 
     # ── Step 5: Write README.md and ISSUE_TEMPLATE.md ─────────────────────────
@@ -116,6 +152,7 @@ try:
     with open("README.md", "w", encoding="utf-8") as f_rm, \
          open(".github/ISSUE_TEMPLATE.md", "w", encoding="utf-8") as f_is:
 
+        # ---------- README header ----------
         f_rm.write("# Daily Papers\n\n")
         f_rm.write(
             "The project automatically fetches the latest papers from arXiv based on keywords.\n\n"
@@ -125,6 +162,7 @@ try:
         )
         f_rm.write(f"Last update: {current_date}\n\n---\n\n")
 
+        # ---------- ISSUE header ----------
         f_is.write("---\n")
         f_is.write(f"title: Latest {issues_result} Papers – {get_daily_date()}\n")
         f_is.write("labels: documentation\n---\n")
@@ -133,30 +171,34 @@ try:
             "for a better reading experience and more papers.**\n\n"
         )
 
+        # ══════════════════════════════════════════════════════════════════════
+        # PART 1 – Today's Overview（只展示今日新文献的总结）
+        # ══════════════════════════════════════════════════════════════════════
         overview_header = f"## 📋 Today's Overview\n*{get_daily_date()}*\n\n"
         f_rm.write(overview_header)
         f_is.write(overview_header)
 
         for keyword in keywords:
-            block = f"### {keyword}\n\n{topic_summaries[keyword]}\n\n"
+            new_count = len(keyword_new_papers[keyword])
+            block = f"### {keyword} ({new_count} new today)\n\n{topic_summaries[keyword]}\n\n"
             f_rm.write(block)
             f_is.write(block)
 
+        # ══════════════════════════════════════════════════════════════════════
+        # PART 2 – Paper Details（展示全部抓取到的文献，含缓存的旧翻译）
+        # ══════════════════════════════════════════════════════════════════════
         f_rm.write("---\n\n## 📄 Paper Details\n\n")
         f_is.write("---\n\n## 📄 Paper Details\n\n")
 
         for keyword in keywords:
-            papers = keyword_papers[keyword]
+            papers = keyword_papers[keyword]  # 全量展示
             print(f"[debug]   Generating table for '{keyword}' ({len(papers)} papers) …")
 
             f_rm.write(f"### {keyword}\n\n")
             f_is.write(f"### {keyword}\n\n")
 
             rm_table = generate_table(papers)
-            print(f"[debug]   README table generated ({len(rm_table)} chars)")
-
             is_table = generate_table(papers[:issues_result])
-            print(f"[debug]   Issue table generated ({len(is_table)} chars)")
 
             f_rm.write(rm_table + "\n\n")
             f_is.write(is_table + "\n\n")
@@ -164,12 +206,16 @@ try:
     print("[debug] Step 5 complete ✓")
 
     # ── Step 6: Send email ────────────────────────────────────────────────────
-    print("[debug] Step 6: Sending email …")
-    send_daily_email(
-        subject=f"📄 Daily arXiv Papers – {get_daily_date()}",
-        body_markdown=email_body,
-    )
-    print("[debug] Step 6 complete ✓")
+    smtp_port_raw = os.environ.get("SMTP_PORT", "").strip()
+    if smtp_port_raw:
+        print("[debug] Step 6: Sending email …")
+        send_daily_email(
+            subject=f"📄 Daily arXiv Papers – {get_daily_date()}",
+            body_markdown=email_body,
+        )
+        print("[debug] Step 6 complete ✓")
+    else:
+        print("[debug] Step 6: Skipped — SMTP_PORT not configured.")
 
 except Exception as exc:
     import traceback
