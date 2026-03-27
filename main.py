@@ -42,6 +42,26 @@ def load_cache() -> dict:
             return json.load(f)
     return {}
 
+def clean_cache(cache: dict, keep_days: int = 90) -> dict:
+    """删除缓存中超过 keep_days 天的条目"""
+    cutoff = datetime.now(beijing_timezone) - timedelta(days=keep_days)
+    cleaned = {}
+    removed = 0
+    for link, meta in cache.items():
+        date_str = meta.get("Date", "")
+        try:
+            paper_date = datetime.strptime(date_str, "%Y-%m-%d").replace(
+                tzinfo=beijing_timezone
+            )
+            if paper_date >= cutoff:
+                cleaned[link] = meta
+            else:
+                removed += 1
+        except (ValueError, TypeError):
+            cleaned[link] = meta  # 日期解析失败的条目保留，不误删
+    print(f"[debug]   Cache cleaned: removed {removed} old entries, kept {len(cleaned)}")
+    return cleaned
+
 def save_cache(cache: dict):
     with open(CACHE_FILE, "w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False, indent=2)
@@ -120,6 +140,7 @@ try:
         else:
             print(f"[debug]   No new abstracts for '{keyword}' — LLM call skipped ✓")
 
+    paper_cache = clean_cache(paper_cache, keep_days=10)
     save_cache(paper_cache)
     print("[debug] Step 2 complete ✓ — cache updated & saved")
 
