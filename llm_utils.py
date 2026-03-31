@@ -87,12 +87,11 @@ def summarize_topic(keyword: str, papers: List[Dict]) -> str:
         for i, p in enumerate(papers)
     )
     prompt = (
-        f"You are an expert in condensed matter physics and materials science.\n"
         f"Below are today's arXiv papers on the topic \"{keyword}\".\n"
-        "Write a concise overview paragraph (4–6 sentences) in English summarising "
-        "the main research themes, methodological trends, and notable findings "
-        "across these papers. Be informative and precise. "
-        "Do NOT enumerate the papers individually.\n\n"
+        "Please provide a concise, one-sentence summary for EACH paper following "
+        "the chronological order of the list. Each summary must strictly follow this logical structure:"
+        "The study focuses on [System/Material], employing [Methodology/Approach] to address/solve [Scientific Problem/Objective]. "
+        "Use a numbered list for clarity.\n\n"
         f"Papers:\n{paper_snippets}\n\nOverview:"
     )
     return _call_llm(prompt, max_tokens=600)
