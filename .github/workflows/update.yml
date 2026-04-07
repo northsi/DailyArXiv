@@ -41,18 +41,11 @@ jobs:
           EMAIL_TO:         ${{ secrets.EMAIL_TO }}
         run: python main.py
 
-
-      - name: Debug - check cache file
-        run: |
-          echo "=== repo root files ==="
-          ls -la
-          echo "=== cache content (first 5 lines) ==="
-          head -5 paper_cache.json 2>/dev/null || echo "paper_cache.json NOT FOUND"
-
       - name: Commit files if changed
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "✏️ Update papers automatically."
+          add_options: '--all'
           file_pattern: |
             README.md
             .github/ISSUE_TEMPLATE.md
