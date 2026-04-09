@@ -97,6 +97,7 @@ def generate_table(papers: List[Dict], ignore_keys: List[str] = None) -> str:
 
     Key behaviours
     ──────────────
+    • '#'           – sequential numbering from 1
     • 'Link'        – embedded into the Title hyperlink; never its own column.
     • 'Abstract_CN' – embedded inside the 'Abstract' cell as a second
                       collapsible block; never its own column.
@@ -117,8 +118,8 @@ def generate_table(papers: List[Dict], ignore_keys: List[str] = None) -> str:
     ]
 
     formatted_papers = []
-    for paper in papers:
-        fp = {}
+    for idx, paper in enumerate(papers, start=1):  # 从1开始编号
+        fp = {"#": str(idx)}  # 添加编号列
         for key in columns_in_use:
             val = paper.get(key, "")
 
@@ -155,7 +156,7 @@ def generate_table(papers: List[Dict], ignore_keys: List[str] = None) -> str:
         formatted_papers.append(fp)
 
     # Build Markdown table
-    final_cols = list(formatted_papers[0].keys())
+    final_cols = ["#"] + [col for col in list(formatted_papers[0].keys()) if col != "#"]  # 编号列放在最前面
     header  = "| " + " | ".join(f"**{c}**" for c in final_cols) + " |\n"
     header += "| " + " | ".join(["---"] * len(final_cols)) + " |"
 
