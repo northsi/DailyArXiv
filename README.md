@@ -6,38 +6,20 @@ The subheadings represent search keywords. Only the most recent articles per key
 
 Click the **Watch** button to receive daily email notifications.
 
-Last update: 2026-05-20
+Last update: 2026-05-21
 
 ---
 
 ## 📋 Today's Overview
-*May 20, 2026*
+*May 21, 2026*
 
-### Superconductivity (20 new today)
+### Superconductivity (0 new today)
 
-1.  The study focuses on a disordered helical superconducting edge under a Zeeman field, employing bosonization and renormalization-group analysis to address how impurity potentials modify charge- and spin-density wave correlations and superconducting pair correlations.
-2.  The study focuses on superconducting cat-qubits, employing an energetic advantage analysis to address the problem of improving quantum computation efficiency beyond traditional time-based metrics.
-3.  The study focuses on superconducting qubits, employing a surface electrostatic simulator (SesQ) to address the multiscale computational challenge of calculating the energy participation ratio (EPR) for characterizing dielectric losses.
-4.  The study focuses on the ultrafast superconducting diode effect, employing a novel experimental approach to address the limitations of dissipative and slow vortex transport in nonreciprocal superconductors.
-5.  The study focuses on hole-doped La$_3$Ni$_2$O$_7$, employing an analysis of Fermi surface nesting to address the problem of achieving bulk superconductivity under ambient pressure without strain.
-6.  The study focuses on a nano-magnet trapped in a superconducting trap, employing a quantum dynamics model to address the rotational quantum tunneling of a magnetic dipole through a potential barrier.
-7.  The study focuses on a non-interacting gas of charge-$e/3$ anyons, employing a flux-attachment construction to address the mechanism of superconductivity through hidden weak-pairing.
-8.  The study focuses on Gaussian superconducting fluctuations, employing time-dependent Ginzburg-Landau theory to address the calculation of the two-point magnetic noise spectrum measurable by spin qubit pairs.
-9.  The study focuses on 2D superconducting qubit lattices, employing engineered simultaneous interactions to address the scalable, single-step generation of W states.
-10. The study focuses on Ruddlesden-Popper nickelates, employing high-precision crystallographic-axis-resolved dc transport measurements to address how interlayer electronic coherence links magnetism and superconductivity.
-11. The study focuses on Floquet-Laughlin states in superconducting circuits, employing a dissipation-assisted preparation method to address the challenge of adiabatically preparing highly correlated fractional Chern insulator states.
-12. The study focuses on UTe$_2$, employing electrical-resistivity measurements under pulsed magnetic fields to address the role of boosted magnetic fluctuations at the onset of superconductivity beyond 40 T.
-13. The study focuses on hexagonal HfRuAs, employing anisotropic Migdal-Eliashberg theory with *ab initio* inputs to address the characterization of its strong-coupling anisotropic superconductivity.
-14. The study focuses on Bi-2212, employing first-principles density functional theory calculations with a pressure-dependent model to address the origin of conflicting evolutions of $T_c$ under hydrostatic pressure.
-15. The study focuses on rhombohedral heptalayer graphene (RHG), employing transport measurements to address the observation of multiple superconducting phases at zero magnetic field.
-16. The study focuses on moiré WSe$_2$
+*今日无新文献。*
 
-### spin glass (4 new today)
+### spin glass (0 new today)
 
-1. **Optimal Persistence Reveals Hidden Topology in Complex Energy Landscapes** The study focuses on the p=2 spherical spin glass, employing an analysis of the canyon-finding rate to address the topological transition marked by infinite persistence and the discrete-to-quasi-continuous GOE crossover at finite persistence.
-2. **Frustration from Localized Zhang-Rice States: A Unified Theory of Doping-Driven Magnetic Transitions in Cuprates** The study focuses on doped cuprates, employing a unified microscopic theory of localized Zhang-Rice singlets to address how doped holes disrupt antiferromagnetic order by actively mediating emergent spin exchange.
-3. **At Most Two Infinite Blue Clusters in the CMR Representation of the Edwards-Anderson Spin Glass** The study focuses on the short-range Edwards-Anderson spin glass, employing rigorous proof of a structural constraint to address the existence of at most two macroscopic blue clusters with opposite overlap signs in the CMR representation.
-4. **Exact mapping of a spin glass with correlated disorder to the pure Ising model** The study focuses on an Ising spin-glass model with correlated disorder, employing an exact mapping to address the definition of a Nishimori line that allows physical quantities to be expressed in terms of the pure Ising model.
+*今日无新文献。*
 
 ---
 
