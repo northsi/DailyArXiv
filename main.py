@@ -96,13 +96,18 @@ try:
         link = "AND" if len(keyword.split()) == 1 else "OR"
         max_result = max_results_per_keyword.get(keyword, 10)
         print(f"[debug]   Fetching '{keyword}' (max={max_result}, link={link}) …")
-
+    
+        # 请求前随机等待 3～8 秒
+        delay = random.uniform(3, 8)
+        print(f"[debug]   Waiting {delay:.1f}s before request...")
+        time.sleep(delay)
+    
         papers = get_daily_papers_by_keyword_with_retries(
             keyword, column_names, max_result, link
         )
         if papers is None:
             raise RuntimeError(f"Failed to fetch papers for keyword: '{keyword}'")
-
+    
         print(f"[debug]   Got {len(papers)} papers for '{keyword}'")
         keyword_papers[keyword] = papers
         time.sleep(5)
