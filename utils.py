@@ -27,30 +27,66 @@ def request_paper_with_arXiv_api(
         f"&max_results={max_results}&sortBy=lastUpdatedDate"
     )
     url = urllib.parse.quote(url, safe="%/:=&?~#+!$,;'@()*[]")
-    response = urllib.request.urlopen(url).read().decode("utf-8")
-    feed = feedparser.parse(response)
 
-    papers = []
-    for entry in feed.entries:
-        entry = EasyDict(entry)
-        paper = EasyDict()
-        paper.Title    = remove_duplicated_spaces(entry.title.replace("\n", " "))
-        paper.Abstract = remove_duplicated_spaces(entry.summary.replace("\n", " "))
-        paper.Authors  = [
-            remove_duplicated_spaces(_["name"].replace("\n", " "))
-            for _ in getattr(entry, "authors", [])
-        ]
-        paper.Link    = remove_duplicated_spaces(entry.link.replace("\n", " "))
-        paper.Tags    = [
-            remove_duplicated_spaces(_["term"].replace("\n", " "))
-            for _ in getattr(entry, "tags", [])
-        ]
-        paper.Comment = remove_duplicated_spaces(
-            entry.get("arxiv_comment", "").replace("\n", " ")
-        )
-        paper.Date = entry.updated
-        papers.append(paper)
-    return papers
+    max_retries = 5
+    for attempt in range(max_retries):
+        # 1. 每次请求前随机休眠 1~3 秒，降低节奏感
+        time.sleep(random.uniform(1, 3))
+
+        try:
+            response = urllib.request.urlopen(url, timeout=30)
+            data = response.read().decode("utf-8")
+            feed = feedparser.parse(data)
+            # ---------- 原有的解析逻辑 ----------
+            papers = []
+            for entry in feed.entries:
+                entry = EasyDict(entry)
+                paper = EasyDict()
+                paper.Title    = remove_duplicated_spaces(entry.title.replace("\n", " "))
+                paper.Abstract = remove_duplicated_spaces(entry.summary.replace("\n", " "))
+                paper.Authors  = [
+                    remove_duplicated_spaces(_["name"].replace("\n", " "))
+                    for _ in getattr(entry, "authors", [])
+                ]
+                paper.Link    = remove_duplicated_spaces(entry.link.replace("\n", " "))
+                paper.Tags    = [
+                    remove_duplicated_spaces(_["term"].replace("\n", " "))
+                    for _ in getattr(entry, "tags", [])
+                ]
+                paper.Comment = remove_duplicated_spaces(
+                    entry.get("arxiv_comment", "").replace("\n", " ")
+                )
+                paper.Date = entry.updated
+                papers.append(paper)
+            return papers
+
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                # 读取 Retry-After 头
+                retry_after = e.headers.get("Retry-After")
+                if retry_after is not None:
+                    wait = int(retry_after)
+                else:
+                    wait = 30 * (2 ** attempt)  # 指数退避：30, 60, 120...
+                print(f"[arXiv] 429 Too Many Requests. Waiting {wait}s (attempt {attempt+1}/{max_retries})")
+                time.sleep(wait)
+                continue
+            elif e.code == 503:
+                wait = 10 * (2 ** attempt)
+                print(f"[arXiv] 503 Service Unavailable. Waiting {wait}s (attempt {attempt+1}/{max_retries})")
+                time.sleep(wait)
+                continue
+            else:
+                raise
+        except Exception as e:
+            print(f"[arXiv] Unexpected error: {e}")
+            if attempt == max_retries - 1:
+                raise
+            time.sleep(10 * (2 ** attempt))
+
+    # 重试用尽，返回空列表（与主程序逻辑适配）
+    print(f"[arXiv] Failed to fetch data for '{keyword}' after {max_retries} attempts.")
+    return []
 
 
 def filter_tags(
