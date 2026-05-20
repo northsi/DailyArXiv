@@ -122,8 +122,9 @@ def get_daily_papers_by_keyword_with_retries(
         papers = get_daily_papers_by_keyword(keyword, column_names, max_result, link)
         if papers:
             return papers
-        print(f"Empty list for '{keyword}', retrying ({attempt + 1}/{retries})…")
-        time.sleep(60)
+        wait = min(60 * (attempt + 1), 300)  # 最多等 5 分钟
+        print(f"Empty list for '{keyword}', retrying in {wait}s ({attempt + 1}/{retries})…")
+        time.sleep(wait)
     return None
 
 
