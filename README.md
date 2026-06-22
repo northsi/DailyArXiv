@@ -6,29 +6,20 @@ The subheadings represent search keywords. Only the most recent articles per key
 
 Click the **Watch** button to receive daily email notifications.
 
-Last update: 2026-06-22
+Last update: 2026-06-23
 
 ---
 
 ## 📋 Today's Overview
-*June 22, 2026*
+*June 23, 2026*
 
-### Superconductivity (7 new today)
+### Superconductivity (0 new today)
 
-Here are the concise, one-sentence summaries for each paper, following the specified structure.
+*今日无新文献。*
 
-1. The study focuses on **superconducting TiN resonators on sapphire**, employing **direct thermal reconstruction via a CO₂ laser beam** to address/solve **the need for aggressive chemical cleaning in substrate preparation for epitaxy**.
-2. The study focuses on **a normal meta-altermagnetic superconducting nanowire junction**, employing **a theoretical proposal for a one-dimensional nanowire on an s-wave superconductor** to address/solve **the engineering of spin triplet superconductivity and dissipationless spin transport**.
-3. The study focuses on **the extended Hubbard model**, employing **the inclusion of next-nearest-neighbor hopping and several nonlocal interaction terms** to address/solve **the influence of nonlocal interactions on s- and d-wave superconducting correlations**.
-4. The study focuses on **the noncentrosymmetric weakly-correlated superconductor Nb₁₈Re₈₂**, employing **experimental and theoretical investigation** to address/solve **whether a substantial spin-triplet component can be realized without strong electronic coupling via antisymmetric spin-orbit coupling**.
-5. The study focuses on **superconducting circuits in a circuit QED architecture**, employing **a Single-Step Phase-Engineered (SSPE) pulse scheme** to address/solve **the hardware-efficient and qubit-state-dependent depopulation (reset) of a readout cavity**.
-6. The study focuses on **melting Abelian fractional Chern insulators**, employing **numerical and theoretical analysis of bandwidth-driven transitions** to address/solve **the observation of a direct transition into a charge-2e superconductor and the realization of non-Abelian topological superconductivity**.
-7. The study focuses on **superconducting qubits**, employing **a proposed architecture with frequency-multiplexed millimeter-wave qubits and an on-chip nonreciprocal control bus** to address/solve **the limitations of cryogenic wiring complexity, microwave crosstalk, and Purcell decay for scaling quantum processors**.
+### spin glass (0 new today)
 
-### spin glass (2 new today)
-
-1. **The study focuses on** the random field Edwards-Anderson model, **employing** a rigorous mathematical proof **to address/solve** the self-averaging property of the replica overlap and the representation of the order parameter in any dimension.
-2. **The study focuses on** biclique quantum spin glasses, **employing** the (discrete) truncated Wigner approximation (TWA) **to address/solve** the near-adiabatic dynamics and the recovery of sample-to-sample fluctuations.
+*今日无新文献。*
 
 ---
 
