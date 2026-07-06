@@ -27,7 +27,7 @@ keywords = ["Majorana", "Qubit"]
 
 max_results_per_keyword = {
     "Majorana": 10,
-    "spin glass": 20,
+    "Qubit": 20,
 }
 
 issues_result = 30
