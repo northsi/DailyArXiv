@@ -23,11 +23,11 @@ from email_utils import send_daily_email
 beijing_timezone = pytz.timezone("Asia/Shanghai")
 current_date = datetime.now(beijing_timezone).strftime("%Y-%m-%d")
 
-keywords = ["Superconductivity", "spin glass"]
+keywords = ["Majorana", "Qubit"]
 
 max_results_per_keyword = {
-    "Superconductivity": 20,
-    "spin glass": 10,
+    "Majorana": 10,
+    "spin glass": 20,
 }
 
 issues_result = 30
