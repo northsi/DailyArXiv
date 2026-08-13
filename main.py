@@ -23,14 +23,13 @@ from email_utils import send_daily_email
 beijing_timezone = pytz.timezone("Asia/Shanghai")
 current_date = datetime.now(beijing_timezone).strftime("%Y-%m-%d")
 
-keywords = ["Majorana", "Qubit"]
+keywords = ["NbSe2"]
 
 max_results_per_keyword = {
-    "Majorana": 10,
-    "Qubit": 20,
+    "NbSe2": 10,
 }
 
-issues_result = 30
+issues_result = 10
 column_names = ["Title", "Link", "Abstract", "Date", "Authors"]
 
 CACHE_FILE = "paper_cache.json"
