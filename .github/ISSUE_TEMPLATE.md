@@ -1,24 +1,15 @@
 ---
-title: Latest 10 Papers – August 14, 2026
+title: Latest 10 Papers – August 17, 2026
 labels: documentation
 ---
 **Check the [GitHub page](https://github.com/zezhishao/MTS_Daily_ArXiv) for a better reading experience and more papers.**
 
 ## 📋 Today's Overview
-*August 14, 2026*
+*August 17, 2026*
 
-### NbSe2 (10 new today)
+### NbSe2 (0 new today)
 
-1. **The study focuses on NbSe2 flakes, employing pressure application to address the realization of a magnetic-field-free superconducting diode effect by breaking inversion and time-reversal symmetries.**
-2. **The study focuses on twisted NbSe2/NbSe2 van der Waals Josephson junctions, employing dry transfer with controlled crystallographic alignment to address the microscopic origin of supercurrent nonreciprocity and its relation to twist-angle engineering.**
-3. **The study focuses on a helimagnetic monolayer CrBr2 on an s-wave superconductor NbSe2, employing low-temperature scanning tunneling microscopy to address the system's topological nature and the role of interfacial coupling.**
-4. **The study focuses on few-layer NbSe2, employing magnetoresistance measurements to address quantum interference phenomena and phase coherence in the two-dimensional superconducting fluctuation regime.**
-5. **The study focuses on non-centrosymmetric rhombohedral NbSe2 (3R-NbSe2), employing structural, transport, magnetic, and thermodynamic measurements to address superconductivity in a stacking-engineered polytype lacking global inversion symmetry.**
-6. **The study focuses on the cleaved surface of 2H-NbSe2, employing ultralow-temperature spectroscopic-imaging scanning tunneling microscopy to address the interplay between charge density wave and superconductivity via anisotropic superconducting gaps.**
-7. **The study focuses on molecule-intercalated NbSe2, employing order-disorder kinetics to address the formation of emergent cooperative superstructures and their tunable hybrid quantum states.**
-8. **The study focuses on a 24 nm thick 2H-NbSe2 flake, employing cryogenic four-dimensional scanning transmission electron microscopy to address spatial correlations of charge density wave order across the transition.**
-9. **The study focuses on a NbSe2-based qubit, employing van der Waals material integration to address the realization of coherent oscillations in a weakly anharmonic quantum device.**
-10. **The study focuses on NbSe2, employing strain application to address the achievement of a field-free superconducting diode effect by breaking time reversal symmetry intrinsically.**
+*今日无新文献。*
 
 ---
 
