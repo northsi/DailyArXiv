@@ -6,17 +6,16 @@ The subheadings represent search keywords. Only the most recent articles per key
 
 Click the **Watch** button to receive daily email notifications.
 
-Last update: 2026-08-24
+Last update: 2026-08-25
 
 ---
 
 ## 📋 Today's Overview
-*August 24, 2026*
+*August 25, 2026*
 
-### NbSe2 (1 new today)
+### NbSe2 (0 new today)
 
-1. **Cavity-enhanced superconductivity in the two-dimensional limit of NbSe2**  
-The study focuses on few-layer NbSe2, employing coupling to a terahertz complementary split-ring resonator to address the microscopic mechanism and magnitude of cavity-enhanced superconductivity in the two-dimensional limit.
+*今日无新文献。*
 
 ---
 

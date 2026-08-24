@@ -1,16 +1,15 @@
 ---
-title: Latest 10 Papers – August 24, 2026
+title: Latest 10 Papers – August 25, 2026
 labels: documentation
 ---
 **Check the [GitHub page](https://github.com/zezhishao/MTS_Daily_ArXiv) for a better reading experience and more papers.**
 
 ## 📋 Today's Overview
-*August 24, 2026*
+*August 25, 2026*
 
-### NbSe2 (1 new today)
+### NbSe2 (0 new today)
 
-1. **Cavity-enhanced superconductivity in the two-dimensional limit of NbSe2**  
-The study focuses on few-layer NbSe2, employing coupling to a terahertz complementary split-ring resonator to address the microscopic mechanism and magnitude of cavity-enhanced superconductivity in the two-dimensional limit.
+*今日无新文献。*
 
 ---
 
