@@ -1,11 +1,11 @@
 ---
-title: Latest 10 Papers – September 08, 2026
+title: Latest 10 Papers – September 09, 2026
 labels: documentation
 ---
 **Check the [GitHub page](https://github.com/zezhishao/MTS_Daily_ArXiv) for a better reading experience and more papers.**
 
 ## 📋 Today's Overview
-*September 08, 2026*
+*September 09, 2026*
 
 ### NbSe2 (0 new today)
 
