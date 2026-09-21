@@ -1,15 +1,15 @@
 ---
-title: Latest 10 Papers – September 21, 2026
+title: Latest 10 Papers – September 22, 2026
 labels: documentation
 ---
 **Check the [GitHub page](https://github.com/zezhishao/MTS_Daily_ArXiv) for a better reading experience and more papers.**
 
 ## 📋 Today's Overview
-*September 21, 2026*
+*September 22, 2026*
 
-### NbSe2 (1 new today)
+### NbSe2 (0 new today)
 
-1. The study focuses on the 2D superconductor NbSe2, employing vortex-mediated spin current injection experiments to demonstrate that vortices can serve as direct carriers of spin angular momentum into superconductors, addressing a major challenge in superconducting spintronics.
+*今日无新文献。*
 
 ---
 

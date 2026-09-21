@@ -6,16 +6,16 @@ The subheadings represent search keywords. Only the most recent articles per key
 
 Click the **Watch** button to receive daily email notifications.
 
-Last update: 2026-09-21
+Last update: 2026-09-22
 
 ---
 
 ## 📋 Today's Overview
-*September 21, 2026*
+*September 22, 2026*
 
-### NbSe2 (1 new today)
+### NbSe2 (0 new today)
 
-1. The study focuses on the 2D superconductor NbSe2, employing vortex-mediated spin current injection experiments to demonstrate that vortices can serve as direct carriers of spin angular momentum into superconductors, addressing a major challenge in superconducting spintronics.
+*今日无新文献。*
 
 ---
 
