@@ -6,12 +6,12 @@ The subheadings represent search keywords. Only the most recent articles per key
 
 Click the **Watch** button to receive daily email notifications.
 
-Last update: 2026-09-24
+Last update: 2026-09-25
 
 ---
 
 ## 📋 Today's Overview
-*September 24, 2026*
+*September 25, 2026*
 
 ### NbSe2 (0 new today)
 
