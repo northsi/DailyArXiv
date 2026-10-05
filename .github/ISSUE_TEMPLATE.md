@@ -1,11 +1,11 @@
 ---
-title: Latest 10 Papers – October 05, 2026
+title: Latest 10 Papers – October 06, 2026
 labels: documentation
 ---
 **Check the [GitHub page](https://github.com/zezhishao/MTS_Daily_ArXiv) for a better reading experience and more papers.**
 
 ## 📋 Today's Overview
-*October 05, 2026*
+*October 06, 2026*
 
 ### NbSe2 (0 new today)
 
