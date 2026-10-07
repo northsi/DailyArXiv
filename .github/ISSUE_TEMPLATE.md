@@ -1,17 +1,15 @@
 ---
-title: Latest 10 Papers – October 07, 2026
+title: Latest 10 Papers – October 08, 2026
 labels: documentation
 ---
 **Check the [GitHub page](https://github.com/zezhishao/MTS_Daily_ArXiv) for a better reading experience and more papers.**
 
 ## 📋 Today's Overview
-*October 07, 2026*
+*October 08, 2026*
 
-### NbSe2 (1 new today)
+### NbSe2 (0 new today)
 
-1. The study focuses on bulk metallic bands in 2H-NbSe₂, employing Floquet engineering via periodic optical driving to extend light-induced band dressing to bulk metals despite strong screening.
-
-2. The study focuses on 2H-NbSe₂, employing [methodology] to address [scientific problem/objective].
+*今日无新文献。*
 
 ---
 

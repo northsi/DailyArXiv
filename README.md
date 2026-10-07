@@ -6,18 +6,16 @@ The subheadings represent search keywords. Only the most recent articles per key
 
 Click the **Watch** button to receive daily email notifications.
 
-Last update: 2026-10-07
+Last update: 2026-10-08
 
 ---
 
 ## 📋 Today's Overview
-*October 07, 2026*
+*October 08, 2026*
 
-### NbSe2 (1 new today)
+### NbSe2 (0 new today)
 
-1. The study focuses on bulk metallic bands in 2H-NbSe₂, employing Floquet engineering via periodic optical driving to extend light-induced band dressing to bulk metals despite strong screening.
-
-2. The study focuses on 2H-NbSe₂, employing [methodology] to address [scientific problem/objective].
+*今日无新文献。*
 
 ---
 
