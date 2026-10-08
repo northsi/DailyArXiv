@@ -225,7 +225,7 @@ def generate_table(papers: List[Dict], ignore_keys: List[str] = None) -> str:
     return "\n".join(rows)
 
 
-REPORT_FILES = ("README.md",)
+REPORT_FILES = ("README.md", "_data/papers.json")
 BEIJING_TIMEZONE = pytz.timezone("Asia/Shanghai")
 
 

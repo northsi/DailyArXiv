@@ -164,6 +164,14 @@ class PaperOutputTests(unittest.TestCase):
                     for output in ["README.md"]:
                         self.assertNotIn("Reject", Path(output).read_text())
                     self.assertNotIn("email", Path("README.md").read_text())
+                    digest = json.loads(Path("_data/papers.json").read_text())
+                    self.assertEqual(digest["paper_count"], 1)
+                    self.assertEqual(digest["new_count"], 1 if index == 0 else 0)
+                    website_paper = digest["topics"][0]["papers"][0]
+                    self.assertEqual(website_paper["title"], "Keep")
+                    self.assertEqual(website_paper["finding"], "The accepted finding.")
+                    self.assertEqual(website_paper["last_author"], "Last")
+                    self.assertNotIn("Reject", json.dumps(digest))
                     self.assertFalse(Path(".github/ISSUE_TEMPLATE.md").exists())
                     cache = json.loads(Path("paper_cache.json").read_text())
                     self.assertTrue(cache["Reject"]["Quality_Filter"]["reject"])

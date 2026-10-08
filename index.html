@@ -1,0 +1,36 @@
+---
+layout: papers
+title: Paper digest
+---
+{% assign digest = site.data.papers %}
+<section class="hero" aria-labelledby="page-heading">
+  <div><p class="eyebrow">YOUR DAILY READING LIST</p><h1 id="page-heading">Find the physics.<br><em>Skip the noise.</em></h1><p class="hero-description">Selected arXiv papers, their main findings, and the details worth a closer look.</p></div>
+  <div class="update-note"><span class="status-dot" aria-hidden="true"></span><span>Latest digest<br><strong><time datetime="{{ digest.updated | escape }}">{{ digest.updated | escape }}</time></strong><small>Updates Mon–Fri · 00:30 UTC+8</small></span></div>
+</section>
+<div class="digest-layout">
+  <aside class="sidebar" aria-label="Digest overview">
+    <section class="overview-panel"><p class="eyebrow">AT A GLANCE</p><div class="stat"><strong>{{ digest.new_count }}</strong><span>new in this update</span></div><div class="stat"><strong>{{ digest.paper_count }}</strong><span>papers in this digest</span></div><p class="scope-label">RESEARCH SCOPE</p>{% for topic in digest.topics %}<p class="scope-value">{{ topic.keyword | escape }}</p>{% endfor %}</section>
+    <section id="about" class="about-panel"><h2>A focused reading list</h2><p>Papers are selected for physical significance and substantive novelty. Routine calculations without a clear new insight are filtered out.</p><p>Each finding is based on the abstract. Expand the original abstract or open arXiv to explore further.</p><p class="muted">“New” means newly added to this digest, not necessarily published today. Last author refers to author order, not confirmed correspondence.</p></section>
+  </aside>
+  <section id="papers" class="paper-section" aria-labelledby="papers-heading">
+    <div class="section-heading"><div><p class="eyebrow">THE READING LIST</p><h2 id="papers-heading">Latest papers</h2></div><span class="count-label" id="result-count" role="status" aria-live="polite">{{ digest.paper_count }} papers</span></div>
+    <div class="filters" id="paper-filters" hidden>
+      <div class="search-field"><label for="paper-search">Search papers</label><input id="paper-search" type="search" placeholder="Title, finding, author, or abstract…" autocomplete="off"></div>
+      <div class="filter-row"><div class="select-field"><label for="topic-filter">Topic</label><select id="topic-filter"><option value="">All topics</option>{% for topic in digest.topics %}<option value="{{ topic.keyword | escape }}">{{ topic.keyword | escape }}</option>{% endfor %}</select></div><div class="select-field"><label for="paper-sort">Sort by</label><select id="paper-sort"><option value="digest">Digest order</option><option value="newest">Newest paper</option><option value="oldest">Oldest paper</option></select></div><label class="new-filter"><input type="checkbox" id="new-only"> New only</label><button type="button" class="reset-button" id="reset-filters">Reset</button></div>
+    </div>
+    <noscript><p class="notice">All papers are listed below. Enable JavaScript to search, filter, and sort.</p></noscript>
+    <div id="paper-list" class="paper-list">
+      {% for topic in digest.topics %}{% for paper in topic.papers %}
+      <article class="paper-card" data-topic="{{ topic.keyword | escape }}" data-date="{{ paper.date | escape }}" data-new="{{ paper.is_new }}">
+        <div class="paper-meta"><span class="paper-topic">{{ topic.keyword | escape }}</span><time datetime="{{ paper.date | escape }}">{{ paper.date | escape }}</time>{% if paper.is_new %}<span class="new-badge">New</span>{% endif %}</div>
+        <h3><a href="{{ paper.link | escape }}">{{ paper.title | escape }} <span aria-hidden="true">↗</span></a></h3>
+        <p class="paper-author"><span>Last author</span> {{ paper.last_author | escape }}</p>
+        <div class="finding"><span class="finding-label">MAIN FINDING</span><p>{{ paper.finding | escape }}</p></div>
+        <details class="abstract"><summary>Read abstract</summary><p>{{ paper.abstract | escape }}</p><a href="{{ paper.link | escape }}">Read on arXiv <span aria-hidden="true">↗</span></a></details>
+      </article>
+      {% endfor %}{% endfor %}
+    </div>
+    <div class="empty-state" id="no-results" hidden><h3>No matching papers</h3><p>Try a different search or reset your filters.</p></div>
+    {% if digest.paper_count == 0 %}<div class="empty-state"><h3>No papers in this update</h3><p>No papers passed screening. Check back after the next update.</p></div>{% endif %}
+  </section>
+</div>

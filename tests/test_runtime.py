@@ -38,6 +38,7 @@ class RuntimeTests(unittest.TestCase):
                 os.chdir(tmp)
                 Path(".github").mkdir()
                 for path in utils.REPORT_FILES:
+                    Path(path).parent.mkdir(parents=True, exist_ok=True)
                     Path(path).write_text("original " + path)
 
                 def fail():
@@ -147,6 +148,21 @@ class RuntimeTests(unittest.TestCase):
         )
         self.assertEqual(params["max_results"], ["10"])
         self.assertEqual(params["sortBy"], ["lastUpdatedDate"])
+
+    def test_empty_digest_has_valid_website_data(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            original = os.getcwd()
+            try:
+                os.chdir(tmp)
+                main.write_site_data({"Physics": []}, {"Physics": []}, "2026-10-08")
+                import json
+
+                digest = json.loads(Path("_data/papers.json").read_text())
+                self.assertEqual(digest["paper_count"], 0)
+                self.assertEqual(digest["new_count"], 0)
+                self.assertEqual(digest["topics"][0]["papers"], [])
+            finally:
+                os.chdir(original)
 
     def test_tag_filter_preserves_order_and_avoids_duplicates(self):
         papers = [

@@ -5,6 +5,7 @@ import random
 import sys
 import time
 from datetime import datetime, timedelta
+from pathlib import Path
 
 import pytz
 
@@ -172,6 +173,44 @@ def build_topic_summaries(keyword_new_papers):
     return topic_summaries
 
 
+def write_site_data(keyword_papers, keyword_new_papers, current_date):
+    """Persist accepted papers for Jekyll without making additional AI calls."""
+    topics = []
+    for keyword, papers in keyword_papers.items():
+        new_links = {paper["Link"] for paper in keyword_new_papers[keyword]}
+        topics.append(
+            {
+                "keyword": keyword,
+                "papers": [
+                    {
+                        "title": paper.get("Title", ""),
+                        "link": paper.get("Link", ""),
+                        "abstract": paper.get("Abstract", ""),
+                        "finding": paper.get("Finding_Summary", ""),
+                        "date": paper.get("Date", "").split("T")[0],
+                        "last_author": paper["Authors"][-1]
+                        if paper.get("Authors")
+                        else "Author not provided",
+                        "is_new": paper.get("Link", "") in new_links,
+                    }
+                    for paper in papers
+                ],
+            }
+        )
+    digest = {
+        "updated": current_date,
+        "paper_count": sum(len(topic["papers"]) for topic in topics),
+        "new_count": sum(
+            paper["is_new"] for topic in topics for paper in topic["papers"]
+        ),
+        "topics": topics,
+    }
+    Path("_data").mkdir(exist_ok=True)
+    with open("_data/papers.json", "w", encoding="utf-8") as output:
+        json.dump(digest, output, ensure_ascii=False, indent=2)
+        output.write("\n")
+
+
 def write_reports(keyword_papers, keyword_new_papers, topic_summaries, current_date):
     """Write the website content consumed by the Jekyll homepage."""
     # ── Step 4: Write website content ─────────────────────────
@@ -214,6 +253,7 @@ def write_reports(keyword_papers, keyword_new_papers, topic_summaries, current_d
             rm_table = generate_table(papers)
             f_rm.write(rm_table + "\n\n")
 
+    write_site_data(keyword_papers, keyword_new_papers, current_date)
     print("[debug] Step 4 complete ✓")
 
 

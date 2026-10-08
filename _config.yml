@@ -1,29 +1,19 @@
-# _config.yml
-title: Daily ArXiv Papers
-description: Automatically fetched latest papers from arXiv
-author: Your Name # TODO: Replace with your actual name or GitHub ID
+title: Daily ArXiv
+description: Selected arXiv papers with meaningful physical insights, concise findings, and original abstracts.
+author: northsi
+url: https://northsi.github.io
+baseurl: /DailyArXiv
 theme: jekyll-theme-primer
-
-# Display settings
 show_downloads: false
-# google_analytics: G-XXXXXXXXXX # Commented out if not in use to avoid build warnings
-
-# Plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-github-metadata
   - jemoji
-  # Note: Do not include jekyll-paginate if you are not using pagination
-
-# Custom navigation
-header_pages:
-  - about.md
-  # - README.md # Removed to prevent a redundant link in your navigation bar
-
-# Pagination settings (Note: Only works for files in the _posts directory, not a single README.md)
-# paginate: 20
-# paginate_path: "/page:num/"
-
-# Custom styling
-sass:
-  style: compressed
+exclude:
+  - tests
+  - main.py
+  - utils.py
+  - llm_utils.py
+  - paper_cache.json
+  - requirements.txt
+  - README.md
