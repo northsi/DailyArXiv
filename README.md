@@ -6,26 +6,16 @@ The subheadings represent search keywords. Only the most recent articles per key
 
 Results are displayed on this website after each scheduled update.
 
-Last update: 2026-10-08
+Last update: 2026-10-09
 
 ---
 
 ## 📋 Today's Overview
-*October 08, 2026*
+*October 09, 2026*
 
-### superconductivity OR superconducting (11 new today)
+### superconductivity OR superconducting (0 new today)
 
-1. **Black hole radial geometry from a quantum spin chain**: Using an exactly solvable spin chain implemented on a superconducting processor, the study maps black-hole radial geometry onto lattice quasimomentum.
-2. **Standard estimators cannot represent fault-tolerant workloads at measured error rates: evaluated, evidence-based uncertainty for quantum resource estimation**: Using five surface-code cost models with measured error rates, the study finds standard estimators cannot represent most tested fault-tolerant workloads and substantially understate resource uncertainty.
-3. **Correlating DC SQUID Performance with the Location of Trapped Magnetic Flux Using Scanning SQUID Microscopy**: Using scanning SQUID microscopy and same-cooldown electrical measurements, the study identifies preferred flux-pinning sites near DC SQUIDs irrespective of moat geometry.
-4. **Dynamically protected erasure qubit via low-frequency charge driving**: Using sub-GHz charge driving of superconducting Kerr oscillators, the experiment demonstrates dynamically protected dual-rail qubits with nearly fourfold erasure bias.
-5. **Twist-angle-dependent quantum phase diagrams in twisted bilayer MoTe2**: Using twist-angle-dependent transport measurements in bilayer MoTe2, the study finds superconductivity emerges above approximately 5.6°, adjacent to a correlated insulating phase.
-6. **Regulating oxygen content and superconductivity in La$_3$Ni$_2$O$_{7+δ}$**: Using oxygen-controlled synthesis and high-pressure transport in La3Ni2O7+δ, the study finds oxygen content controls phase purity and the bilayer superconducting upper critical field.
-7. **Topological and kinetic origins of fractional thermal conductance at the topological insulator--superconductor interface**: Using anomaly-based analysis of equilibrated chiral-edge networks, the study proves thermal conductance cannot distinguish topological and kinetic mechanisms with identical anomaly data.
-8. **Origin of superconductivity in bilayer nickelates: a Quantum Monte Carlo study for a sign-problem-free effective model**: Using sign-problem-free determinant Quantum Monte Carlo for a two-orbital bilayer nickelate model, the study finds interlayer tunneling controls competition between superconductivity and (π,π) bond order.
-9. **Gate-driven Switching Dynamics in a Fully Suspended Superconducting Nanowire**: Using switching measurements on fully suspended MoGe nanowires without leakage channels, the study finds gate voltage enhances phase-slip escape rates over six orders of magnitude.
-10. **Gaps in unconventional superconductors**: Using a review of superconducting-gap concepts, the study explains how nonuniform gaps appear in experimental observables. It reports no new experimental result.
-11. **Exploring topology via momentum-selective tomography**: Using momentum-selective tomography on a superconducting processor implementing an extended SSH model, the experiment resolves quantized winding numbers of 0, ±1, and 2.
+*No new papers passed screening today.*
 
 ---
 

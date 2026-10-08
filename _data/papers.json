@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "paper_count": 11,
-  "new_count": 11,
+  "new_count": 0,
   "topics": [
     {
       "keyword": "superconductivity OR superconducting",
@@ -13,7 +13,7 @@
           "finding": "Using an exactly solvable spin chain implemented on a superconducting processor, the study maps black-hole radial geometry onto lattice quasimomentum.",
           "date": "2026-10-07",
           "last_author": "Boris A. Khanikati",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Standard estimators cannot represent fault-tolerant workloads at measured error rates: evaluated, evidence-based uncertainty for quantum resource estimation",
@@ -22,7 +22,7 @@
           "finding": "Using five surface-code cost models with measured error rates, the study finds standard estimators cannot represent most tested fault-tolerant workloads and substantially understate resource uncertainty.",
           "date": "2026-10-07",
           "last_author": "Sher Jeel Ahmad",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Correlating DC SQUID Performance with the Location of Trapped Magnetic Flux Using Scanning SQUID Microscopy",
@@ -31,7 +31,7 @@
           "finding": "Using scanning SQUID microscopy and same-cooldown electrical measurements, the study identifies preferred flux-pinning sites near DC SQUIDs irrespective of moat geometry.",
           "date": "2026-10-07",
           "last_author": "Michael L. Schneider",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Dynamically protected erasure qubit via low-frequency charge driving",
@@ -40,7 +40,7 @@
           "finding": "Using sub-GHz charge driving of superconducting Kerr oscillators, the experiment demonstrates dynamically protected dual-rail qubits with nearly fourfold erasure bias.",
           "date": "2026-10-07",
           "last_author": "Irfan Siddiqi",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Twist-angle-dependent quantum phase diagrams in twisted bilayer MoTe2",
@@ -49,7 +49,7 @@
           "finding": "Using twist-angle-dependent transport measurements in bilayer MoTe2, the study finds superconductivity emerges above approximately 5.6°, adjacent to a correlated insulating phase.",
           "date": "2026-10-07",
           "last_author": "Tingxin Li",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Regulating oxygen content and superconductivity in La$_3$Ni$_2$O$_{7+δ}$",
@@ -58,7 +58,7 @@
           "finding": "Using oxygen-controlled synthesis and high-pressure transport in La3Ni2O7+δ, the study finds oxygen content controls phase purity and the bilayer superconducting upper critical field.",
           "date": "2026-10-07",
           "last_author": "Meng Wang",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Topological and kinetic origins of fractional thermal conductance at the topological insulator--superconductor interface",
@@ -67,7 +67,7 @@
           "finding": "Using anomaly-based analysis of equilibrated chiral-edge networks, the study proves thermal conductance cannot distinguish topological and kinetic mechanisms with identical anomaly data.",
           "date": "2026-10-07",
           "last_author": "Guillermo R. Zemba",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Origin of superconductivity in bilayer nickelates: a Quantum Monte Carlo study for a sign-problem-free effective model",
@@ -76,7 +76,7 @@
           "finding": "Using sign-problem-free determinant Quantum Monte Carlo for a two-orbital bilayer nickelate model, the study finds interlayer tunneling controls competition between superconductivity and (π,π) bond order.",
           "date": "2026-10-07",
           "last_author": "Xu Zhang",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Gate-driven Switching Dynamics in a Fully Suspended Superconducting Nanowire",
@@ -85,7 +85,7 @@
           "finding": "Using switching measurements on fully suspended MoGe nanowires without leakage channels, the study finds gate voltage enhances phase-slip escape rates over six orders of magnitude.",
           "date": "2026-10-07",
           "last_author": "Francesco Giazotto",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Gaps in unconventional superconductors",
@@ -94,7 +94,7 @@
           "finding": "Using a review of superconducting-gap concepts, the study explains how nonuniform gaps appear in experimental observables. It reports no new experimental result.",
           "date": "2026-10-07",
           "last_author": "Andreas Kreisel",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Exploring topology via momentum-selective tomography",
@@ -103,7 +103,7 @@
           "finding": "Using momentum-selective tomography on a superconducting processor implementing an extended SSH model, the experiment resolves quantized winding numbers of 0, ±1, and 2.",
           "date": "2026-10-07",
           "last_author": "Chaohong Lee",
-          "is_new": true
+          "is_new": false
         }
       ]
     }
