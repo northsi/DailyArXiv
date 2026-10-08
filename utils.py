@@ -1,15 +1,16 @@
 # utils.py
-import os
-import time
-import pytz
-import shutil
-import random
 import datetime
-from typing import List, Dict
-import urllib.request
+import os
+import random
+import shutil
+import time
 import urllib.parse
+import urllib.request
+from html import escape
+from typing import Dict, List
 
 import feedparser
+import pytz
 from easydict import EasyDict
 
 
@@ -35,31 +36,9 @@ def request_paper_with_arXiv_api(
         time.sleep(random.uniform(1, 3))
 
         try:
-            response = urllib.request.urlopen(url, timeout=30)
-            data = response.read().decode("utf-8")
-            feed = feedparser.parse(data)
-            # ---------- 原有的解析逻辑 ----------
-            papers = []
-            for entry in feed.entries:
-                entry = EasyDict(entry)
-                paper = EasyDict()
-                paper.Title    = remove_duplicated_spaces(entry.title.replace("\n", " "))
-                paper.Abstract = remove_duplicated_spaces(entry.summary.replace("\n", " "))
-                paper.Authors  = [
-                    remove_duplicated_spaces(_["name"].replace("\n", " "))
-                    for _ in getattr(entry, "authors", [])
-                ]
-                paper.Link    = remove_duplicated_spaces(entry.link.replace("\n", " "))
-                paper.Tags    = [
-                    remove_duplicated_spaces(_["term"].replace("\n", " "))
-                    for _ in getattr(entry, "tags", [])
-                ]
-                paper.Comment = remove_duplicated_spaces(
-                    entry.get("arxiv_comment", "").replace("\n", " ")
-                )
-                paper.Date = entry.updated
-                papers.append(paper)
-            return papers
+            with urllib.request.urlopen(url, timeout=30) as response:
+                data = response.read().decode("utf-8")
+            return parse_arxiv_feed(data)
 
         except urllib.error.HTTPError as e:
             if e.code == 429:
@@ -68,13 +47,17 @@ def request_paper_with_arXiv_api(
                 if retry_after is not None:
                     wait = int(retry_after)
                 else:
-                    wait = 30 * (2 ** attempt)  # 指数退避：30, 60, 120...
-                print(f"[arXiv] 429 Too Many Requests. Waiting {wait}s (attempt {attempt+1}/{max_retries})")
+                    wait = 30 * (2**attempt)  # 指数退避：30, 60, 120...
+                print(
+                    f"[arXiv] 429 Too Many Requests. Waiting {wait}s (attempt {attempt + 1}/{max_retries})"
+                )
                 time.sleep(wait)
                 continue
             elif e.code == 503:
-                wait = 10 * (2 ** attempt)
-                print(f"[arXiv] 503 Service Unavailable. Waiting {wait}s (attempt {attempt+1}/{max_retries})")
+                wait = 10 * (2**attempt)
+                print(
+                    f"[arXiv] 503 Service Unavailable. Waiting {wait}s (attempt {attempt + 1}/{max_retries})"
+                )
                 time.sleep(wait)
                 continue
             else:
@@ -83,25 +66,49 @@ def request_paper_with_arXiv_api(
             print(f"[arXiv] Unexpected error: {e}")
             if attempt == max_retries - 1:
                 raise
-            time.sleep(10 * (2 ** attempt))
+            time.sleep(10 * (2**attempt))
 
     # 重试用尽，返回空列表（与主程序逻辑适配）
     print(f"[arXiv] Failed to fetch data for '{keyword}' after {max_retries} attempts.")
     return []
 
 
+def parse_arxiv_feed(data: str) -> List[Dict]:
+    """Parse an Atom response without performing network operations."""
+    feed = feedparser.parse(data)
+    papers = []
+    for entry in feed.entries:
+        entry = EasyDict(entry)
+        paper = EasyDict()
+        paper.Title = remove_duplicated_spaces(entry.title.replace("\n", " "))
+        paper.Abstract = remove_duplicated_spaces(entry.summary.replace("\n", " "))
+        paper.Authors = [
+            remove_duplicated_spaces(_["name"].replace("\n", " "))
+            for _ in getattr(entry, "authors", [])
+        ]
+        paper.Link = remove_duplicated_spaces(entry.link.replace("\n", " "))
+        paper.Tags = [
+            remove_duplicated_spaces(_["term"].replace("\n", " "))
+            for _ in getattr(entry, "tags", [])
+        ]
+        paper.Comment = remove_duplicated_spaces(
+            entry.get("arxiv_comment", "").replace("\n", " ")
+        )
+        paper.Date = entry.updated
+        papers.append(paper)
+    return papers
+
+
 def filter_tags(
     papers: List[Dict],
     target_fields: List[str] = ["physics", "cond-mat", "quant-ph", "nlin"],
 ) -> List[Dict]:
-    results = []
-    for paper in papers:
-        tags = paper.get("Tags", [])
-        for tag in tags:
-            if tag.split(".")[0] in target_fields:
-                results.append(paper)
-                break
-    return results
+    allowed_fields = set(target_fields)
+    return [
+        paper
+        for paper in papers
+        if any(tag.split(".")[0] in allowed_fields for tag in paper.get("Tags", []))
+    ]
 
 
 def get_daily_papers_by_keyword(
@@ -124,7 +131,9 @@ def get_daily_papers_by_keyword_with_retries(
         if papers:
             return papers
         wait = min(60 * (attempt + 1), 300)  # 最多等 5 分钟
-        print(f"Empty list for '{keyword}', retrying in {wait}s ({attempt + 1}/{retries})…")
+        print(
+            f"Empty list for '{keyword}', retrying in {wait}s ({attempt + 1}/{retries})…"
+        )
         time.sleep(wait)
     return None
 
@@ -133,26 +142,17 @@ def generate_table(papers: List[Dict], ignore_keys: List[str] = None) -> str:
     """
     Render a Markdown table from a list of paper dicts.
 
-    Key behaviours
-    ──────────────
-    • '#'           – sequential numbering from 1
-    • 'Link'        – embedded into the Title hyperlink; never its own column.
-    • 'Abstract_CN' – embedded inside the 'Abstract' cell as a second
-                      collapsible block; never its own column.
-    • 'Abstract'    – rendered as two collapsible <details> blocks (EN / 中文).
-    • 'Authors'     – shortened to "First Author et al."
-    • 'Tags'        – collapsed when lengthy.
-    • ignore_keys   – any column names to exclude entirely.
+    Keep the English abstract, display a one-sentence finding, and show the
+    last listed author.
     """
     if not papers:
         return "*No papers matched today.*"
 
-    ignore_keys  = set(ignore_keys or [])
-    INTERNAL_KEYS = {"Link", "Abstract_CN"}   # consumed internally, not columns
+    ignore_keys = set(ignore_keys or [])
+    INTERNAL_KEYS = {"Link", "Abstract_CN"}  # consumed internally, not columns
 
     columns_in_use = [
-        k for k in papers[0].keys()
-        if k not in ignore_keys and k not in INTERNAL_KEYS
+        k for k in papers[0].keys() if k not in ignore_keys and k not in INTERNAL_KEYS
     ]
 
     formatted_papers = []
@@ -169,23 +169,24 @@ def generate_table(papers: List[Dict], ignore_keys: List[str] = None) -> str:
                 fp["Date"] = val.split("T")[0] if "T" in val else val
 
             elif key == "Abstract":
-                cn = paper.get("Abstract_CN", "")
-                cell = f"<details><summary>EN</summary><p>{val}</p></details>"
-                if cn:
-                    cell += f"<details><summary>中文</summary><p>{cn}</p></details>"
-                fp["Abstract"] = cell
+                fp["Abstract"] = (
+                    f"<details><summary>EN</summary><p>{escape(str(val))}</p></details>"
+                )
+
+            elif key == "Finding_Summary":
+                fp["主要发现"] = escape(str(val)).replace("|", "&#124;")
 
             elif key == "Authors":
-                fp["Authors"] = (
-                    f"{val[0]} et al." if isinstance(val, list) and val else ""
-                )
+                author = val[-1] if isinstance(val, list) and val else "作者未提供"
+                fp["最后作者"] = escape(str(author)).replace("|", "&#124;")
 
             elif key == "Tags":
                 tags_str = ", ".join(val) if isinstance(val, list) else str(val)
                 fp["Tags"] = (
                     f"<details><summary>{tags_str[:5]}…</summary>"
                     f"<p>{tags_str}</p></details>"
-                    if len(tags_str) > 10 else tags_str
+                    if len(tags_str) > 10
+                    else tags_str
                 )
 
             else:
@@ -194,41 +195,43 @@ def generate_table(papers: List[Dict], ignore_keys: List[str] = None) -> str:
         formatted_papers.append(fp)
 
     # Build Markdown table
-    final_cols = ["#"] + [col for col in list(formatted_papers[0].keys()) if col != "#"]  # 编号列放在最前面
-    header  = "| " + " | ".join(f"**{c}**" for c in final_cols) + " |\n"
+    final_cols = ["#"] + [
+        col for col in list(formatted_papers[0].keys()) if col != "#"
+    ]  # 编号列放在最前面
+    header = "| " + " | ".join(f"**{c}**" for c in final_cols) + " |\n"
     header += "| " + " | ".join(["---"] * len(final_cols)) + " |"
 
-    body = ""
+    rows = [header]
     for fp in formatted_papers:
-        row  = [str(fp.get(c, "")) for c in final_cols]
-        body += "\n| " + " | ".join(row) + " |"
+        row = [str(fp.get(c, "")) for c in final_cols]
+        rows.append("| " + " | ".join(row) + " |")
+    return "\n".join(rows)
 
-    return header + body
+
+REPORT_FILES = ("README.md",)
+BEIJING_TIMEZONE = pytz.timezone("Asia/Shanghai")
 
 
 def back_up_files():
-    os.makedirs(".github", exist_ok=True)
-    if os.path.exists("README.md"):
-        shutil.copy("README.md", "README.md.bk")
-    if os.path.exists(".github/ISSUE_TEMPLATE.md"):
-        shutil.copy(".github/ISSUE_TEMPLATE.md", ".github/ISSUE_TEMPLATE.md.bk")
+    for path in REPORT_FILES:
+        if os.path.exists(path):
+            shutil.copy(path, f"{path}.bk")
 
 
 def restore_files():
-    if os.path.exists("README.md.bk"):
-        shutil.move("README.md.bk", "README.md")
-    if os.path.exists(".github/ISSUE_TEMPLATE.md.bk"):
-        shutil.move(".github/ISSUE_TEMPLATE.md.bk", ".github/ISSUE_TEMPLATE.md")
+    for path in REPORT_FILES:
+        backup = f"{path}.bk"
+        if os.path.exists(backup):
+            shutil.move(backup, path)
 
 
 def remove_backups():
-    if os.path.exists("README.md.bk"):
-        os.remove("README.md.bk")
-    if os.path.exists(".github/ISSUE_TEMPLATE.md.bk"):
-        os.remove(".github/ISSUE_TEMPLATE.md.bk")
+    for path in REPORT_FILES:
+        backup = f"{path}.bk"
+        if os.path.exists(backup):
+            os.remove(backup)
 
 
 def get_daily_date() -> str:
-    beijing_timezone = pytz.timezone("Asia/Shanghai")
-    today = datetime.datetime.now(beijing_timezone)
+    today = datetime.datetime.now(BEIJING_TIMEZONE)
     return today.strftime("%B %d, %Y")

@@ -4,7 +4,7 @@ The project automatically fetches the latest papers from arXiv based on keywords
 
 The subheadings represent search keywords. Only the most recent articles per keyword are kept (up to 100).
 
-Click the **Watch** button to receive daily email notifications.
+Results are displayed on this website after each scheduled update.
 
 Last update: 2026-10-08
 

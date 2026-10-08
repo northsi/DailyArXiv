@@ -2,4 +2,3 @@ feedparser
 easydict
 pytz
 openai>=1.0.0
-markdown
