@@ -10,6 +10,7 @@ from pathlib import Path
 import pytz
 
 from llm_utils import (
+    FINDING_SUMMARY_VERSION,
     batch_summarize_findings,
     filter_low_quality_papers,
     summarize_topic,
@@ -128,7 +129,11 @@ def summarize_papers(keyword_papers, paper_cache, existing_links):
         needs_summary = []
         for paper in papers:
             cached = paper_cache.get(paper.get("Link", ""), {})
-            if cached.get("Finding_Summary") and cached.get("Finding_Language") == "en":
+            if (
+                cached.get("Finding_Summary")
+                and cached.get("Finding_Language") == "en"
+                and cached.get("Finding_Version") == FINDING_SUMMARY_VERSION
+            ):
                 paper["Finding_Summary"] = cached["Finding_Summary"]
             else:
                 needs_summary.append(paper)
@@ -144,6 +149,7 @@ def summarize_papers(keyword_papers, paper_cache, existing_links):
                     {
                         "Finding_Summary": summary,
                         "Finding_Language": "en",
+                        "Finding_Version": FINDING_SUMMARY_VERSION,
                         "Title": paper.get("Title", ""),
                         "Date": paper.get("Date", ""),
                     }

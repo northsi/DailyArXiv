@@ -3674,8 +3674,9 @@
       "fingerprint": "28d318b263918d6815e0255fbf19866381bbc238c7d95986476f3a98160735d7",
       "reject": false
     },
-    "Finding_Summary": "The radial differential equation for a scalar field in an anti-de Sitter black brane background can be encoded in an exactly solvable semi-infinite spin chain independent of dimensionality, with the radial coordinate emerging as lattice quasimomentum, and this finite chain was implemented on a superconducting processor, yielding a conformal field theory at finite filling and low energies.",
-    "Finding_Language": "en"
+    "Finding_Summary": "Using an exactly solvable spin chain implemented on a superconducting processor, the study maps black-hole radial geometry onto lattice quasimomentum.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   },
   "https://arxiv.org/abs/2610.10490v1": {
     "Title": "Standard estimators cannot represent fault-tolerant workloads at measured error rates: evaluated, evidence-based uncertainty for quantum resource estimation",
@@ -3684,8 +3685,9 @@
       "fingerprint": "b48493bb05e2988fe8fdcee69739f50c5ff9e402be4f354f11ebd7855185302e",
       "reject": false
     },
-    "Finding_Summary": "Propagating evidence-based priors over fault-tolerant hardware parameters through five surface-code cost models shows that using demonstrated error rates (median ~4 x 10^-3) widens the 90% physical-qubit interval to roughly forty times the conventional estimate, that independently structured cost models disagree by a stable factor of two, and that standard tools cannot represent these workloads at measured error rates at all.",
-    "Finding_Language": "en"
+    "Finding_Summary": "Using five surface-code cost models with measured error rates, the study finds standard estimators cannot represent most tested fault-tolerant workloads and substantially understate resource uncertainty.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   },
   "https://arxiv.org/abs/2610.10442v1": {
     "Title": "Correlating DC SQUID Performance with the Location of Trapped Magnetic Flux Using Scanning SQUID Microscopy",
@@ -3694,8 +3696,9 @@
       "fingerprint": "16acc89cd4784ab3fdfce4767f54c10bbc631d124c3e1e48b95c2f92726feef3",
       "reject": false
     },
-    "Finding_Summary": "Scanning SQUID microscopy imaging of moat effectiveness near a DC SQUID, correlated in the same cooldown with direct circuit performance measurements, shows preferential pinning sites for fluxons regardless of moat configuration, demonstrating the utility of SSM for circuit layout feedback, modeling, and failure analysis.",
-    "Finding_Language": "en"
+    "Finding_Summary": "Using scanning SQUID microscopy and same-cooldown electrical measurements, the study identifies preferred flux-pinning sites near DC SQUIDs irrespective of moat geometry.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   },
   "https://arxiv.org/abs/2610.10432v1": {
     "Title": "Dynamically protected erasure qubit via low-frequency charge driving",
@@ -3704,8 +3707,9 @@
       "fingerprint": "77012a1426dcc2bd40414b224da4fe0eea060e602a32626d6bc4e9af1f58beb7",
       "reject": false
     },
-    "Finding_Summary": "Sub-GHz charge driving of superconducting Kerr oscillators in the transmon regime circumvents the trade-off between dynamical protection and parasitic processes, enabling 82 ns cooling and reset to below 0.7% residual population, logical control and dynamical protection of a dual-rail qubit with nearly fourfold erasure bias, and an error per Clifford of 5.6 x 10^-4 (falling to 1.5 x 10^-4 after post-selection) with 25 ns gates.",
-    "Finding_Language": "en"
+    "Finding_Summary": "Using sub-GHz charge driving of superconducting Kerr oscillators, the experiment demonstrates dynamically protected dual-rail qubits with nearly fourfold erasure bias.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   },
   "https://arxiv.org/abs/2603.16412v2": {
     "Title": "Twist-angle-dependent quantum phase diagrams in twisted bilayer MoTe2",
@@ -3714,8 +3718,9 @@
       "fingerprint": "4822d3684623dc645c34b89738aa30febfbf276de848ffdb2585d9f846896d6c",
       "reject": false
     },
-    "Finding_Summary": "Systematic transport study of twist-angle-dependent phase diagrams in tMoTe2 across 3.79°–5.76° reveals an evolution from valley-polarized fractional topological states (including FQAH states following the Jain sequence and signatures of an anomalous composite Fermi liquid at νh = 1/2) at small angles to valley-degenerate correlated states and superconductivity at larger angles, with superconductivity emerging above approximately 5.6° adjacent to the νh = 1 correlated insulator.",
-    "Finding_Language": "en"
+    "Finding_Summary": "Using twist-angle-dependent transport measurements in bilayer MoTe2, the study finds superconductivity emerges above approximately 5.6°, adjacent to a correlated insulating phase.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   },
   "https://arxiv.org/abs/2604.18186v3": {
     "Title": "Fundamentals and Applications of Hybrid Electro- and Opto-mechanical system coupled to Superconducting Qubit: A Short Review",
@@ -3732,8 +3737,9 @@
       "fingerprint": "401a2e203ef3ae1d7d3935de8d6e1dc9561cf42df993043de6bdaa10388fe88d",
       "reject": false
     },
-    "Finding_Summary": "Oxygen content in La₃Ni₂O₇₊δ governs phase purity and directly modulates the upper critical field of bilayer superconductivity, with distinct superconducting transitions corresponding to bilayer, hybrid single-layer-bilayer, and trilayer-intergrown phases.",
-    "Finding_Language": "en"
+    "Finding_Summary": "Using oxygen-controlled synthesis and high-pressure transport in La3Ni2O7+δ, the study finds oxygen content controls phase purity and the bilayer superconducting upper critical field.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   },
   "https://arxiv.org/abs/2610.10011v1": {
     "Title": "Topological and kinetic origins of fractional thermal conductance at the topological insulator--superconductor interface",
@@ -3742,8 +3748,9 @@
       "fingerprint": "a232a9f9324e77c383e3b8321a6e2e497ed9d2b077e70a497c45e50f23ee69e1",
       "reject": false
     },
-    "Finding_Summary": "The paper proves that under full thermal equilibration, two-terminal thermal conductance of a chiral edge network depends only on anomaly-pinned net chiral central charges, so thermal-conductance measurements cannot distinguish realizations sharing the same anomaly data, and separation of the equilibrated (2,-1) half-integer plateau from a chiral Majorana origin must come from the charge sector via the Lorenz ratio and shot noise.",
-    "Finding_Language": "en"
+    "Finding_Summary": "Using anomaly-based analysis of equilibrated chiral-edge networks, the study proves thermal conductance cannot distinguish topological and kinetic mechanisms with identical anomaly data.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   },
   "https://arxiv.org/abs/2512.09025v2": {
     "Title": "Origin of superconductivity in bilayer nickelates: a Quantum Monte Carlo study for a sign-problem-free effective model",
@@ -3752,8 +3759,9 @@
       "fingerprint": "8af5ebe1ce147562918de0e8a133d7b8a64da5075a9fe9dde27b9681ead34061",
       "reject": false
     },
-    "Finding_Summary": "In a two-orbital bilayer nickelate model, Kramers anti-unitary symmetries guarantee a sign-problem-free determinant Quantum Monte Carlo treatment and reveal a competing (π,π) inter-layer bond order instability whose competition with superconductivity is decisively controlled by inter-layer tunneling.",
-    "Finding_Language": "en"
+    "Finding_Summary": "Using sign-problem-free determinant Quantum Monte Carlo for a two-orbital bilayer nickelate model, the study finds interlayer tunneling controls competition between superconductivity and (π,π) bond order.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   },
   "https://arxiv.org/abs/2610.09806v1": {
     "Title": "Gate-driven Switching Dynamics in a Fully Suspended Superconducting Nanowire",
@@ -3762,8 +3770,9 @@
       "fingerprint": "c95715d7ecc9512cd2e202cf487468de672bd945efc8263c246141b20d19a0af",
       "reject": false
     },
-    "Finding_Summary": "In a fully suspended amorphous MoGe superconducting nanowire with no leakage channels, gate voltage strongly enhances the phase slip escape rate exponentially over six orders of magnitude, with a deviation from simple phase slip models and a surprising non-invariance under gate-voltage polarity reversal.",
-    "Finding_Language": "en"
+    "Finding_Summary": "Using switching measurements on fully suspended MoGe nanowires without leakage channels, the study finds gate voltage enhances phase-slip escape rates over six orders of magnitude.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   },
   "https://arxiv.org/abs/2610.09799v1": {
     "Title": "Effect of uniform bond-charge order on longitudinal spin-susceptibility jump at a superconducting instability inside a magnetic phase",
@@ -3780,8 +3789,9 @@
       "fingerprint": "37ea3a7e207030905c23e8be49a508c3e87947e171cfe3472d2b7ebd26085127",
       "reject": false
     },
-    "Finding_Summary": "This review presents the concepts needed to understand how unconventional superconductors differ from conventional ones, including the origin of non-uniform gapping and its expression in experimentally accessible quantities, as a basis for navigating contradictory literature; it reports no new experimental finding.",
-    "Finding_Language": "en"
+    "Finding_Summary": "Using a review of superconducting-gap concepts, the study explains how nonuniform gaps appear in experimental observables. It reports no new experimental result.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   },
   "https://arxiv.org/abs/2610.09673v1": {
     "Title": "Exploring topology via momentum-selective tomography",
@@ -3790,8 +3800,9 @@
       "fingerprint": "32604eeb2ddfee02d8d4b0ee6595d804ff71d0d3802243d48624dbded4a43c13",
       "reject": false
     },
-    "Finding_Summary": "The paper experimentally demonstrates on a superconducting processor that a momentum-selective \"star-like\" geometry enables direct band-topology tomography of an extended Su-Schrieffer-Heeger model, allowing direct extraction of the winding phase across the Brillouin zone and resolution of quantized winding numbers ν = {0, ±1, 2} characterized by phase windings {0, ±2π, 4π}.",
-    "Finding_Language": "en"
+    "Finding_Summary": "Using momentum-selective tomography on a superconducting processor implementing an extended SSH model, the experiment resolves quantized winding numbers of 0, ±1, and 2.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   },
   "https://arxiv.org/abs/2610.09666v1": {
     "Title": "Geodesic-based optimal control for leakage suppression in superconducting qubits",

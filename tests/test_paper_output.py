@@ -48,12 +48,20 @@ class PaperOutputTests(unittest.TestCase):
             )
             self.assertIn("Do not read the full paper", call.call_args.args[0])
             self.assertIn("abstract B", call.call_args.args[0])
+            self.assertIn("one or two short sentences", call.call_args.args[0])
+            self.assertIn("Using [model/method/experiment]", call.call_args.args[0])
         with (
             patch("llm_utils._call_llm", return_value="[1] Finding A."),
             patch("time.sleep"),
         ):
             with self.assertRaises(RuntimeError):
                 llm_utils.batch_summarize_findings(["A", "B"])
+
+    def test_overlong_findings_are_not_published(self):
+        response = "[1] " + " ".join(["word"] * 41)
+        with patch("llm_utils._call_llm", return_value=response), patch("time.sleep"):
+            with self.assertRaisesRegex(RuntimeError, "40-word limit"):
+                llm_utils.batch_summarize_findings(["abstract"])
 
     def test_filter_caches_decisions_and_rescreens_changed_abstract(self):
         papers = [
@@ -198,6 +206,9 @@ class PaperOutputTests(unittest.TestCase):
                         {
                             paper["Link"]: {
                                 "Abstract_CN": "Legacy translation",
+                                "Finding_Summary": "An older, verbose finding.",
+                                "Finding_Language": "en",
+                                "Finding_Version": 1,
                                 "Date": "2099-01-01",
                             }
                         }
@@ -230,6 +241,10 @@ class PaperOutputTests(unittest.TestCase):
                     cache = json.loads(Path("paper_cache.json").read_text())
                     self.assertNotIn("Abstract_CN", cache[paper["Link"]])
                     self.assertEqual(cache[paper["Link"]]["Finding_Language"], "en")
+                    self.assertEqual(
+                        cache[paper["Link"]]["Finding_Version"],
+                        llm_utils.FINDING_SUMMARY_VERSION,
+                    )
         finally:
             os.chdir(old_cwd)
 

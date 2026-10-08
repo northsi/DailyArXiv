@@ -47,6 +47,8 @@ def _call_llm(
 
 
 QUALITY_FILTER_VERSION = 3
+FINDING_SUMMARY_VERSION = 2
+MAX_FINDING_WORDS = 40
 NUMBERED_SUMMARY_PATTERN = re.compile(r"\[(\d+)\]\s*([\s\S]*?)(?=\[\d+\]|$)")
 
 
@@ -158,7 +160,7 @@ def filter_low_quality_papers(
 
 
 def batch_summarize_findings(texts: List[str], batch_size: int = 5) -> List[str]:
-    """Summarize each abstract's main finding in one English sentence."""
+    """Summarize each abstract as a brief English method-to-result statement."""
     results = [""] * len(texts)
     for batch_start in range(0, len(texts), batch_size):
         batch = texts[batch_start : batch_start + batch_size]
@@ -166,14 +168,20 @@ def batch_summarize_findings(texts: List[str], batch_size: int = 5) -> List[str]
             f"[{i + 1}] {text}" for i, text in enumerate(batch)
         )
         prompt = (
-            f"Using only the following {len(batch)} abstracts, summarize each paper's main "
-            "finding or conclusion in one English sentence.\n"
-            "Do not translate sentence by sentence or merely describe the research aim or method. "
-            "Do not read the full paper, consult external sources, or add unsupported information. "
-            "Retain the key material, result, and necessary qualifications. "
-            "If an abstract reports no clear finding, state that explicitly.\n"
-            "Follow the numbered format exactly: one sentence per item, with no extra explanation.\n"
-            "[1] <main finding>\n[2] <main finding>\n...\n\n"
+            f"Using only the following {len(batch)} abstracts, write each paper's main "
+            "finding in English, using one or two short sentences.\n"
+            "Required structure: 'Using [model/method/experiment], the study finds "
+            "[main result].' Use the most specific method and result stated in the abstract. "
+            "Prefer one sentence; use a second only for an essential qualification. "
+            f"Aim for 20-30 words and never exceed {MAX_FINDING_WORDS} words per paper. "
+            "Report only the single most important result; omit background, motivation, "
+            "secondary findings, lists of metrics, significance claims, and future prospects. "
+            "Retain the key material and at most one essential quantitative result. "
+            "Do not read the full paper, consult external sources, or invent a method or finding. "
+            "If no method or new result is stated, say so briefly; identify reviews as reviews.\n"
+            "Follow the numbered format exactly, with no extra explanation.\n"
+            "[1] Using [method], the study finds [result].\n"
+            "[2] Using [method], the study finds [result].\n...\n\n"
             f"{numbered_input}"
         )
         raw = _call_llm(prompt, max_tokens=1200)
@@ -181,7 +189,10 @@ def batch_summarize_findings(texts: List[str], batch_size: int = 5) -> List[str]
         for num_str, summary in matches:
             idx = int(num_str) - 1
             if 0 <= idx < len(batch):
-                results[batch_start + idx] = " ".join(summary.split())
+                finding = " ".join(summary.split())
+                if len(finding.split()) > MAX_FINDING_WORDS:
+                    raise RuntimeError("Finding summary exceeds the 40-word limit")
+                results[batch_start + idx] = finding
         if any(not results[batch_start + i] for i in range(len(batch))):
             raise RuntimeError(
                 "LLM did not return a finding summary for every abstract"
