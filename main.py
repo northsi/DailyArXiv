@@ -29,7 +29,7 @@ beijing_timezone = pytz.timezone("Asia/Shanghai")
 keywords = ["superconductivity OR superconducting"]
 
 max_results_per_keyword = {
-    "superconductivity OR superconducting": 10,
+    "superconductivity OR superconducting": 15,
 }
 
 column_names = ["Title", "Link", "Abstract", "Date", "Authors"]
