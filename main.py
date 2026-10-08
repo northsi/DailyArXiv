@@ -47,7 +47,7 @@ def load_cache() -> dict:
 
 
 def clean_cache(cache: dict, keep_days: int = 90) -> dict:
-    """清理旧缓存；保留质量判断以避免旧论文被重复筛选。"""
+    """Clean old cache entries; retain quality decisions to avoid repeated screening."""
     cutoff = datetime.now(beijing_timezone) - timedelta(days=keep_days)
     cleaned = {}
     removed = 0
@@ -62,7 +62,7 @@ def clean_cache(cache: dict, keep_days: int = 90) -> dict:
             else:
                 removed += 1
         except (ValueError, TypeError):
-            cleaned[link] = meta  # 日期解析失败的条目保留，不误删
+            cleaned[link] = meta  # Preserve entries whose dates cannot be parsed.
     print(
         f"[debug]   Cache cleaned: removed {removed} old entries, kept {len(cleaned)}"
     )
@@ -85,7 +85,7 @@ def fetch_papers():
         max_result = max_results_per_keyword.get(keyword, 10)
         print(f"[debug]   Fetching '{keyword}' (max={max_result}, link={link}) …")
 
-        # 请求前随机等待 3～8 秒
+        # Wait a random 3-8 seconds before requesting papers.
         delay = random.uniform(3, 8)
         print(f"[debug]   Waiting {delay:.1f}s before request...")
         time.sleep(delay)
@@ -127,7 +127,7 @@ def summarize_papers(keyword_papers, paper_cache, existing_links):
         needs_summary = []
         for paper in papers:
             cached = paper_cache.get(paper.get("Link", ""), {})
-            if cached.get("Finding_Summary"):
+            if cached.get("Finding_Summary") and cached.get("Finding_Language") == "en":
                 paper["Finding_Summary"] = cached["Finding_Summary"]
             else:
                 needs_summary.append(paper)
@@ -142,6 +142,7 @@ def summarize_papers(keyword_papers, paper_cache, existing_links):
                 paper_cache[paper["Link"]].update(
                     {
                         "Finding_Summary": summary,
+                        "Finding_Language": "en",
                         "Title": paper.get("Title", ""),
                         "Date": paper.get("Date", ""),
                     }
@@ -153,7 +154,7 @@ def summarize_papers(keyword_papers, paper_cache, existing_links):
 
 def build_topic_summaries(keyword_new_papers):
     """Build daily overviews from accepted new papers."""
-    # ── Step 3: 只对新文献生成 topic summary ──────────────────────────────────
+    # ── Step 3: Build topic summaries only for new papers ──────────────────────────────────
     print("[main] Generating topic summaries …")
     topic_summaries: dict = {}
     for keyword in keywords:
@@ -163,7 +164,7 @@ def build_topic_summaries(keyword_new_papers):
             topic_summaries[keyword] = summarize_topic(keyword, new_papers)
             print(f"[debug]   Summary length: {len(topic_summaries[keyword])} chars")
         else:
-            topic_summaries[keyword] = "*今日无通过筛选的新文献。*"
+            topic_summaries[keyword] = "*No new papers passed screening today.*"
             print("[debug]   No new papers — summary skipped ✓")
         time.sleep(2)
 
@@ -187,7 +188,7 @@ def write_reports(keyword_papers, keyword_new_papers, topic_summaries, current_d
         f_rm.write(f"Last update: {current_date}\n\n---\n\n")
 
         # ══════════════════════════════════════════════════════════════════════
-        # PART 1 – Today's Overview（只展示今日新文献的总结）
+        # PART 1 – Today's Overview (summaries of new papers only)
         # ══════════════════════════════════════════════════════════════════════
         overview_header = f"## 📋 Today's Overview\n*{get_daily_date()}*\n\n"
         f_rm.write(overview_header)
@@ -198,12 +199,12 @@ def write_reports(keyword_papers, keyword_new_papers, topic_summaries, current_d
             f_rm.write(block)
 
         # ══════════════════════════════════════════════════════════════════════
-        # PART 2 – Paper Details（展示全部抓取到的文献，含缓存的发现总结）
+        # PART 2 – Paper Details (all accepted papers, including cached findings)
         # ══════════════════════════════════════════════════════════════════════
         f_rm.write("---\n\n## 📄 Paper Details\n\n")
 
         for keyword in keywords:
-            papers = keyword_papers[keyword]  # 全量展示
+            papers = keyword_papers[keyword]  # Show all accepted papers.
             print(
                 f"[debug]   Generating table for '{keyword}' ({len(papers)} papers) …"
             )
@@ -219,7 +220,7 @@ def write_reports(keyword_papers, keyword_new_papers, topic_summaries, current_d
 def run_pipeline() -> None:
     """Execute fetch, screening, summaries and website generation."""
     current_date = datetime.now(beijing_timezone).strftime("%Y-%m-%d")
-    # 加载缓存，并快照已有的链接集合（在本次运行更新缓存之前）
+    # Load the cache and snapshot existing links before updating it.
     paper_cache = load_cache()
     existing_links = set(paper_cache.keys())
     print(f"[debug] Cache loaded: {len(existing_links)} previously processed papers")

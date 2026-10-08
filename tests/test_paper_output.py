@@ -24,32 +24,32 @@ class PaperOutputTests(unittest.TestCase):
                 atom.encode()
             )
             paper = utils.request_paper_with_arXiv_api("test", 1)[0]
-        paper["Finding_Summary"] = "发现了新现象。"
+        paper["Finding_Summary"] = "A new phenomenon was found."
         table = utils.generate_table([paper])
-        self.assertIn("**最后作者**", table)
+        self.assertIn("**Last Author**", table)
         self.assertIn("| Last |", table)
         self.assertNotIn("University A", table)
-        self.assertNotIn("单位", table)
+        self.assertNotIn("Affiliation", table)
         self.assertNotIn("Wrong University", table)
-        self.assertIn("发现了新现象。", table)
+        self.assertIn("A new phenomenon was found.", table)
         paper["Authors"] = []
-        self.assertIn("作者未提供", utils.generate_table([paper]))
+        self.assertIn("Author not provided", utils.generate_table([paper]))
 
     def test_findings_prompt_and_incomplete_response(self):
         with (
             patch(
-                "llm_utils._call_llm", return_value="[1] 发现甲。\n[2] 发现乙。"
+                "llm_utils._call_llm", return_value="[1] Finding A.\n[2] Finding B."
             ) as call,
             patch("time.sleep"),
         ):
             self.assertEqual(
                 llm_utils.batch_summarize_findings(["abstract A", "abstract B"]),
-                ["发现甲。", "发现乙。"],
+                ["Finding A.", "Finding B."],
             )
-            self.assertIn("不要读取全文", call.call_args.args[0])
+            self.assertIn("Do not read the full paper", call.call_args.args[0])
             self.assertIn("abstract B", call.call_args.args[0])
         with (
-            patch("llm_utils._call_llm", return_value="[1] 发现甲。"),
+            patch("llm_utils._call_llm", return_value="[1] Finding A."),
             patch("time.sleep"),
         ):
             with self.assertRaises(RuntimeError):
@@ -144,7 +144,7 @@ class PaperOutputTests(unittest.TestCase):
                 def summarize(texts, **kwargs):
                     events.append("summary")
                     self.assertEqual(texts, ["Keep abstract"])
-                    return ["保留的发现。"]
+                    return ["The accepted finding."]
 
                 for index in range(2):
                     with (
@@ -187,7 +187,12 @@ class PaperOutputTests(unittest.TestCase):
                 os.chdir(tmp)
                 Path("paper_cache.json").write_text(
                     json.dumps(
-                        {paper["Link"]: {"Abstract_CN": "旧翻译", "Date": "2099-01-01"}}
+                        {
+                            paper["Link"]: {
+                                "Abstract_CN": "Legacy translation",
+                                "Date": "2099-01-01",
+                            }
+                        }
                     )
                 )
                 for index in range(2):
@@ -198,7 +203,7 @@ class PaperOutputTests(unittest.TestCase):
                         ),
                         patch(
                             "llm_utils.batch_summarize_findings",
-                            return_value=["发现了新现象。"],
+                            return_value=["A new phenomenon was found."],
                         ) as summarize,
                         patch(
                             "llm_utils._call_llm",
@@ -209,13 +214,14 @@ class PaperOutputTests(unittest.TestCase):
                         runpy.run_path(str(main_path), run_name="__main__")
                     self.assertEqual(summarize.call_count, 1 if index == 0 else 0)
                     output = Path("README.md").read_text()
-                    self.assertIn("发现了新现象。", output)
+                    self.assertIn("A new phenomenon was found.", output)
                     self.assertIn("| Last |", output)
-                    self.assertNotIn("单位", output)
-                    self.assertNotIn("旧翻译", output)
+                    self.assertNotIn("Affiliation", output)
+                    self.assertNotIn("Legacy translation", output)
                     self.assertIn("0 new today", output)
                     cache = json.loads(Path("paper_cache.json").read_text())
                     self.assertNotIn("Abstract_CN", cache[paper["Link"]])
+                    self.assertEqual(cache[paper["Link"]]["Finding_Language"], "en")
         finally:
             os.chdir(old_cwd)
 

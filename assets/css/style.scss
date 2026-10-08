@@ -3,9 +3,9 @@
 
 @import "{{ site.theme }}";
 
-/* 自定义样式覆盖 */
+/* Custom style overrides */
 
-/* 全局样式 */
+/* Global styles */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
@@ -13,7 +13,7 @@ body {
   background-color: #f6f8fa;
 }
 
-/* 主容器 */
+/* Main container */
 .main-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -23,7 +23,7 @@ body {
   border-radius: 8px;
 }
 
-/* 标题样式 */
+/* Heading styles */
 .page-header {
   background: linear-gradient(120deg, #155799, #159957);
   color: white;
@@ -44,7 +44,7 @@ body {
   opacity: 0.9;
 }
 
-/* 关键词标题 */
+/* Keyword headings */
 h2 {
   color: #0366d6;
   border-bottom: 2px solid #e1e4e8;
@@ -53,7 +53,7 @@ h2 {
   font-size: 1.8rem;
 }
 
-/* 表格美化 */
+/* Table styling */
 table {
   width: 100%;
   border-collapse: separate;
@@ -83,7 +83,7 @@ tr:last-child td {
   border-bottom: none;
 }
 
-/* 论文标题样式 */
+/* Paper title styling */
 td:first-child a {
   color: #0366d6;
   text-decoration: none;
@@ -95,13 +95,13 @@ td:first-child a:hover {
   color: #044289;
 }
 
-/* 日期样式 */
+/* Date styling */
 td:nth-child(2) {
   color: #586069;
   white-space: nowrap;
 }
 
-/* Abstract 折叠框样式 */
+/* Collapsible abstract styling */
 details {
   background-color: #f6f8fa;
   border-radius: 6px;
@@ -127,7 +127,7 @@ details p {
   border-left: 3px solid #0366d6;
 }
 
-/* 页脚 */
+/* Footer */
 .site-footer {
   margin-top: 3rem;
   padding-top: 1rem;
@@ -136,7 +136,7 @@ details p {
   color: #586069;
 }
 
-/* 响应式设计 */
+/* Responsive layout */
 @media screen and (max-width: 768px) {
   .main-content {
     padding: 1rem;
@@ -150,13 +150,13 @@ details p {
     padding: 8px;
   }
   
-  /* 在手机上隐藏abstract列 */
+  /* Hide the abstract column on mobile devices */
   td:nth-child(3), th:nth-child(3) {
     display: none;
   }
 }
 
-/* 标签样式 */
+/* Tag styling */
 .tag {
   display: inline-block;
   padding: 2px 8px;
@@ -168,7 +168,7 @@ details p {
   font-weight: 500;
 }
 
-/* 评论样式 */
+/* Comment styling */
 .comment {
   color: #586069;
   font-size: 0.9rem;
@@ -177,7 +177,7 @@ details p {
   border-radius: 4px;
 }
 
-/* 导航栏 */
+/* Navigation bar */
 .site-nav {
   background-color: white;
   padding: 1rem 2rem;
@@ -195,7 +195,7 @@ details p {
   text-decoration: underline;
 }
 
-/* 搜索框（可选） */
+/* Search box (optional) */
 .search-container {
   margin: 1rem 0;
   text-align: right;

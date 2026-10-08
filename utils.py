@@ -32,7 +32,7 @@ def request_paper_with_arXiv_api(
 
     max_retries = 5
     for attempt in range(max_retries):
-        # 1. 每次请求前随机休眠 1~3 秒，降低节奏感
+        # Wait a random 1-3 seconds before each request.
         time.sleep(random.uniform(1, 3))
 
         try:
@@ -42,12 +42,12 @@ def request_paper_with_arXiv_api(
 
         except urllib.error.HTTPError as e:
             if e.code == 429:
-                # 读取 Retry-After 头
+                # Read the Retry-After header.
                 retry_after = e.headers.get("Retry-After")
                 if retry_after is not None:
                     wait = int(retry_after)
                 else:
-                    wait = 30 * (2**attempt)  # 指数退避：30, 60, 120...
+                    wait = 30 * (2**attempt)  # Exponential backoff: 30, 60, 120...
                 print(
                     f"[arXiv] 429 Too Many Requests. Waiting {wait}s (attempt {attempt + 1}/{max_retries})"
                 )
@@ -68,7 +68,7 @@ def request_paper_with_arXiv_api(
                 raise
             time.sleep(10 * (2**attempt))
 
-    # 重试用尽，返回空列表（与主程序逻辑适配）
+    # Return an empty list when retries are exhausted.
     print(f"[arXiv] Failed to fetch data for '{keyword}' after {max_retries} attempts.")
     return []
 
@@ -130,7 +130,7 @@ def get_daily_papers_by_keyword_with_retries(
         papers = get_daily_papers_by_keyword(keyword, column_names, max_result, link)
         if papers:
             return papers
-        wait = min(60 * (attempt + 1), 300)  # 最多等 5 分钟
+        wait = min(60 * (attempt + 1), 300)  # Wait at most 5 minutes.
         print(
             f"Empty list for '{keyword}', retrying in {wait}s ({attempt + 1}/{retries})…"
         )
@@ -156,8 +156,8 @@ def generate_table(papers: List[Dict], ignore_keys: List[str] = None) -> str:
     ]
 
     formatted_papers = []
-    for idx, paper in enumerate(papers, start=1):  # 从1开始编号
-        fp = {"#": str(idx)}  # 添加编号列
+    for idx, paper in enumerate(papers, start=1):  # Number rows starting at 1.
+        fp = {"#": str(idx)}  # Add the row-number column.
         for key in columns_in_use:
             val = paper.get(key, "")
 
@@ -174,11 +174,13 @@ def generate_table(papers: List[Dict], ignore_keys: List[str] = None) -> str:
                 )
 
             elif key == "Finding_Summary":
-                fp["主要发现"] = escape(str(val)).replace("|", "&#124;")
+                fp["Main Finding"] = escape(str(val)).replace("|", "&#124;")
 
             elif key == "Authors":
-                author = val[-1] if isinstance(val, list) and val else "作者未提供"
-                fp["最后作者"] = escape(str(author)).replace("|", "&#124;")
+                author = (
+                    val[-1] if isinstance(val, list) and val else "Author not provided"
+                )
+                fp["Last Author"] = escape(str(author)).replace("|", "&#124;")
 
             elif key == "Tags":
                 tags_str = ", ".join(val) if isinstance(val, list) else str(val)
@@ -197,7 +199,7 @@ def generate_table(papers: List[Dict], ignore_keys: List[str] = None) -> str:
     # Build Markdown table
     final_cols = ["#"] + [
         col for col in list(formatted_papers[0].keys()) if col != "#"
-    ]  # 编号列放在最前面
+    ]  # Put row numbers first.
     header = "| " + " | ".join(f"**{c}**" for c in final_cols) + " |\n"
     header += "| " + " | ".join(["---"] * len(final_cols)) + " |"
 
