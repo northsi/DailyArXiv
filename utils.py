@@ -2,6 +2,7 @@
 import datetime
 import os
 import random
+import re
 import shutil
 import time
 import urllib.parse
@@ -18,17 +19,31 @@ def remove_duplicated_spaces(text: str) -> str:
     return " ".join(text.split())
 
 
+def build_arxiv_query(keyword: str, link: str = "OR") -> str:
+    """Combine OR-separated terms; link controls title versus abstract matching."""
+    if link not in {"OR", "AND"}:
+        raise ValueError("link must be 'OR' or 'AND'")
+    terms = [term.strip() for term in re.split(r"\bOR\b", keyword, flags=re.IGNORECASE)]
+    if any(not term for term in terms):
+        raise ValueError("Search terms must not be empty")
+    clauses = [f'ti:"{term}" {link} abs:"{term}"' for term in terms]
+    if len(clauses) == 1:
+        return clauses[0]
+    return " OR ".join(f"({clause})" for clause in clauses)
+
+
 def request_paper_with_arXiv_api(
     keyword: str, max_results: int, link: str = "OR"
 ) -> List[Dict]:
-    assert link in ["OR", "AND"], "link should be 'OR' or 'AND'"
-    quoted_keyword = f'"{keyword}"'
-    url = (
-        f"http://export.arxiv.org/api/query?"
-        f"search_query=ti:{quoted_keyword}+{link}+abs:{quoted_keyword}"
-        f"&max_results={max_results}&sortBy=lastUpdatedDate"
+    query = build_arxiv_query(keyword, link)
+    params = urllib.parse.urlencode(
+        {
+            "search_query": query,
+            "max_results": max_results,
+            "sortBy": "lastUpdatedDate",
+        }
     )
-    url = urllib.parse.quote(url, safe="%/:=&?~#+!$,;'@()*[]")
+    url = f"http://export.arxiv.org/api/query?{params}"
 
     max_retries = 5
     for attempt in range(max_retries):

@@ -26,10 +26,10 @@ from utils import (
 
 beijing_timezone = pytz.timezone("Asia/Shanghai")
 
-keywords = ["NbSe2"]
+keywords = ["superconductivity OR superconducting"]
 
 max_results_per_keyword = {
-    "NbSe2": 10,
+    "superconductivity OR superconducting": 10,
 }
 
 column_names = ["Title", "Link", "Abstract", "Date", "Authors"]

@@ -5,6 +5,7 @@ import runpy
 import tempfile
 import unittest
 import urllib.error
+import urllib.parse
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
@@ -99,6 +100,53 @@ class RuntimeTests(unittest.TestCase):
         self.assertEqual(request.call_count, 2)
         self.assertIn(unittest.mock.call(7), sleep.call_args_list)
         response.__exit__.assert_called_once()
+
+    def test_boolean_keywords_and_field_matching(self):
+        self.assertEqual(
+            utils.build_arxiv_query("superconductivity OR superconducting"),
+            '(ti:"superconductivity" OR abs:"superconductivity") OR '
+            '(ti:"superconducting" OR abs:"superconducting")',
+        )
+        self.assertEqual(
+            utils.build_arxiv_query("NbSe2", "AND"), 'ti:"NbSe2" AND abs:"NbSe2"'
+        )
+        self.assertEqual(
+            utils.build_arxiv_query("high temperature"),
+            'ti:"high temperature" OR abs:"high temperature"',
+        )
+        self.assertEqual(
+            utils.build_arxiv_query("order parameter"),
+            'ti:"order parameter" OR abs:"order parameter"',
+        )
+        self.assertEqual(
+            utils.build_arxiv_query("superconductivity or superconducting"),
+            utils.build_arxiv_query("superconductivity OR superconducting"),
+        )
+        for keyword in ["", "superconductivity OR", "OR superconducting", "a OR OR b"]:
+            with self.subTest(keyword=keyword), self.assertRaises(ValueError):
+                utils.build_arxiv_query(keyword)
+
+    def test_arxiv_request_encodes_boolean_expression(self):
+        response = MagicMock()
+        response.__enter__.return_value.read.return_value = (
+            b'<feed xmlns="http://www.w3.org/2005/Atom"/>'
+        )
+        with (
+            patch("utils.urllib.request.urlopen", return_value=response) as request,
+            patch("time.sleep"),
+        ):
+            utils.request_paper_with_arXiv_api(
+                "superconductivity OR superconducting", 10
+            )
+        params = urllib.parse.parse_qs(
+            urllib.parse.urlsplit(request.call_args.args[0]).query
+        )
+        self.assertEqual(
+            params["search_query"],
+            [utils.build_arxiv_query("superconductivity OR superconducting")],
+        )
+        self.assertEqual(params["max_results"], ["10"])
+        self.assertEqual(params["sortBy"], ["lastUpdatedDate"])
 
     def test_tag_filter_preserves_order_and_avoids_duplicates(self):
         papers = [
