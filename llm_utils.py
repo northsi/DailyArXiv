@@ -29,6 +29,8 @@ def _call_llm(
     if max_retries < 1:
         raise ValueError("max_retries must be positive")
     client = _get_client()
+    token_budget = max_tokens
+    token_ceiling = max(max_tokens, 8192)
     try:
         for attempt in range(max_retries):
             try:
@@ -36,13 +38,20 @@ def _call_llm(
                     model=model,
                     messages=[{"role": "user", "content": prompt}],
                     temperature=0.5,
-                    max_tokens=max_tokens,
+                    max_tokens=token_budget,
+                    # These tasks require concise final answers, not reasoning output.
+                    extra_body={"thinking": {"type": "disabled"}},
                 )
                 if not response.choices:
                     raise RuntimeError("DeepSeek returned no choices")
                 choice = response.choices[0]
                 if choice.finish_reason == "length":
-                    raise RuntimeError("DeepSeek output was truncated (finish_reason=length)")
+                    used_budget = token_budget
+                    token_budget = min(token_budget * 2, token_ceiling)
+                    raise RuntimeError(
+                        "DeepSeek output was truncated "
+                        f"(finish_reason=length, max_tokens={used_budget})"
+                    )
                 if choice.finish_reason != "stop":
                     raise RuntimeError(
                         f"DeepSeek did not complete normally (finish_reason={choice.finish_reason})"
