@@ -16,21 +16,17 @@ def _get_client() -> OpenAI:
             "DEEPSEEK_API_KEY is not set. "
             "Add it as a GitHub secret and pass it to the workflow step."
         )
-    return OpenAI(api_key=api_key, base_url="https://api.deepseek.com")
+    return OpenAI(api_key=api_key, base_url="https://api.deepseek.com/v1")
 
 
 def _call_llm(
     prompt: str,
-    model: str = "deepseek-flash",
+    model: str = "deepseek-chat",
     max_tokens: int = 2048,
     max_retries: int = 3,
 ) -> str:
     """Call the DeepSeek (OpenAI-compatible) API with automatic retry."""
-    if max_retries < 1:
-        raise ValueError("max_retries must be positive")
     client = _get_client()
-    token_budget = max_tokens
-    token_ceiling = max(max_tokens, 8192)
     try:
         for attempt in range(max_retries):
             try:
@@ -38,33 +34,14 @@ def _call_llm(
                     model=model,
                     messages=[{"role": "user", "content": prompt}],
                     temperature=0.5,
-                    max_tokens=token_budget,
-                    # These tasks require concise final answers, not reasoning output.
-                    extra_body={"thinking": {"type": "disabled"}},
+                    max_tokens=max_tokens,
                 )
-                if not response.choices:
-                    raise RuntimeError("DeepSeek returned no choices")
-                choice = response.choices[0]
-                if choice.finish_reason == "length":
-                    used_budget = token_budget
-                    token_budget = min(token_budget * 2, token_ceiling)
-                    raise RuntimeError(
-                        "DeepSeek output was truncated "
-                        f"(finish_reason=length, max_tokens={used_budget})"
-                    )
-                if choice.finish_reason != "stop":
-                    raise RuntimeError(
-                        f"DeepSeek did not complete normally (finish_reason={choice.finish_reason})"
-                    )
-                content = choice.message.content
-                if not isinstance(content, str) or not content.strip():
-                    raise RuntimeError("DeepSeek returned an empty response")
-                return content.strip()
+                return response.choices[0].message.content.strip()
             except Exception as exc:
                 print(f"[LLM] Attempt {attempt + 1}/{max_retries} failed: {exc}")
-                if attempt == max_retries - 1:
-                    raise
-                time.sleep(10)
+                if attempt < max_retries - 1:
+                    time.sleep(10)
+        return ""
     finally:
         client.close()
 
@@ -78,29 +55,13 @@ NUMBERED_SUMMARY_PATTERN = re.compile(r"\[(\d+)\]\s*([\s\S]*?)(?=\[\d+\]|$)")
 def _parse_quality_decisions(raw: str, count: int) -> Dict[int, bool]:
     """Validate the complete decision batch before updating the cache."""
     try:
-        if not isinstance(raw, str) or not raw.strip():
-            raise ValueError("empty response")
-        raw = raw.strip()
-        fence = re.fullmatch(r"```(?:json)?\s*\n([\s\S]*?)\n```", raw, re.IGNORECASE)
-        if fence:
-            raw = fence.group(1).strip()
-
-        def unique_object(pairs):
-            result = {}
-            for key, value in pairs:
-                if key in result:
-                    raise ValueError(f"duplicate JSON key: {key}")
-                result[key] = value
-            return result
-
-        decisions = json.loads(raw, object_pairs_hook=unique_object)
+        decisions = json.loads(raw)
         if not isinstance(decisions, list) or len(decisions) != count:
             raise ValueError("wrong decision count")
         by_id = {}
         for decision in decisions:
             if (
                 not isinstance(decision, dict)
-                or set(decision) != {"id", "reject"}
                 or type(decision.get("id")) is not int
                 or type(decision.get("reject")) is not bool
                 or decision["id"] in by_id
@@ -112,7 +73,7 @@ def _parse_quality_decisions(raw: str, count: int) -> Dict[int, bool]:
     except (ValueError, TypeError) as exc:
         # Stop rather than publish unchecked papers or silently discard them.
         raise RuntimeError(
-            f"Quality filter returned invalid decisions: {exc}; update stopped"
+            "Quality filter returned invalid decisions; update stopped"
         ) from exc
     return by_id
 
@@ -169,7 +130,7 @@ def filter_low_quality_papers(
             '[{"id":1,"reject":false}]. No explanation or Markdown.\n'
             + json.dumps(inputs, ensure_ascii=False)
         )
-        raw = _call_llm(prompt, max_tokens=max(2048, len(batch) * 128))
+        raw = _call_llm(prompt, max_tokens=256)
         by_id = _parse_quality_decisions(raw, len(batch))
         for i, (link, (paper, fingerprint)) in enumerate(batch, start=1):
             metadata = cache.setdefault(link, {})

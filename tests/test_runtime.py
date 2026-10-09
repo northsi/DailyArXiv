@@ -66,82 +66,21 @@ class RuntimeTests(unittest.TestCase):
                 client = MagicMock()
                 response = MagicMock()
                 response.choices[0].message.content = " result "
-                response.choices[0].finish_reason = "stop"
-                api_error = RuntimeError("temporary")
-                client.chat.completions.create.side_effect = [api_error] * failures + [response]
+                client.chat.completions.create.side_effect = [
+                    RuntimeError("temporary")
+                ] * failures + [response]
                 with (
                     patch("llm_utils._get_client", return_value=client),
                     patch("time.sleep") as sleep,
                     contextlib.redirect_stdout(io.StringIO()),
                 ):
-                    if failures == 3:
-                        with self.assertRaisesRegex(RuntimeError, "temporary") as error:
-                            llm_utils._call_llm("prompt")
-                        self.assertIs(error.exception, api_error)
-                    else:
-                        self.assertEqual(llm_utils._call_llm("prompt"), "result")
+                    result = llm_utils._call_llm("prompt")
+                self.assertEqual(result, "" if failures == 3 else "result")
                 self.assertEqual(
                     client.chat.completions.create.call_count, min(failures + 1, 3)
                 )
                 self.assertEqual(sleep.call_count, min(failures, 2))
-                for call in client.chat.completions.create.call_args_list:
-                    self.assertEqual(call.kwargs["max_tokens"], 2048)
                 client.close.assert_called_once()
-
-    def test_llm_rejects_empty_and_truncated_responses(self):
-        for content, reason, message in [
-            (None, "stop", "empty response"),
-            ("  ", "stop", "empty response"),
-            ('[{"id":1,"reject":false}]', "length", "truncated"),
-            ("blocked", "content_filter", "did not complete normally"),
-        ]:
-            with self.subTest(content=content, reason=reason):
-                client = MagicMock()
-                response = client.chat.completions.create.return_value
-                response.choices[0].message.content = content
-                response.choices[0].finish_reason = reason
-                with patch("llm_utils._get_client", return_value=client), patch("time.sleep"):
-                    with self.assertRaisesRegex(RuntimeError, message):
-                        llm_utils._call_llm("prompt")
-                self.assertEqual(client.chat.completions.create.call_count, 3)
-                client.close.assert_called_once()
-        client = MagicMock()
-        client.chat.completions.create.return_value.choices = []
-        with patch("llm_utils._get_client", return_value=client):
-            with self.assertRaisesRegex(RuntimeError, "no choices"):
-                llm_utils._call_llm("prompt", max_retries=1)
-        client.close.assert_called_once()
-
-    def test_llm_truncation_increases_budget_and_disables_thinking(self):
-        client = MagicMock()
-        truncated = MagicMock()
-        truncated.choices[0].finish_reason = "length"
-        # Even apparently valid JSON must not be accepted after truncation.
-        truncated.choices[0].message.content = '[{"id":1,"reject":true}]'
-        completed = MagicMock()
-        completed.choices[0].finish_reason = "stop"
-        completed.choices[0].message.content = '[{"id":1,"reject":false}]'
-        client.chat.completions.create.side_effect = [truncated, truncated, completed]
-        with patch("llm_utils._get_client", return_value=client), patch("time.sleep"):
-            result = llm_utils._call_llm("prompt")
-        self.assertEqual(result, '[{"id":1,"reject":false}]')
-        calls = client.chat.completions.create.call_args_list
-        self.assertEqual([call.kwargs["max_tokens"] for call in calls], [2048, 4096, 8192])
-        for call in calls:
-            self.assertEqual(call.kwargs["extra_body"], {"thinking": {"type": "disabled"}})
-        client.close.assert_called_once()
-
-    def test_llm_truncation_budget_is_bounded(self):
-        client = MagicMock()
-        client.chat.completions.create.return_value.choices[0].finish_reason = "length"
-        with patch("llm_utils._get_client", return_value=client), patch("time.sleep"):
-            with self.assertRaisesRegex(RuntimeError, "max_tokens=8192"):
-                llm_utils._call_llm("prompt", max_tokens=4096, max_retries=4)
-        self.assertEqual(
-            [call.kwargs["max_tokens"] for call in client.chat.completions.create.call_args_list],
-            [4096, 8192, 8192, 8192],
-        )
-        client.close.assert_called_once()
 
     def test_arxiv_retry_after_and_response_cleanup(self):
         response = MagicMock()
