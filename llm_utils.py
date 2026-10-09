@@ -16,12 +16,12 @@ def _get_client() -> OpenAI:
             "DEEPSEEK_API_KEY is not set. "
             "Add it as a GitHub secret and pass it to the workflow step."
         )
-    return OpenAI(api_key=api_key, base_url="https://api.deepseek.com/v1")
+    return OpenAI(api_key=api_key, base_url="https://api.deepseek.com")
 
 
 def _call_llm(
     prompt: str,
-    model: str = "deepseek-chat",
+    model: str = "deepseek-flash",
     max_tokens: int = 2048,
     max_retries: int = 3,
 ) -> str:
