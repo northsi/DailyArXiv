@@ -127,6 +127,45 @@ class PaperOutputTests(unittest.TestCase):
                 with self.assertRaises(RuntimeError):
                     llm_utils.filter_low_quality_papers([{"Link": "paper"}], {})
 
+    def test_filter_accepts_complete_json_code_blocks(self):
+        for fence in ["json", "JSON", ""]:
+            with self.subTest(fence=fence):
+                papers = [{"Link": "keep"}, {"Link": "reject"}]
+                response = '```' + fence + '\n[{"id":2,"reject":true},{"id":1,"reject":false}]\n```'
+                with patch("llm_utils._call_llm", return_value=response) as call, patch("time.sleep"):
+                    self.assertEqual(llm_utils.filter_low_quality_papers(papers, {}), [papers[0]])
+                self.assertGreaterEqual(call.call_args.kwargs["max_tokens"], 2048)
+
+    def test_invalid_filter_results_do_not_modify_cache(self):
+        for response in [
+            None, "  ", '[{"id":1,"reject":false}',
+            '[{"id":true,"reject":false}]',
+            '[{"id":1.0,"reject":false}]',
+            '[{"id":1,"reject":0}]',
+            '[{"id":1,"reject":false,"extra":true}]',
+            '[{"id":1,"id":1,"reject":false}]',
+            '[{"id":1,"reject":false,"reject":true}]',
+            '[{"id":1,"reject":false},{"id":1,"reject":true}]',
+            'Explanation: [{"id":1,"reject":false}]',
+            '```json\n[{"id":1,"reject":false}]\n``` trailing',
+        ]:
+            with self.subTest(response=response):
+                cache = {"existing": {"Title": "unchanged"}}
+                original = copy.deepcopy(cache)
+                with patch("llm_utils._call_llm", return_value=response):
+                    with self.assertRaises(RuntimeError):
+                        llm_utils.filter_low_quality_papers([{"Link": "paper"}], cache)
+                self.assertEqual(cache, original)
+
+    def test_filter_preserves_api_error(self):
+        error = RuntimeError("API model unavailable")
+        cache = {}
+        with patch("llm_utils._call_llm", side_effect=error):
+            with self.assertRaises(RuntimeError) as caught:
+                llm_utils.filter_low_quality_papers([{"Link": "paper"}], cache)
+        self.assertIs(caught.exception, error)
+        self.assertEqual(cache, {})
+
     def test_rejected_papers_never_reach_summaries_or_output(self):
         main_path = Path(__file__).resolve().parents[1] / "main.py"
         papers = [
