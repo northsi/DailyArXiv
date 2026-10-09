@@ -3811,5 +3811,138 @@
       "fingerprint": "d2e85f57dd7c7097eb460fd66d2eb9b76434b6ff6cb7187e72e4a2163e6cc6f9",
       "reject": true
     }
+  },
+  "https://arxiv.org/abs/2605.18586v2": {
+    "Title": "Phase dynamics and dissipation in tunnel ferromagnetic Josephson junctions",
+    "Date": "2026-10-08T17:03:04Z",
+    "Quality_Filter": {
+      "fingerprint": "5c658002649cabd0c0d8e56558702e488ae7076553c2efe4daba8ce3a3521748",
+      "reject": false
+    },
+    "Finding_Summary": "Using current-voltage fitting with a tunnel junction microscopic model and switching current distribution measurements, the study finds submicrometric Al-based ferromagnetic Josephson junctions exhibit electrodynamic properties comparable to state-of-the-art transmon qubits with clear signatures of quantum phase diffusion.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.12257v1": {
+    "Title": "Pressure-induced double-dome superconductivity in doped kagome metal Cs(V0.86Ta0.14)3Sb5 without charge density wave",
+    "Date": "2026-10-08T16:26:34Z",
+    "Quality_Filter": {
+      "fingerprint": "ea29bc175faa7fd54ba7d8fc62fe054cf1c50534900d4d4b535cdf598d876c97",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2606.04608v2": {
+    "Title": "Correlated States in Quantum Dot Clusters Coupled to a Common Superconductor",
+    "Date": "2026-10-08T16:16:57Z",
+    "Quality_Filter": {
+      "fingerprint": "f021bdd7f4869400b96ee5b383cf9bfb836daf25a8871f95bd0dec034b2831aa",
+      "reject": false
+    },
+    "Finding_Summary": "Using exact methods, density matrix renormalization group, and neural-network quantum-state variational Monte Carlo, the study finds three distinct interacting regimes, with one-dimensional systems becoming gapless in the thermodynamic limit and two-dimensional clusters showing robust triplet ground states.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.12227v1": {
+    "Title": "A quasiparticle-protected superconducting qubit",
+    "Date": "2026-10-08T16:12:31Z",
+    "Quality_Filter": {
+      "fingerprint": "9dfe873d415a18099d15ded2699e2f9909eb65a74df2d471bd538e7296171b97",
+      "reject": false
+    },
+    "Finding_Summary": "Using a flux-tunable transmon with a gold-on-niobium ground plane and strongly gap-engineered aluminum junctions, the study finds the niobium device withstands over an order of magnitude higher near-infrared optical power before excess relaxation appears compared with an all-aluminum transmon.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.12075v1": {
+    "Title": "Field-resolved hierarchy of superconducting energy gaps in PdTe",
+    "Date": "2026-10-08T14:51:35Z",
+    "Quality_Filter": {
+      "fingerprint": "5f526a35e1b06e2b9b4c52a5bd3d246d9a738a5df18a75b395425c63de2a5a38",
+      "reject": false
+    },
+    "Finding_Summary": "Using low-temperature soft point-contact spectroscopy in a sealed ³He immersion environment, the study finds PdTe exhibits two superconducting energy scales near 0.5 and 1.1 meV with distinct magnetic-field evolution revealing characteristic fields near 4.5 and 7.5 kG.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2407.20957v2": {
+    "Title": "Shortcuts for Adiabatic and Variational Algorithms in Molecular Simulation",
+    "Date": "2026-10-08T13:57:46Z",
+    "Quality_Filter": {
+      "fingerprint": "16cbf0bd67c661fd7bdc5709af020f5bea0eb84abd0a6a3a09347ce089cfe42d",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2604.23301v2": {
+    "Title": "Grassmann time-evolving matrix product operators for fermionic impurities coupled to a superconducting bath",
+    "Date": "2026-10-08T12:53:21Z",
+    "Quality_Filter": {
+      "fingerprint": "093d2de3d56d4dc414e04bd3eed2895b2dd7c6390ad20dc663cb6220dcb4c68c",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2605.13259v2": {
+    "Title": "Superconductivity in a Two-Orbital Hatsugai-Kohmoto Model at Half Filling",
+    "Date": "2026-10-08T11:18:38Z",
+    "Quality_Filter": {
+      "fingerprint": "0cd48544c8092b49618f2318ae69a951c4f527d4a15a975ec3a902dde2a4e759",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.11713v1": {
+    "Title": "Electric and Heat Transport in One-Dimensional SNS Junctions with Energy-Dependent Transmission",
+    "Date": "2026-10-08T11:18:07Z",
+    "Quality_Filter": {
+      "fingerprint": "c5b1033d70edce19d50c0e35f096a971e3a8cc0c8ca5d4c60b27ccc909df546f",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.11658v1": {
+    "Title": "Error-Corrected Memory and Logic on a Heavy-Hex Superconducting-Qubit Processor",
+    "Date": "2026-10-08T10:35:25Z",
+    "Quality_Filter": {
+      "fingerprint": "42fed2e5fd64c7a07c79eb9fb2f6d315f52b294e505df3f4314c097ffd68f25e",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.11540v1": {
+    "Title": "Quickly extracting fidelity decay rates in random circuit benchmarking experiments",
+    "Date": "2026-10-08T09:10:01Z",
+    "Quality_Filter": {
+      "fingerprint": "6527b60247715e848b8f5dd895e6743214ba400b0693b4d5b84b569bbc514fc9",
+      "reject": false
+    },
+    "Finding_Summary": "Using classical post-processing with a one-parameter family of estimators including the trace filter function, the study finds trace-filtered randomized benchmarking yields consistent fidelity estimates below 10 layers where the standard estimator requires depth beyond a 40-layer experimental window.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.11484v1": {
+    "Title": "From band reconstruction to Bogoliubov dispersion: How dz2-band enhances iron-based superconductivity",
+    "Date": "2026-10-08T08:29:14Z",
+    "Quality_Filter": {
+      "fingerprint": "b6ba1a38dd9038b1c909a344f8eddac858b24e2aa4be7d436aa571b311d9af57",
+      "reject": false
+    },
+    "Finding_Summary": "Using scanning tunneling microscope mechanical lattice modification of an iron-based superconductor, the study finds that an upward shift of a deep-lying dz2 band hybridizes with Fermi-level bands and enhances the superconducting gap.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.11477v1": {
+    "Title": "Quantitative Rules for Parallel Calibration and Drift-Resilient Maintenance of Large-Scale Superconducting Quantum Processors",
+    "Date": "2026-10-08T08:23:17Z",
+    "Quality_Filter": {
+      "fingerprint": "c2272b792a29cb44653cb856dd958dfc7aa4132f3561a7fd37a9f86be9ed4ce5",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.11341v1": {
+    "Title": "Strain-engineered long-distance supercurrent in an altermagnetic CrSb based-Josephson junction",
+    "Date": "2026-10-08T06:34:56Z",
+    "Quality_Filter": {
+      "fingerprint": "82ad959c6fff05c53c90afc78ba22fa2679e221dae0ba64ce6250a04b7c3e8ba",
+      "reject": false
+    },
+    "Finding_Summary": "Using Josephson junctions with epitaxial strained altermagnet CrSb thin films, the study finds dissipationless supercurrent transport across a 150 nm lateral spacer distance.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   }
 }
