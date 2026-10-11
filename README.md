@@ -6,22 +6,16 @@ The subheadings represent search keywords. Only the most recent articles per key
 
 Results are displayed on this website after each scheduled update.
 
-Last update: 2026-10-09
+Last update: 2026-10-12
 
 ---
 
 ## 📋 Today's Overview
-*October 09, 2026*
+*October 12, 2026*
 
-### superconductivity OR superconducting (7 new today)
+### superconductivity OR superconducting (0 new today)
 
-1. **Phase dynamics and dissipation in tunnel ferromagnetic Josephson junctions**: Using current-voltage fitting with a tunnel junction microscopic model and switching current distribution measurements, the study finds submicrometric Al-based ferromagnetic Josephson junctions exhibit electrodynamic properties comparable to state-of-the-art transmon qubits with clear signatures of quantum phase diffusion.
-2. **Correlated States in Quantum Dot Clusters Coupled to a Common Superconductor**: Using exact methods, density matrix renormalization group, and neural-network quantum-state variational Monte Carlo, the study finds three distinct interacting regimes, with one-dimensional systems becoming gapless in the thermodynamic limit and two-dimensional clusters showing robust triplet ground states.
-3. **A quasiparticle-protected superconducting qubit**: Using a flux-tunable transmon with a gold-on-niobium ground plane and strongly gap-engineered aluminum junctions, the study finds the niobium device withstands over an order of magnitude higher near-infrared optical power before excess relaxation appears compared with an all-aluminum transmon.
-4. **Field-resolved hierarchy of superconducting energy gaps in PdTe**: Using low-temperature soft point-contact spectroscopy in a sealed ³He immersion environment, the study finds PdTe exhibits two superconducting energy scales near 0.5 and 1.1 meV with distinct magnetic-field evolution revealing characteristic fields near 4.5 and 7.5 kG.
-5. **Quickly extracting fidelity decay rates in random circuit benchmarking experiments**: Using classical post-processing with a one-parameter family of estimators including the trace filter function, the study finds trace-filtered randomized benchmarking yields consistent fidelity estimates below 10 layers where the standard estimator requires depth beyond a 40-layer experimental window.
-6. **From band reconstruction to Bogoliubov dispersion: How dz2-band enhances iron-based superconductivity**: Using scanning tunneling microscope mechanical lattice modification of an iron-based superconductor, the study finds that an upward shift of a deep-lying dz2 band hybridizes with Fermi-level bands and enhances the superconducting gap.
-7. **Strain-engineered long-distance supercurrent in an altermagnetic CrSb based-Josephson junction**: Using Josephson junctions with epitaxial strained altermagnet CrSb thin films, the study finds dissipationless supercurrent transport across a 150 nm lateral spacer distance.
+*No new papers passed screening today.*
 
 ---
 
