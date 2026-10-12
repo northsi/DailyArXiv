@@ -3944,5 +3944,158 @@
     "Finding_Summary": "Using Josephson junctions with epitaxial strained altermagnet CrSb thin films, the study finds dissipationless supercurrent transport across a 150 nm lateral spacer distance.",
     "Finding_Language": "en",
     "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.13845v1": {
+    "Title": "Enhanced analogue quantum computation with a logically-encoded XX gadget",
+    "Date": "2026-10-09T16:54:47Z",
+    "Quality_Filter": {
+      "fingerprint": "cd3b200d4d8e70543a82e98c9a052443da1fc51e9ca1b9b37c3afef4f2f3ca1c",
+      "reject": false
+    },
+    "Finding_Summary": "Using a truss gadget that generates two-body XX interactions from one-body X/Z fields and two-body ZZ interactions, the study finds an approximately thousand-fold improvement in the probability of finding a near-ground state for weighted maximum-independent-set instances on a superconducting annealer.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.13843v1": {
+    "Title": "A Hardware-Native Trapped-Ion Hybrid Qudit-Oscillator Instruction Set",
+    "Date": "2026-10-09T16:53:03Z",
+    "Quality_Filter": {
+      "fingerprint": "4f16840b6b9b6c9d3df3f5cfae7ae4000edc0ddeb0bc9fd46e87a763e22c6ff1",
+      "reject": false
+    },
+    "Finding_Summary": "Using a hardware-native hybrid qudit-oscillator instruction set implemented in HybridLane, the study finds that one Trotter step is projected to run about ten times faster on a 40Ca+ qudit processor, with average RMSE of approximately 1.1 percent.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2405.20911v3": {
+    "Title": "Josephson junctions, superconducting circuits, and qubit for quantum technologies",
+    "Date": "2026-10-09T15:56:04Z",
+    "Quality_Filter": {
+      "fingerprint": "eae03664daaf1393eb8bfb63c51df7eff821ce50374b89f4f2119241aa3328bd",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.13769v1": {
+    "Title": "Physics of stabilization and dynamic control of CW magnetrons for superconducting accelerators",
+    "Date": "2026-10-09T15:52:44Z",
+    "Quality_Filter": {
+      "fingerprint": "b12c1b4d189c9b35853f8aa1b4ce9b2dcaa09524b6332164ed619afc844c9b23",
+      "reject": false
+    },
+    "Finding_Summary": "Using analytical results, PIC simulations, and previously obtained analytical and experimental data, the study discusses methods for operating and controlling CW magnetrons most suitable for SRF accelerators.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2507.09873v4": {
+    "Title": "High-throughput bidirectional electro-optic transduction assessed with a practical quantum capacity",
+    "Date": "2026-10-09T15:26:50Z",
+    "Quality_Filter": {
+      "fingerprint": "00444822d3c0a15ad1713d67d79a5af7536d32d2f293fbaf630b791c606c88db",
+      "reject": false
+    },
+    "Finding_Summary": "Using a membrane-based opto-electromechanical transducer, the study finds a throughput of 7 kHz at an input-referred added noise of 3 photons in both upconversion and downconversion, nearly four orders of magnitude better than previous downconversion work.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.13727v1": {
+    "Title": "Anomaly induced transport in holographic superconductors",
+    "Date": "2026-10-09T15:25:47Z",
+    "Quality_Filter": {
+      "fingerprint": "81fec0b7051437f9028ebf5bfcfb9465284b22745c7f6ecb161bcb858bf915f0",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.13584v1": {
+    "Title": "Altermagnetic Control of Charge-4e Superconductivity",
+    "Date": "2026-10-09T13:35:34Z",
+    "Quality_Filter": {
+      "fingerprint": "d90924d22f0d4b10e6db4a67af34bdf21add9e16da79f9a039025b4c0c059bc6",
+      "reject": false
+    },
+    "Finding_Summary": "Using a two-dimensional classical array of conventional superconductors coupled through altermagnetic junctions, the study finds a finite charge-4e region between staggered and uniform charge-2e states, with algebraic coherence of pairs of Cooper pairs.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2605.01915v2": {
+    "Title": "Thin-film nanostructuring of NbTi superconducting resonators for enhanced temperature sensitivity in cryogenic thermometry",
+    "Date": "2026-10-09T12:14:01Z",
+    "Quality_Filter": {
+      "fingerprint": "831dca6f22031696074352645ee74510a9ae8a9bcac35040467a7166b6c19ae3",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2606.02014v2": {
+    "Title": "Lie Algebra-Based Quantum Optimal Controls Interpolation",
+    "Date": "2026-10-09T11:52:33Z",
+    "Quality_Filter": {
+      "fingerprint": "19b388e4498f07b4c233af73a6f0fa6142cc28e56a3c6b8dc12f1e6babb78d4d",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.13417v1": {
+    "Title": "Modelling Josephson Junctions with Boundary Conditions: Towards High-Fidelity Models for Superconducting Qubits",
+    "Date": "2026-10-09T11:24:27Z",
+    "Quality_Filter": {
+      "fingerprint": "1fc07e68347cfbd7c64acbde70af0206dabd0f4979bd0730f99f45b75d4bf276",
+      "reject": false
+    },
+    "Finding_Summary": "Using a quantum-mechanical loop model with self-adjoint boundary conditions, the study finds the supercurrent factorises as $I_c(δ,λ)\\sinδ$, recovering both Josephson relations but predicting deviations from the pure $\\sinδ$ law for transparent junctions.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2609.37191v2": {
+    "Title": "Uniform-Charge-Density $d$-Wave Superconductivity in the Pure $t$-$J$ Model at $1/8$ Doping on an Infinite Cylinder",
+    "Date": "2026-10-09T10:58:33Z",
+    "Quality_Filter": {
+      "fingerprint": "016c3247b4d64ea2c24719ea67e70a9c5e30e0ca0bd03d92b9a36abd0355ce61",
+      "reject": false
+    },
+    "Finding_Summary": "Using the variational uniform matrix product state method on an infinite $L_y=8$ cylinder, the study finds a uniform-charge-density $d$-wave superconducting ground state with quasi-long-range pairing correlations and no stripe or magnetic order.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2605.02642v2": {
+    "Title": "Floquet-Multiple Andreev Reflections",
+    "Date": "2026-10-09T10:03:38Z",
+    "Quality_Filter": {
+      "fingerprint": "3cc912d015b6e296ac0b8f108ecc95953c5a966b3e95267856b3258102f21574",
+      "reject": false
+    },
+    "Finding_Summary": "Using three-terminal Josephson junctions on a ballistic two-dimensional normal conductor, the study finds that quartet and higher-order multipair processes yield characteristic Floquet-multiple Andreev reflection conductance and noise resonances.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2603.12897v3": {
+    "Title": "Finite-momentum superconductivity with singlet-triplet mixing in an altermagnetic metal: A pairing instability analysis",
+    "Date": "2026-10-09T09:49:34Z",
+    "Quality_Filter": {
+      "fingerprint": "3dded769d73b0dec1c5261bd950c6752ff589b9157021dc827f294c0d586bcfb",
+      "reject": false
+    },
+    "Finding_Summary": "Using a square-lattice altermagnetic metal with attractive nearest-neighbor interaction, the study finds finite-momentum FFLO pairing that typically emerges across multiple channels with mixed parity, featuring singlet-triplet mixing.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2607.24171v2": {
+    "Title": "DC Conductance of X-shaped Majorana Interferometer reveals Non-Abelian Anyon Statistics",
+    "Date": "2026-10-09T08:59:29Z",
+    "Quality_Filter": {
+      "fingerprint": "18829d279df0c127bb2838da7fc128e1ccf41e6bccd37d16e63defd73ee7c550",
+      "reject": false
+    },
+    "Finding_Summary": "Using a low-energy effective theory via chiral bosonization for an X-shaped chiral Majorana interferometer, the study finds a completely isotropic DC conductance tensor yielding non-zero conductance when simultaneous edge-vortex and Majorana tunneling activates the fermionic fusion channel.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.13196v1": {
+    "Title": "Graphene double quantum dot as a solid-state two-level system in the THz range",
+    "Date": "2026-10-09T08:13:30Z",
+    "Quality_Filter": {
+      "fingerprint": "d043cc0aa21ffcc12e1d40f7133dc9a8977f20d7d663aa9ee64c2fbf5678eb13",
+      "reject": false
+    },
+    "Finding_Summary": "Using low-temperature transport spectroscopy and nonequilibrium Green's function modeling, the study finds that an hBN-encapsulated graphene double quantum dot forms an artificial molecule with bonding and antibonding states separated by up to 0.6 meV, a 0.145 THz transition.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   }
 }
