@@ -6,26 +6,16 @@ The subheadings represent search keywords. Only the most recent articles per key
 
 Results are displayed on this website after each scheduled update.
 
-Last update: 2026-10-13
+Last update: 2026-10-14
 
 ---
 
 ## 📋 Today's Overview
-*October 13, 2026*
+*October 14, 2026*
 
-### superconductivity OR superconducting (11 new today)
+### superconductivity OR superconducting (0 new today)
 
-1. **Enhanced analogue quantum computation with a logically-encoded XX gadget**: Using a truss gadget that generates two-body XX interactions from one-body X/Z fields and two-body ZZ interactions, the study finds an approximately thousand-fold improvement in the probability of finding a near-ground state for weighted maximum-independent-set instances on a superconducting annealer.
-2. **A Hardware-Native Trapped-Ion Hybrid Qudit-Oscillator Instruction Set**: Using a hardware-native hybrid qudit-oscillator instruction set implemented in HybridLane, the study finds that one Trotter step is projected to run about ten times faster on a 40Ca+ qudit processor, with average RMSE of approximately 1.1 percent.
-3. **Physics of stabilization and dynamic control of CW magnetrons for superconducting accelerators**: Using analytical results, PIC simulations, and previously obtained analytical and experimental data, the study discusses methods for operating and controlling CW magnetrons most suitable for SRF accelerators.
-4. **High-throughput bidirectional electro-optic transduction assessed with a practical quantum capacity**: Using a membrane-based opto-electromechanical transducer, the study finds a throughput of 7 kHz at an input-referred added noise of 3 photons in both upconversion and downconversion, nearly four orders of magnitude better than previous downconversion work.
-5. **Altermagnetic Control of Charge-4e Superconductivity**: Using a two-dimensional classical array of conventional superconductors coupled through altermagnetic junctions, the study finds a finite charge-4e region between staggered and uniform charge-2e states, with algebraic coherence of pairs of Cooper pairs.
-6. **Modelling Josephson Junctions with Boundary Conditions: Towards High-Fidelity Models for Superconducting Qubits**: Using a quantum-mechanical loop model with self-adjoint boundary conditions, the study finds the supercurrent factorises as $I_c(δ,λ)\sinδ$, recovering both Josephson relations but predicting deviations from the pure $\sinδ$ law for transparent junctions.
-7. **Uniform-Charge-Density $d$-Wave Superconductivity in the Pure $t$-$J$ Model at $1/8$ Doping on an Infinite Cylinder**: Using the variational uniform matrix product state method on an infinite $L_y=8$ cylinder, the study finds a uniform-charge-density $d$-wave superconducting ground state with quasi-long-range pairing correlations and no stripe or magnetic order.
-8. **Floquet-Multiple Andreev Reflections**: Using three-terminal Josephson junctions on a ballistic two-dimensional normal conductor, the study finds that quartet and higher-order multipair processes yield characteristic Floquet-multiple Andreev reflection conductance and noise resonances.
-9. **Finite-momentum superconductivity with singlet-triplet mixing in an altermagnetic metal: A pairing instability analysis**: Using a square-lattice altermagnetic metal with attractive nearest-neighbor interaction, the study finds finite-momentum FFLO pairing that typically emerges across multiple channels with mixed parity, featuring singlet-triplet mixing.
-10. **DC Conductance of X-shaped Majorana Interferometer reveals Non-Abelian Anyon Statistics**: Using a low-energy effective theory via chiral bosonization for an X-shaped chiral Majorana interferometer, the study finds a completely isotropic DC conductance tensor yielding non-zero conductance when simultaneous edge-vortex and Majorana tunneling activates the fermionic fusion channel.
-11. **Graphene double quantum dot as a solid-state two-level system in the THz range**: Using low-temperature transport spectroscopy and nonequilibrium Green's function modeling, the study finds that an hBN-encapsulated graphene double quantum dot forms an artificial molecule with bonding and antibonding states separated by up to 0.6 meV, a 0.145 THz transition.
+*No new papers passed screening today.*
 
 ---
 
