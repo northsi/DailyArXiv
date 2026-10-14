@@ -4097,5 +4097,158 @@
     "Finding_Summary": "Using low-temperature transport spectroscopy and nonequilibrium Green's function modeling, the study finds that an hBN-encapsulated graphene double quantum dot forms an artificial molecule with bonding and antibonding states separated by up to 0.6 meV, a 0.145 THz transition.",
     "Finding_Language": "en",
     "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.18778v1": {
+    "Title": "Deterministic and programmable generation of mechanical multipartite entangled states",
+    "Date": "2026-10-13T17:32:44Z",
+    "Quality_Filter": {
+      "fingerprint": "5f62fdfd18d3a6a9dc346df35db73e19b06814304473ede6ff970d9501f582fa",
+      "reject": false
+    },
+    "Finding_Summary": "Using optimal-control-engineered isometries between a transmon qubit and phonon modes of a bulk acoustic wave resonator, the study deterministically prepares matrix product states and certifies genuine multipartite entanglement among up to four mechanical modes.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2609.13070v2": {
+    "Title": "Visualizing Chiral Edge Modes in Twisted Cuprate Superconductors via Scanning-Probe Quantum Sensing",
+    "Date": "2026-10-13T16:27:59Z",
+    "Quality_Filter": {
+      "fingerprint": "d6f899bf6649535a78d8f2dbd11194d23dcb11affc0acc485d38f1fe7c27640d",
+      "reject": false
+    },
+    "Finding_Summary": "Using single-spin relaxometry, the study visualizes spontaneously formed edge modes in twisted Bi2Sr2CaCu2O8+x and evaluates the nontrivial topological band gap and its critical temperature behavior under different twist angles.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2512.13877v2": {
+    "Title": "Field-angle-resolved heat transport in UTe$_2$: determination of nodal positions in the superconducting order parameter",
+    "Date": "2026-10-13T14:49:50Z",
+    "Quality_Filter": {
+      "fingerprint": "35788ebca4845fbde8595f985c92be22b5ecf1b91605907180234f2e811192a1",
+      "reject": false
+    },
+    "Finding_Summary": "Using field-angle-dependent thermal conductivity measurements and modeling with the experimentally determined Fermi surface, the study identifies point nodes along the crystallographic b-axis, implying a B2u superconducting order parameter in UTe2.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.18482v1": {
+    "Title": "Lifting: Quantum State Discrimination Framework for Mid-Circuit Measurements",
+    "Date": "2026-10-13T14:43:40Z",
+    "Quality_Filter": {
+      "fingerprint": "6df9af955aee24e5b1103b0ee2b24b42d4817e328fb3b47be9ead73c240de61c",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.18477v1": {
+    "Title": "Experimental Realization of a C-Shunt Flux-Qubit Coupler for Controlled-Z Gates between Transmons",
+    "Date": "2026-10-13T14:39:57Z",
+    "Quality_Filter": {
+      "fingerprint": "7ffda362606515fa80b1a252037aa98ca740601046ed197bd90228fcff29de8c",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.18418v1": {
+    "Title": "The role of dependency range in thermally coupled superconducting networks",
+    "Date": "2026-10-13T13:59:46Z",
+    "Quality_Filter": {
+      "fingerprint": "16b40738674f94589b894fbf1a9a1b47376e1923a4de7664f3a7de755c07c0d6",
+      "reject": false
+    },
+    "Finding_Summary": "Using an experimentally calibrated model of resistively shunted Josephson junctions for thermally coupled amorphous superconducting networks, the study finds that long-range thermal coupling can stabilize the superconducting phase upon heating, with anisotropic cascades.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.18286v1": {
+    "Title": "Phonon-Mediated Superconductivity near Phase Boundaries in Rhombohedral Multilayer Graphene",
+    "Date": "2026-10-13T12:36:46Z",
+    "Quality_Filter": {
+      "fingerprint": "ee667a7fccded5a5316082f6acfeb7f4f341b1c64b67645a9f576d6f236ede07",
+      "reject": false
+    },
+    "Finding_Summary": "Using coupled self-consistent Migdal-Eliashberg equations with first-principles input and interaction-driven symmetry breaking, the study reproduces the experimentally observed superconducting regions in rhombohedral graphene via phonon-mediated pairing.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2609.28837v2": {
+    "Title": "Imaging how fluctuations destroy superconductivity in two dimensions",
+    "Date": "2026-10-13T11:40:46Z",
+    "Quality_Filter": {
+      "fingerprint": "d3d4b5215b0b483f49f5d9114833aebc316fccb144f7c5a34f6ffbdcc2dfa826",
+      "reject": false
+    },
+    "Finding_Summary": "Using scanning magnetic susceptometry on gate-tunable Josephson junction arrays, the study finds the diamagnetic critical temperature scales as Tc ∝ ρs0^0.3, with anomalous metal transport emerging alongside large-scale inhomogeneity at low carrier densities.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.18185v1": {
+    "Title": "Quantitative Impact of Occupation Smearing Methods on Conventional Superconductivity: from Electronic Structure through Lattice Dynamics to Electron-Phonon Coupling",
+    "Date": "2026-10-13T11:25:00Z",
+    "Quality_Filter": {
+      "fingerprint": "ad04e5e05698684fecb306569573382437ea7decb33f3d5f3f6c0fc5e642ccd4",
+      "reject": false
+    },
+    "Finding_Summary": "Using first-principles calculations benchmarked on CsH6 against the optimized tetrahedron method, the study finds smearing-induced errors weaken electron-phonon coupling, while the parameter-free method gives a stable CsH6 with a superconducting transition temperature of 121 K.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.18171v1": {
+    "Title": "Effects of the choice of the exchange-correlation functional on high-temperature superconductivity predictions in covalent-cage M(BN)5 family",
+    "Date": "2026-10-13T11:16:19Z",
+    "Quality_Filter": {
+      "fingerprint": "1c059671a8654442292b34c903b4e547fb874ad449d7bc2b871b91c41de0cb8d",
+      "reject": false
+    },
+    "Finding_Summary": "Using high-throughput first-principles calculations on M(BN)5 superconductors, the study finds exchange-correlation functional choice strongly affects electron-phonon coupling, with PBEsol yielding a Tc of 113 K at ambient pressure for Rb(BN)5.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.18124v1": {
+    "Title": "Local error correction prolongs time-crystalline memory",
+    "Date": "2026-10-13T10:36:57Z",
+    "Quality_Filter": {
+      "fingerprint": "3a657de98a9a45430c40661399f2af9819b4e6bea18761a24941c99b55647d8f",
+      "reject": false
+    },
+    "Finding_Summary": "Using stochastic local bit-flip error correction on up to 68 qubits of a superconducting processor, the study finds the time-crystalline memory decay time increases by up to a factor of two.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2609.39411v2": {
+    "Title": "Genuine Multipartite Nonlocality Is Fermionic Magic",
+    "Date": "2026-10-13T09:49:06Z",
+    "Quality_Filter": {
+      "fingerprint": "ea221efb50d0b48884c2e5d5784066f018926b944a788a1aa103bf0a9d397f45",
+      "reject": false
+    },
+    "Finding_Summary": "Using superconducting processors and the Mermin inequality, the study finds fermionic Gaussian states are never genuinely multipartite nonlocal, with the bound confirmed on 96 qubits and crossed by twelve interacting fermions on a ring.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2609.39418v2": {
+    "Title": "Weyl superconductivity from Feshbach resonance in the three-dimensional repulsive Hubbard model",
+    "Date": "2026-10-13T09:16:36Z",
+    "Quality_Filter": {
+      "fingerprint": "d75ede31790087c581eb398b0775d0bbe7a84ec98ac2de1b1376e18d0f02a5c9",
+      "reject": false
+    },
+    "Finding_Summary": "Using a 3D extension of the Feshbach mechanism, the study finds that strong-coupling pairing via near-resonant dopant bound states yields a time-reversal symmetry breaking d_{x²−y²}+id_{z²} superconducting state.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.18000v1": {
+    "Title": "Development and experimental implementation of noise characterisation techniques on a superconducting quantum processor",
+    "Date": "2026-10-13T09:02:36Z",
+    "Quality_Filter": {
+      "fingerprint": "8ed945564a116badeedd1b417a6716b648364c23649ec1d1a99cd3e82e2d3f96",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.17943v1": {
+    "Title": "WannierSTM: Efficient superconducting scanning-probe spectroscopy from maximally localized Wannier functions",
+    "Date": "2026-10-13T08:27:13Z",
+    "Quality_Filter": {
+      "fingerprint": "257cbc30ddf841330520dd904d1c503f8bf79580e216710072fa597125ccd2d6",
+      "reject": true
+    }
   }
 }
