@@ -4250,5 +4250,164 @@
       "fingerprint": "257cbc30ddf841330520dd904d1c503f8bf79580e216710072fa597125ccd2d6",
       "reject": true
     }
+  },
+  "https://arxiv.org/abs/2610.20605v1": {
+    "Title": "Nodal nematic superconductivity in moiré graphene",
+    "Date": "2026-10-14T17:59:50Z",
+    "Quality_Filter": {
+      "fingerprint": "105c1e60530bbb39f844d372a068a54a9d979a56fc706402d78a1216b59d5709",
+      "reject": false
+    },
+    "Finding_Summary": "Using tunneling spectroscopy integrated with quantum transport measurements, the study finds an intrinsic multi-component nodal nematic superconducting state in magic-angle twisted trilayer graphene that spontaneously breaks the moiré superlattice's six-fold rotational symmetry.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.20553v1": {
+    "Title": "Metallic electron crystals in rhombohedral graphene as a bridge to twisted WSe$_2$",
+    "Date": "2026-10-14T17:44:00Z",
+    "Quality_Filter": {
+      "fingerprint": "99886f1790e05b7c860081c26c9ae4fac16a2d0d95501124ee9b65a438708708",
+      "reject": false
+    },
+    "Finding_Summary": "Using calculations of Wigner crystal states in pentalayer rhombohedral multilayer graphene, the study finds a metallic Wigner crystal that breaks three-fold rotation symmetry, suggesting a similar low-energy description for RMG and tWSe$_2$.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.20455v1": {
+    "Title": "Magnetic Susceptibility of Superconducting Films in the Meissner-London Regime",
+    "Date": "2026-10-14T16:38:04Z",
+    "Quality_Filter": {
+      "fingerprint": "f951d06b3033a291d48be75949e96c9a31282e8bed350fd5dca5151480643a29",
+      "reject": false
+    },
+    "Finding_Summary": "Using a 2D sheet-current model validated by finite-element modeling and a volume-current integral equation, the study provides a closed-form χ(λ) for superconducting discs accurate to 0.1% for aspect ratios ≤0.05.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.20454v1": {
+    "Title": "Orbitronics in Zero-dimensional Graphene Nanoflakes via Electrode Coupling",
+    "Date": "2026-10-14T16:37:08Z",
+    "Quality_Filter": {
+      "fingerprint": "f2a58a327d85d22d92d0773ad90c2aaf0883c688ec06fd1b577555ae511474b3",
+      "reject": false
+    },
+    "Finding_Summary": "Using a hexagonal graphene nanoflake with appropriately placed electrodes, the study finds a chiral current carrying net orbital angular momentum from degenerate opposite-angular-momentum eigenstates.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.20446v1": {
+    "Title": "Large-Tiny Spin-Stripe SDW Order in La$_3$Ni$_2$O$_7$ via $^{139}$La-NQR Spectroscopy: Reconsideration Based on the $Am2m$ Structure",
+    "Date": "2026-10-14T16:33:57Z",
+    "Quality_Filter": {
+      "fingerprint": "d12f66070971b51a3214537fbcb60787318b3896adcc8bf460979d24cce5804b",
+      "reject": false
+    },
+    "Finding_Summary": "Using $^{139}$La nuclear quadrupole resonance, the study finds two distinct La(2) sites confirming the $Am2m$ structure and identifies the spin-density-wave state as a large-tiny spin-stripe structure.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.20268v1": {
+    "Title": "Transport regimes in tunnel ferromagnetic Josephson junctions",
+    "Date": "2026-10-14T14:30:58Z",
+    "Quality_Filter": {
+      "fingerprint": "ae620a9416e048c7628cc18ed6d35a100be121bc738f7023391beed2644507b4",
+      "reject": false
+    },
+    "Finding_Summary": "Using temperature-dependent transport measurements and Usadel-based modeling of Nb- and Al-based SIsFS Josephson junctions, the study finds three distinct transport regimes—tunnel-dominated, temperature-driven crossover, and weak-link—identified via the evolution of I_cR_N(T).",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.20249v1": {
+    "Title": "Bulk superconductivity in quintuple-layer square-planar nickelate La6Ni5O12",
+    "Date": "2026-10-14T14:22:01Z",
+    "Quality_Filter": {
+      "fingerprint": "3fcf3844af93d27648cd969a53e1b25aa4cff20cb4ad79d28df27fef86023f7a",
+      "reject": false
+    },
+    "Finding_Summary": "Using topotactic reaction on the Ruddlesden-Popper compound La6Ni5O16, the study finds bulk superconductivity at ambient pressure in quintuple-layer square-planar La6Ni5O12 with an onset transition temperature of ~18 K.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.20132v1": {
+    "Title": "A low-cost compact muon detector for millikelvin operation",
+    "Date": "2026-10-14T12:52:09Z",
+    "Quality_Filter": {
+      "fingerprint": "7a1e0a092e7f8fc4899f57d4e94672e157c7b598eaed2822fc21f4b78c042593",
+      "reject": false
+    },
+    "Finding_Summary": "Using a compact two-module plastic scintillator/SiPM muon detector characterized from room temperature to 10 mK, the study finds that below approximately 8 K each muon event produces two pulses, an effect linked to a superconducting material in the SiPM.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.20082v1": {
+    "Title": "Exploring the proximity effect of thin tungsten-aluminum films for phonon-mediated kinetic inductance detectors",
+    "Date": "2026-10-14T12:20:43Z",
+    "Quality_Filter": {
+      "fingerprint": "a5c3f07d681b71d81b74230aa14abb3d6db7c44897f44a7196b0850b6f272e40",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.19927v1": {
+    "Title": "Deterministic and Programmable Fusion for Scalable Generation of Photonic Graph States",
+    "Date": "2026-10-14T10:15:48Z",
+    "Quality_Filter": {
+      "fingerprint": "e774284c1d557bdcab8d0daa64852f324028eaf1c422933f243f2adb9ef1ca0b",
+      "reject": false
+    },
+    "Finding_Summary": "Using a deterministic fusion operation that nondestructively projects flying microwave photonic qubits into Bell states via programmable superconducting circuits, the study finds genuine multipartite entanglement across 13 photonic qubits.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.19851v1": {
+    "Title": "Andreev-reflection spectroscopy of SrPt3P single crystals",
+    "Date": "2026-10-14T09:19:47Z",
+    "Quality_Filter": {
+      "fingerprint": "8d31036fb7bfc82185099eb7f9df71b99e054dc281bdd708ff7231c691fe8909",
+      "reject": false
+    },
+    "Finding_Summary": "Using point-contact Andreev-reflection spectroscopy on high-quality SrPt3P single crystals, the study finds fully gapped, single isotropic s-wave superconductivity with Δ(0)=1.88±0.08 meV and 2Δ/k_BT_c=5.2±0.2.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.19816v1": {
+    "Title": "Nonadiabatic dynamics under slow parametric modulation in nonlinear graphene resonators",
+    "Date": "2026-10-14T08:57:39Z",
+    "Quality_Filter": {
+      "fingerprint": "48d7f25433155e3ff894097537281832dc591dd5e2a2391dbb002bb5589cd651",
+      "reject": false
+    },
+    "Finding_Summary": "Using a graphene drum with MHz resonant drive and kHz tension modulation, the study finds parametric instabilities in the slow rotating-frame dynamics, with stronger modulation driving period doubling and chaos.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2605.22460v2": {
+    "Title": "Current-driven reduction of topological protection in multichannel superconductors",
+    "Date": "2026-10-14T08:50:06Z",
+    "Quality_Filter": {
+      "fingerprint": "73dce748e95af9d2eba67743785a508fc8374d7e523e1ac4742c18ce7d0c4974",
+      "reject": false
+    },
+    "Finding_Summary": "Using an effective momentum-dependent Hamiltonian for a current-biased Kitaev ladder, the study finds the two-mode topological phase is fragile against finite charge current.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.19751v1": {
+    "Title": "Quantum-enhanced Search for Galactic Dark Photons Using Cat-State Cavities",
+    "Date": "2026-10-14T08:08:04Z",
+    "Quality_Filter": {
+      "fingerprint": "8528e7b63f72dea2dfe56c14fed35b2ca8a484e359c3637978e9176cbf84641a",
+      "reject": false
+    },
+    "Finding_Summary": "Using cat-state parity measurements on a superconducting circuit QED platform, the study finds no diurnal modulation and sets 90% confidence-level bounds on the dark-photon kinetic-mixing parameter ε.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2609.15411v2": {
+    "Title": "Exact quantum circuits for a Heisenberg triangle with Dzyaloshinskii-Moriya interaction",
+    "Date": "2026-10-14T07:31:03Z",
+    "Quality_Filter": {
+      "fingerprint": "f857e57112f4a574751cbebce59061ecb83761f3ceae824f6e06b4405b6d47b7",
+      "reject": true
+    }
   }
 }
