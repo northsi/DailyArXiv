@@ -4557,5 +4557,149 @@
     "Finding_Summary": "Using a theoretical investigation of temperature-gradient driven responses in a Fe(Te,Se)-related s-wave proximity superconducting system, the study finds that Bogoliubov Fermi surfaces strongly enhance thermally driven spin polarization and spin Nernst effect, linear in temperature at low temperatures.",
     "Finding_Language": "en",
     "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.30056v1": {
+    "Title": "High-fidelity and robust controlled-Z gates for superconducting transmon qubits. I. Intrinsic errors and decoherence",
+    "Date": "2026-10-21T17:16:53Z",
+    "Quality_Filter": {
+      "fingerprint": "0175e7d314f6e72a4cc873b2c937201364c8df8163136f8dfb856ac3fcf0ff62",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2609.28623v2": {
+    "Title": "Observation of Universal Quantum Chaos at Shallow Depths",
+    "Date": "2026-10-21T17:02:13Z",
+    "Quality_Filter": {
+      "fingerprint": "635ed7433d498a487965d51a894ecad64ec3546608fd2bd0ef83e4873da5afe2",
+      "reject": false
+    },
+    "Finding_Summary": "Using theoretical derivation and experiments on a programmable superconducting processor, the study finds that shallow-circuit output-probability distributions form geometry-dependent universal classes differing from Porter–Thomas statistics, governed by two parameters.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.29986v1": {
+    "Title": "Meter-scale quantum interconnects between large quantum processors",
+    "Date": "2026-10-21T16:28:16Z",
+    "Quality_Filter": {
+      "fingerprint": "875550d637c1f1e87e9923e79f037f7250f847169b8132d7820a60e23ab53651",
+      "reject": false
+    },
+    "Finding_Summary": "Using four L-couplers between two 120-qubit superconducting processors, the study finds relay-based state transfer at a mean network benchmarking fidelity of 99.00% and distant CZ gates at a mean fidelity of 94.75%.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.29901v1": {
+    "Title": "Superconducting parametric amplifiers based on arrays of unequal Josephson junction elements",
+    "Date": "2026-10-21T15:42:19Z",
+    "Quality_Filter": {
+      "fingerprint": "0188e4b7c6cef55b23bdcca9589849bc9196fc5d36af2cdf8d1f1819004c8ae9",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.29892v1": {
+    "Title": "Unambiguous determination of the THz conductivity in driven YBa$_2$Cu$_3$O$_{6+x}$",
+    "Date": "2026-10-21T15:34:34Z",
+    "Quality_Filter": {
+      "fingerprint": "d45052e2cc43f73f4459ca2f661f6dd160f89e15555a5cfc50127222035c5888",
+      "reject": false
+    },
+    "Finding_Summary": "Using fluence-dependent measurements of the pump's complex optical constants at 15–20 THz, the study finds the sublinear THz response growth largely reflects enhanced pump reflection and reduced penetration depth, confirming the light-induced superconducting state.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2608.06570v2": {
+    "Title": "Exact quantum circuits for a lattice Boltzmann realization of the Dirac equation",
+    "Date": "2026-10-21T15:27:00Z",
+    "Quality_Filter": {
+      "fingerprint": "a3f729738116aacafc36ff57759400981a13f3d51fabc77e398a0d997e0454e2",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.29865v1": {
+    "Title": "From Traveling Waves to Synthetic Gauge Fields: A Field-Free Route to Superconducting Diode Effect",
+    "Date": "2026-10-21T15:21:35Z",
+    "Quality_Filter": {
+      "fingerprint": "18b3155965319ce51a8e4941b9ba52775f81ee8ae41469460f1e8cdda5fbd7d4",
+      "reject": false
+    },
+    "Finding_Summary": "Using a spatio-temporally driven chemical potential applied to a helical Shiba chain, the study finds spin-blind superconducting diode rectification odd in drive wavevector, optimal at kd=2π/3, without an external magnetic field.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2502.19560v2": {
+    "Title": "Comment on \"InAs-Al hybrid devices passing the topological gap protocol\", Microsoft Quantum, Phys. Rev. B 107, 245423 (2023)",
+    "Date": "2026-10-21T13:13:15Z",
+    "Quality_Filter": {
+      "fingerprint": "0d1073dcfb4dc1d0b22ec03dbde77561aa3d3d136906faefba141bab0182df67",
+      "reject": false
+    },
+    "Finding_Summary": "Using analysis of the topological gap protocol as applied to Microsoft Quantum's data, the study finds the protocol lacks consistent definitions and is sensitive to measurement parameter choices, so its topological-phase claim is unreliable.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.29583v1": {
+    "Title": "Superconductivity via repulsive interaction in the model with electrons and holes",
+    "Date": "2026-10-21T11:26:34Z",
+    "Quality_Filter": {
+      "fingerprint": "059d109907e9277e099c6e4084689593424c0b6fb12e0beed70a0fa6ee144a23",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2506.23091v7": {
+    "Title": "Fault-tolerant hyper-Ramsey spectroscopy of optical clock transitions with dynamical decoupling",
+    "Date": "2026-10-21T09:53:42Z",
+    "Quality_Filter": {
+      "fingerprint": "342cbb72c90a659c7e57303bcb3834d7c66dfa31a25f370838f379ab04be7ba9",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.29482v1": {
+    "Title": "On thermal Hall effect in boson systems",
+    "Date": "2026-10-21T09:40:27Z",
+    "Quality_Filter": {
+      "fingerprint": "5cfb4cae1dc45c6744a35b67bc69497a32be811293e7cc6f5d6e5b482016b3b7",
+      "reject": false
+    },
+    "Finding_Summary": "Using theoretical rederivation of thermal Hall effect formulas for magnon systems with skyrmion lattices, the study finds that anomalous terms in the magnon Hamiltonian produce a small but finite residual 1/T contribution to thermal Hall conductivity at very low temperatures.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2607.12317v2": {
+    "Title": "Demonstration of tripartite cat states in two distinct classes of entanglement",
+    "Date": "2026-10-21T08:46:58Z",
+    "Quality_Filter": {
+      "fingerprint": "116553405e85c8967c624caaa0cbf38e6a64670892df6d1ba546ad47f52b8804",
+      "reject": false
+    },
+    "Finding_Summary": "Using one-to-all conditional controls on three microwave resonators coupled to a transmon with subspace tomography, the study experimentally realizes GHZ-cat and W-cat states with fidelities of 0.83±0.02 and 0.70±0.02, both exceeding genuine multipartite entanglement thresholds.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2609.02405v2": {
+    "Title": "Constructing and characterising anharmonic potentials in a harmonic oscillator",
+    "Date": "2026-10-21T07:36:34Z",
+    "Quality_Filter": {
+      "fingerprint": "4dff6a4d5bdff570b3d71146b938cf8dea11e536d7d85a6d2a7092d29acdbbcf",
+      "reject": false
+    },
+    "Finding_Summary": "Using bosonic quantum signal processing to compile programmable non-Gaussian phase gates in a superconducting oscillator-transmon system, the study constructs cubic, double-well, and approximate Morse potentials, validated by pointwise force reconstruction.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2512.08393v3": {
+    "Title": "Single-step phase-engineered pulse for active readout cavity reset with a known qubit state",
+    "Date": "2026-10-21T06:20:41Z",
+    "Quality_Filter": {
+      "fingerprint": "25fc60291ae09ce3c336598cb99eef60a2a4f211aa34fceeeb486050347ab2e5",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2510.00765v2": {
+    "Title": "Fast and Sensitive Readout of a Semiconductor Quantum Dot Using an In-Situ Microwave Resonator with Enhanced Gate Lever Arm",
+    "Date": "2026-10-21T03:33:55Z",
+    "Quality_Filter": {
+      "fingerprint": "e6239e5f86f3c84a7908a1c9bc067410c52bcfb508c0cbe646749d33a9a50828",
+      "reject": true
+    }
   }
 }
