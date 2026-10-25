@@ -4701,5 +4701,136 @@
       "fingerprint": "e6239e5f86f3c84a7908a1c9bc067410c52bcfb508c0cbe646749d33a9a50828",
       "reject": true
     }
+  },
+  "https://arxiv.org/abs/2603.25858v2": {
+    "Title": "Benchmarking the accuracy of superconducting pair-pair correlations within Constrained Path Quantum Monte Carlo",
+    "Date": "2026-10-22T15:00:25Z",
+    "Quality_Filter": {
+      "fingerprint": "8aaebd031c22b452788b4ac49bccb9a8023cf73631332921697c2c8fe7664346",
+      "reject": false
+    },
+    "Finding_Summary": "Using comparisons with exactly solvable systems, the study finds that back propagation underestimates long-range superconducting pair-pair correlations and introduces an uncontrolled approximation except in special cases such as one dimension.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2606.21507v2": {
+    "Title": "Nontrivial Boundary-Mediated Superconducting Transport in a TRSB Topological Iron-Based Superconductor",
+    "Date": "2026-10-22T14:46:26Z",
+    "Quality_Filter": {
+      "fingerprint": "c7fd5479bfc74b949596061365e60374749b5b9f1e352076e8ec8c7fa7426145",
+      "reject": false
+    },
+    "Finding_Summary": "Using crystallographically sharp edges and side-surface-dominant contacts in exfoliated Fe(Te,Se) devices, the study finds an anomalous conductance plateau in topological FeTe0.55Se0.45 that is absent in topologically trivial compositions and follows the time-reversal-symmetry-breaking scale.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.26573v2": {
+    "Title": "Avalanches and Aging Driven by Parametric Amplification in Kerr Oscillator Networks",
+    "Date": "2026-10-22T09:39:00Z",
+    "Quality_Filter": {
+      "fingerprint": "64fa9ea49e4478699540d7d1d0a68dee993e9f14457ca64dfd62c655943bd26d",
+      "reject": false
+    },
+    "Finding_Summary": "Using deterministic transient dynamics of Kerr parametric oscillator networks with nonlinear couplings, the study finds avalanches in which activation intervals grow geometrically, so activations accumulate only logarithmically in time.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2609.35754v2": {
+    "Title": "Perfect Born Sampling of Symmetric Thermal Tensor Network States",
+    "Date": "2026-10-22T09:30:57Z",
+    "Quality_Filter": {
+      "fingerprint": "778c0ee322253bcf908b40c2f4aff204e5ace783c02ccf73cfb6332431b04376",
+      "reject": false
+    },
+    "Finding_Summary": "Using a perfect Born sampling approach for thermal tensor networks with symmetry quantum-number sampling, the study finds scalar chiral order at half filling and kinetic ferromagnetism upon electron doping in large-scale Hubbard model simulations.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2506.05045v2": {
+    "Title": "Engineering Quantum-Enhanced Transport by Supertransfer",
+    "Date": "2026-10-22T08:44:25Z",
+    "Quality_Filter": {
+      "fingerprint": "88d39d8572c7e2f57d0e96908538e56f960266150d6ad0abc188911d7353e04b",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2605.26233v2": {
+    "Title": "Slave-boson Formalism for Superconducting Pairing at Strong Coupling",
+    "Date": "2026-10-22T08:27:53Z",
+    "Quality_Filter": {
+      "fingerprint": "e44b1c2faaaa86d4dbafe197c36296f9d4d60d2f2adebabed8b8d83463385bd4",
+      "reject": false
+    },
+    "Finding_Summary": "Using the spin-rotation-invariant Kotliar-Ruckenstein slave-boson approach with a dynamical-fluctuation pairing vertex, the study finds pairing instabilities across doping, interaction, temperature and gap structure that qualitatively match cuprate experiments.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2506.09856v2": {
+    "Title": "Multi-FPGA Synchronization and Data Communication for Quantum Control and Measurement",
+    "Date": "2026-10-22T06:37:18Z",
+    "Quality_Filter": {
+      "fingerprint": "720944ec0cdb1b6447523b41f73e3402703c0cd1843b37c47cec3e68f9e0e916",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.30681v1": {
+    "Title": "High-fidelity and robust controlled-Z gates for superconducting transmon qubits. II. System-parameter uncertainties and overall errors",
+    "Date": "2026-10-22T03:48:21Z",
+    "Quality_Filter": {
+      "fingerprint": "c9f48dc8bcd985b65d1eadbb3f53724620dfce70097bfe00016fe6e36a0f5278",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.30581v1": {
+    "Title": "Cluster property and entanglement in the superconducting state",
+    "Date": "2026-10-22T01:17:46Z",
+    "Quality_Filter": {
+      "fingerprint": "9f069c58fe985f1af47aa75fe4762e4f630498bbc3cf472baf54cf754d8fd933",
+      "reject": false
+    },
+    "Finding_Summary": "Using conditions for the cluster property in the superconducting state, the study finds that the commonly used order parameter holds true and resolves the particle-number-fluctuation concern raised by Leggett et al.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2607.05890v2": {
+    "Title": "Microscopic theory of the lower critical field in superconducting thin-film strips",
+    "Date": "2026-10-22T01:08:00Z",
+    "Quality_Filter": {
+      "fingerprint": "908c54013128434a797d739e2c3b7ba3b6c5d4fa5b5780f57af4a5f6480011ac",
+      "reject": false
+    },
+    "Finding_Summary": "Using two-dimensional Usadel equations solved self-consistently for a dirty strip, the study finds a vortex self-energy larger than the Pearl–London estimate, with Bc1 obtained from Gibbs-energy differences without a cutoff.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2606.10420v2": {
+    "Title": "Superheating field of clean superconductors near the type-I--type-II boundary: the low-temperature Meissner stability limit of niobium",
+    "Date": "2026-10-22T00:49:45Z",
+    "Quality_Filter": {
+      "fingerprint": "dc0b00f0309d4c70229bd9592796ad3646af5a0978abc57241118780ab099608",
+      "reject": false
+    },
+    "Finding_Summary": "Using the self-consistent nonlinear nonlocal Eilenberger problem for the Meissner state with stability analysis, the study finds Bsh ≈ 290 mT at T/Tc = 0.2 for a Nb-like material with κGL = 0.7.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.30556v1": {
+    "Title": "Field-free superconducting diode and tunable vortex dynamics in NbN/FePt stripe-domain heterostructures",
+    "Date": "2026-10-22T00:22:11Z",
+    "Quality_Filter": {
+      "fingerprint": "4745608a3df020defe35d88cf0bfb4033201b0e52ded847d0086391e5b2727d2",
+      "reject": false
+    },
+    "Finding_Summary": "Using NbN/FePt and NbN/AlN/FePt heterostructures with remanent stripe domains, the study finds field-free superconducting diode efficiencies of approximately 50–60% and 35–40%, respectively.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.30547v1": {
+    "Title": "Anisotropic thermoelectric transport in the Sr2RuO4-Ru eutectic system",
+    "Date": "2026-10-22T00:14:12Z",
+    "Quality_Filter": {
+      "fingerprint": "37dedb5efeb53fc7101e70044b0a752f5a22160c1a8ad056128d5e413bd1710e",
+      "reject": true
+    }
   }
 }
