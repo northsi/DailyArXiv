@@ -4832,5 +4832,158 @@
       "fingerprint": "37dedb5efeb53fc7101e70044b0a752f5a22160c1a8ad056128d5e413bd1710e",
       "reject": true
     }
+  },
+  "https://arxiv.org/abs/2610.32903v1": {
+    "Title": "Rationalizing charge transfer: a single-molecule case study across three distinct surfaces",
+    "Date": "2026-10-23T17:05:50Z",
+    "Quality_Filter": {
+      "fingerprint": "f6e716c3e21a76d0e0c9f76ac243b9e9d3b5af5a18ad917106a9e682ca8c59f1",
+      "reject": false
+    },
+    "Finding_Summary": "Using STS, DFT, KPFM and model Hamiltonian calculations, the study finds that Me₆ molecules donate one electron to Au(111) and FeCl₂ but two electrons to NbSe₂.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2606.21323v2": {
+    "Title": "Importance of effective Coulomb interactions for $T_c$ in cuprates",
+    "Date": "2026-10-23T16:49:03Z",
+    "Quality_Filter": {
+      "fingerprint": "13d0d4dcdc2aecf20a7c8fe367ad72feb16eb62b9dc71bda96dd1462e1da550b",
+      "reject": false
+    },
+    "Finding_Summary": "Using DFT downfolding to single-band Hubbard and three-band Emery models with statistical analysis, the study finds that Tc correlates most with the Coulomb coupling on p-orbitals in the three-band model.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.32839v1": {
+    "Title": "Finite-Temperature Transconductance of Multiterminal Josephson Junctions with Topological Andreev Spectra",
+    "Date": "2026-10-23T16:12:56Z",
+    "Quality_Filter": {
+      "fingerprint": "68cae15d0a4a2199974cf6139bc4678d2ef7a29f267b629f4579830365ddb61a",
+      "reject": false
+    },
+    "Finding_Summary": "Using linear-response theory, the study finds that finite temperature destroys exact transconductance quantization in multiterminal Josephson junctions but can also make transconductance sensitive to finite-energy topological crossings.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.32791v1": {
+    "Title": "Ginzburg-Landau Theory with Elastic Incompatibility Describes the Liquid-G-phase-Crystal State Diagram",
+    "Date": "2026-10-23T15:36:52Z",
+    "Quality_Filter": {
+      "fingerprint": "070a37f1211a48fa66f81b038c3e41396e92014af08ea84ba2e76625b6def959",
+      "reject": false
+    },
+    "Finding_Summary": "Using a mechanically consistent Ginzburg-Landau theory, the study finds that type-II-like mixed-state physics can emerge structurally in the metastable heterogeneous G state, with random internal stress playing the role of the magnetic field.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.32767v1": {
+    "Title": "Majorana Edge-to-bound State Transition in Interferometric Superconductor Rings",
+    "Date": "2026-10-23T15:08:06Z",
+    "Quality_Filter": {
+      "fingerprint": "8d3a802c75eb0735bdb3f66c8969528af2bc69fd42440682355c8d1d735f27b0",
+      "reject": false
+    },
+    "Finding_Summary": "Using Little-Parks oscillations in nano-ring devices on 2M-WS₂, the study finds that tuning vortex size relative to annulus width drives a transition from topological edge states to localized vortex bound states.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.32762v1": {
+    "Title": "Quantum Machine Learning in Medical Imaging: A Primer for Radiologists",
+    "Date": "2026-10-23T15:04:34Z",
+    "Quality_Filter": {
+      "fingerprint": "c59396d8eef8050dfda65a6bdc5257e31955d2e5e7c942a83f863f4773bd6d13",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.32714v1": {
+    "Title": "Nano-ARPES observation of a flat band at the \\bar{M} point in 2.4° twisted bilayer graphene",
+    "Date": "2026-10-23T14:35:25Z",
+    "Quality_Filter": {
+      "fingerprint": "d637900b0f2f42aff1715787695baa378270c26f84492c0c40a432b4c2ef02f7",
+      "reject": false
+    },
+    "Finding_Summary": "Using angle-resolved photoemission spectroscopy, the study finds an unexpected flat band at the M̄ point far from the Fermi level in 2.4° twisted bilayer graphene, the first observation of flat bands away from the K̄ point.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.32622v1": {
+    "Title": "Trace-distance characterization of recurrent pairwise synchronization in cavity-coupled superconducting qubits",
+    "Date": "2026-10-23T13:39:18Z",
+    "Quality_Filter": {
+      "fingerprint": "439cfbfa9daf4438041ce99abc180aa268d8d84b210454c5d01be600c52affe9",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.32529v1": {
+    "Title": "Effect of oxygen plasma treatment on the structural and superconducting properties of atomic-layer-deposited NbN thin films",
+    "Date": "2026-10-23T12:04:19Z",
+    "Quality_Filter": {
+      "fingerprint": "698e85dcb75394c6f2acc4eb7ea571633c7759caffc7c8a7b389ab83916e8f36",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2604.08235v3": {
+    "Title": "Topological multicomponent superconductivity with sizable $s$-wave admixture in twisted bilayer cuprates",
+    "Date": "2026-10-23T10:55:28Z",
+    "Quality_Filter": {
+      "fingerprint": "18f5ce8064fa550eddf105f078142dc10db0969982bc5d0724ffc972b5ea0ebb",
+      "reject": false
+    },
+    "Finding_Summary": "Using Ginzburg-Landau analysis and self-consistent mean-field calculations, the study finds that a three-component s+d1e^{iφ1}+d2e^{iφ2} state breaking time-reversal and C4 symmetries is stabilized over a broad parameter regime in twisted bilayer cuprates.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.32449v1": {
+    "Title": "Interplay of Chemical Disorder, Vortex Pinning, and Electron Correlations in the Mechanically Robust Medium-Entropy Alloy Superconductor $\\text{Nb}_{0.45}\\text{Ta}_{0.25}\\text{Ti}_{0.15}\\text{Hf}_{0.15}$",
+    "Date": "2026-10-23T10:15:55Z",
+    "Quality_Filter": {
+      "fingerprint": "cb5bb41274537c94b9636bceee618950f8b62ce1969b320f9c8f10a5468349ec",
+      "reject": false
+    },
+    "Finding_Summary": "Using combined experiments and first-principles calculations, the study finds that the medium-entropy alloy Nb0.45Ta0.25Ti0.15Hf0.15 is a type-II superconductor with Tc ≈ 7.8 K and high critical current density from strong vortex pinning.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.32359v1": {
+    "Title": "Strain-tunable van Hove singularity and superconducting dome in monolayer kagome metal CsTi$_3$Bi$_5$",
+    "Date": "2026-10-23T08:51:46Z",
+    "Quality_Filter": {
+      "fingerprint": "c899be1a4f468c98c5c6cd2c99255970bf1cf1919c04eba564ded2238b91d12b",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.32347v1": {
+    "Title": "Entangled logical qubits on a superconducting quantum processor",
+    "Date": "2026-10-23T08:40:47Z",
+    "Quality_Filter": {
+      "fingerprint": "3823f2828dfb46c44207a863813a42aa1425a8141c859516add56f154218d293",
+      "reject": false
+    },
+    "Finding_Summary": "Using ibm_phoenix with noise-informed decoding and fast reset, the study finds surface codes at distance-3 and distance-5 with logical error per round below 1% and logical Bell-state fidelities above 93%.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.32154v1": {
+    "Title": "Photon-Number Discrimination from Increasing Time-of-Arrival Separation in Wide Superconducting Microstrip Single-Photon Detectors",
+    "Date": "2026-10-23T04:41:22Z",
+    "Quality_Filter": {
+      "fingerprint": "163771ccbf4d5a254c417780463f0df60f576e38f2388e46db014e748d5231d6",
+      "reject": false
+    },
+    "Finding_Summary": "Using time-of-arrival measurements on wide NbN superconducting microstrip single-photon detectors, the study finds photon-number-resolved timing components up to n=8 with 99.6% pairwise assignment fidelity for n=7 and n=8.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2609.13070v3": {
+    "Title": "Visualizing Chiral Edge Modes in Twisted Cuprate Superconductors via Scanning-Probe Quantum Sensing",
+    "Date": "2026-10-23T03:18:14Z",
+    "Quality_Filter": {
+      "fingerprint": "d6f899bf6649535a78d8f2dbd11194d23dcb11affc0acc485d38f1fe7c27640d",
+      "reject": false
+    },
+    "Finding_Summary": "Using single-spin relaxometry scanning-probe quantum sensing, the study visualizes spontaneously formed edge modes and evaluates the nontrivial topological band gap in twisted Bi2Sr2CaCu2O8+x superconductors.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   }
 }
