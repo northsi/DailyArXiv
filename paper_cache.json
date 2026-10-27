@@ -4985,5 +4985,150 @@
     "Finding_Summary": "Using single-spin relaxometry scanning-probe quantum sensing, the study visualizes spontaneously formed edge modes and evaluates the nontrivial topological band gap in twisted Bi2Sr2CaCu2O8+x superconductors.",
     "Finding_Language": "en",
     "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.35814v1": {
+    "Title": "The fate of $s_{\\pm}$ superconductivity in the bilayer nickelate La$_3$Ni$_2$O$_7$",
+    "Date": "2026-10-26T17:43:37Z",
+    "Quality_Filter": {
+      "fingerprint": "7edc9ea6a913b11f015065406245d1d6a7c92275e9bb540e0d17f10586dbfd2c",
+      "reject": false
+    },
+    "Finding_Summary": "Using a mean-field fractionalization treatment of a simplified bilayer t-J model, the study finds that the Coulomb pseudopotential suppresses s± symmetry in favor of d-wave pairing in La3Ni2O7.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.26264v2": {
+    "Title": "Time-Reversal Symmetry Breaking in the Centrosymmetric Nonsymmorphic Superconductor RuB2",
+    "Date": "2026-10-26T17:36:51Z",
+    "Quality_Filter": {
+      "fingerprint": "e72bf1972d7e16b279e55e32d6c674fdc0cbe2ee9cd2b7baaaf784abc0ec15d3",
+      "reject": false
+    },
+    "Finding_Summary": "Using zero- and transverse-field muon spin relaxation, the study finds spontaneous internal magnetic fields below Tc = 1.6 K in RuB2, providing direct evidence for time-reversal symmetry breaking.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.35768v1": {
+    "Title": "Growth Phase Map of α and \\b{eta} Tantalum as a Function of Growth Temperature and Oxygen Partial Pressure",
+    "Date": "2026-10-26T17:12:52Z",
+    "Quality_Filter": {
+      "fingerprint": "541ac4b8864936619abae45a6e82d2dd66b4ecc7590d3c5b45ba42b1d1458ea0",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.35737v1": {
+    "Title": "Local Broadband Gigahertz Spectroscopy via SQUID-on-Tip DC Readout",
+    "Date": "2026-10-26T16:55:07Z",
+    "Quality_Filter": {
+      "fingerprint": "f047150e23942e5d14304185d0726103d8a21ae1cbd39189cae8c1bb986d690d",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2511.15880v2": {
+    "Title": "Nonclassicality of a Macroscopic Qubit-Ensemble via Parity Measurement Induced Disturbance",
+    "Date": "2026-10-26T15:20:07Z",
+    "Quality_Filter": {
+      "fingerprint": "adaa61d912b112dc882ded95e36a02ce8b34cef8df962b4b36ee5f9697e82a6c",
+      "reject": false
+    },
+    "Finding_Summary": "Using a resonator-based sequential-measurement scheme with noise analysis, the study finds that violation of macrorealism is detectable up to 100 qubits with current technology.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2605.03774v2": {
+    "Title": "First-Order Transitions in Weak Ising Spin-Orbit-Coupled Superconductors",
+    "Date": "2026-10-26T13:30:12Z",
+    "Quality_Filter": {
+      "fingerprint": "622c4a9d171ce4372a61e7f94ad40334b1ea3649d411ab567f170f1a831527a6",
+      "reject": false
+    },
+    "Finding_Summary": "Using a free-energy approach, the study finds that first-order transitions can emerge in superconductors with weak Ising spin-orbit coupling under large exchange fields.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.35381v1": {
+    "Title": "Momentum-resolved thermodynamics and barrier-free order-parameter collapse in spin-orbit-coupled superconductors under a Zeeman field",
+    "Date": "2026-10-26T13:04:24Z",
+    "Quality_Filter": {
+      "fingerprint": "f3f2a83ae6bc164869791a727210741485cc9de4030b01fe943e09da2b279b16",
+      "reject": false
+    },
+    "Finding_Summary": "Using a momentum decomposition of the zero-temperature free energy, the study finds that the SOC component perpendicular to the Zeeman field enhances the critical field while the parallel component favors Pauli-limited behavior.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2504.19361v2": {
+    "Title": "Time-reversal symmetry breaking and inherent Josephson diodes in a multi-component order parameter superconductor",
+    "Date": "2026-10-26T11:48:59Z",
+    "Quality_Filter": {
+      "fingerprint": "6dd737dc9020bd812612c9d7ad21cf5754a26fff414edc4bce9997dd04c09667",
+      "reject": false
+    },
+    "Finding_Summary": "Using Josephson junctions in single-crystal Sr₂RuO₄ microstructures, the study finds a field-free Josephson diode effect and other anomalous effects interpreted as superconducting domains of a multi-component order parameter.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2607.12401v2": {
+    "Title": "Interlayer Phase Locking and Sliding Select Topological Melting Channels in Superconducting Bilayers",
+    "Date": "2026-10-26T11:46:00Z",
+    "Quality_Filter": {
+      "fingerprint": "4bfcdf6eb08cf63eb0d44f927996d8145c85218b00372636acc97ecc0010a036",
+      "reject": false
+    },
+    "Finding_Summary": "Using renormalization-group analysis and Monte Carlo simulations of a Josephson-coupled bilayer, the study finds that Pokrovsky–Talapov soliton entry selects distinct BKT-like melting channels, with the common superfluid stiffness at incommensurate melting nearly twice its commensurate value.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.35268v1": {
+    "Title": "Higher-harmonic spin-wave excitation by a superconducting antenna with vortices",
+    "Date": "2026-10-26T11:44:26Z",
+    "Quality_Filter": {
+      "fingerprint": "84a582bc691acefd5c12b7b9d21eea9e879f8682d1c02f15c8640f881794c96a",
+      "reject": false
+    },
+    "Finding_Summary": "Using time-dependent Ginzburg–Landau modeling with spectral analysis of the microwave near field, the study finds that nearly harmonic vortex motion in a superconducting microstrip antenna generates higher-harmonic spin-wave excitation.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.35227v1": {
+    "Title": "A Control Line Multiplexing Framework for Scalable Quantum Computing",
+    "Date": "2026-10-26T11:16:45Z",
+    "Quality_Filter": {
+      "fingerprint": "17b86207b81fe859c7885a6ffe10a1b5f76964d31f15840fbd2b57dcfec8ba7d",
+      "reject": false
+    },
+    "Finding_Summary": "Using a 1:4 frequency-division multiplexing demonstration with polychromatic microwave pulses and band-pass filters, the study finds average errors of (6.4±0.2)×10⁻³ for parallel FDM CZ gates without significant multiplexing-induced degradation.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.34796v1": {
+    "Title": "Magnetic susceptibility and superfluid density of inhomogeneous superconducting films: the Tc-mosaic model",
+    "Date": "2026-10-26T03:39:17Z",
+    "Quality_Filter": {
+      "fingerprint": "74fce4c7cd802b5b98802ea18c200ad5839774ddfdef07bbcee2b4dc4048bd58",
+      "reject": false
+    },
+    "Finding_Summary": "Using a random Voronoi mosaic model of a fully gapped film with distributed local Tc, the study finds that a T-linear λ(T) with screening onset within a factor of a few of Tc,max cannot originate from Tc mosaicity.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.34666v1": {
+    "Title": "Neutrinos as Quantum Information Carriers? A Gap Analysis Against the DiVincenzo Criteria",
+    "Date": "2026-10-26T00:56:45Z",
+    "Quality_Filter": {
+      "fingerprint": "50d42da93b2359fec35931a4ca250173d10ec0339c3d1417607c757f8abe2922",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.34485v1": {
+    "Title": "Real-Time Correlation of Relaxation, Dephasing, and Two-level System Dynamics in Transmon Qubits",
+    "Date": "2026-10-25T18:29:58Z",
+    "Quality_Filter": {
+      "fingerprint": "53f47c5f90f40e47b0621cd2b67674d80e9bd9138e1b5db18669c3d23dee48fb",
+      "reject": false
+    },
+    "Finding_Summary": "Using interleaved lifetime and coherence measurements, noise spectroscopy, and TLS spectroscopy, the study finds that T1 and T2 excursions are caused by single or few strongly-coupled TLS defects spectrally diffusing into resonance with the qubit.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   }
 }
