@@ -5130,5 +5130,147 @@
     "Finding_Summary": "Using interleaved lifetime and coherence measurements, noise spectroscopy, and TLS spectroscopy, the study finds that T1 and T2 excursions are caused by single or few strongly-coupled TLS defects spectrally diffusing into resonance with the qubit.",
     "Finding_Language": "en",
     "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.37660v1": {
+    "Title": "Optimal quantum discrimination at Liouvillian exceptional points",
+    "Date": "2026-10-27T17:59:06Z",
+    "Quality_Filter": {
+      "fingerprint": "403956418f468b2271986c80e8e327293aa38b40edd71f88bbef65867be1126c",
+      "reject": false
+    },
+    "Finding_Summary": "Using a finite-dimensional Lindblad model and an optomechanical example at an exceptional point, the study finds that exceptional points offer no fundamental advantage in observation-time scaling, though tailored perturbations can shorten detection time.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2605.02677v2": {
+    "Title": "Vortex Dynamics Driven Transverse Transport in Superconducting Thin Films",
+    "Date": "2026-10-27T16:14:22Z",
+    "Quality_Filter": {
+      "fingerprint": "a3a5eeb5f71a6acd575e2b494d2f05dcd8c90930df6b2f1b2d2f38c5879d2d77",
+      "reject": false
+    },
+    "Finding_Summary": "Using longitudinal and transverse magnetotransport measurements on Hall-bar devices of Nb and Ni/Bi bilayer superconductors, the study finds the transverse voltage is quantitatively explained by vortex-flow dynamics rather than an exotic Hall-type mechanism.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2512.17588v4": {
+    "Title": "On-Chip Nonreciprocal Josephson Frequency Multiplier for Multiplexed Control of Superconducting Qubits",
+    "Date": "2026-10-27T15:09:17Z",
+    "Quality_Filter": {
+      "fingerprint": "c5019f5b57db75db2c8713cd450bbdbe34f63464b9bbbc6ece83a98d8a1fc6ee",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.37366v1": {
+    "Title": "Superconductivity and local stacking polymorphism in LaNiGa2 thin films",
+    "Date": "2026-10-27T15:01:13Z",
+    "Quality_Filter": {
+      "fingerprint": "f146fd75ba3e5232fb83a5dcb33f32286df484bd12713c2a5e9618ba63566dbc",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.37304v1": {
+    "Title": "Point-contact spectroscopy of electron-phonon interactions and anisotropy of superconducting energy gaps in $2H-NbS{{e}_{2}}$",
+    "Date": "2026-10-27T14:25:29Z",
+    "Quality_Filter": {
+      "fingerprint": "510b7ecd8bb49ddf887365b4dac3b9ccd21f2e49395584da827c562a5e4b124b",
+      "reject": false
+    },
+    "Finding_Summary": "Using point-contact spectroscopy on 2H-NbSe2 along the c-axis and ab plane, the study finds the superconducting energy gaps are anisotropic, with three gaps identified in the ab plane and only two along the c direction.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2503.11362v2": {
+    "Title": "Metamagnetic ripples in the UTe2 high magnetic field phase diagram",
+    "Date": "2026-10-27T10:55:54Z",
+    "Quality_Filter": {
+      "fingerprint": "92620a030e829fe23a6c37b950286699e129a14ba124705fb0d2610e5accd3c9",
+      "reject": false
+    },
+    "Finding_Summary": "Using pulsed magnetic field measurements tracking the metamagnetic transition field Hm near the b-a plane in UTe2, the study finds a ripple-like non-monotonic dependence of Hm on field orientation above 50 T with anomalous temperature dependence.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.35227v2": {
+    "Title": "A Control Line Multiplexing Framework for Scalable Quantum Computing",
+    "Date": "2026-10-27T09:35:24Z",
+    "Quality_Filter": {
+      "fingerprint": "17b86207b81fe859c7885a6ffe10a1b5f76964d31f15840fbd2b57dcfec8ba7d",
+      "reject": false
+    },
+    "Finding_Summary": "Using a 1:4 frequency-division multiplexing demonstration with polychromatic microwave pulses and band-pass filters, the study achieves parallel FDM CZ gate errors of (6.4±0.2)×10^-3 without significant multiplexing-induced degradation.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.36875v1": {
+    "Title": "Self-organized hybrid scenario mediated by fishbone modes in the EAST tokamak",
+    "Date": "2026-10-27T09:17:32Z",
+    "Quality_Filter": {
+      "fingerprint": "9707bfa920c9d42b52c778f88db856130b05f65ec4f5d5a77b2438d67fe73f5e",
+      "reject": false
+    },
+    "Finding_Summary": "Using EAST experiments, the study finds that fishbone modes drive low-frequency flows and m=0 current sheets, sustaining hybrid operation with internal transport barriers and stable MHD stability.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.36856v1": {
+    "Title": "Magnetic Imaging with High Spatial Resolution Using a Single Niobium-Nitride-Based Three-Dimensional Nanobridge Junction",
+    "Date": "2026-10-27T08:52:40Z",
+    "Quality_Filter": {
+      "fingerprint": "11494228140b35039cf9d20b2eb32235e9368e37a5653d9f7dfc81f692646d57",
+      "reject": false
+    },
+    "Finding_Summary": "Using a single NbN 3D nanobridge junction probe, the study finds magnetic imaging with 530 nm FWHM for an Abrikosov vortex and resolved 80 nm nanowire spacings.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2605.15939v2": {
+    "Title": "Electrically tunable Crossed Andreev Reflection in Bipolar Magnetic Semiconductors",
+    "Date": "2026-10-27T08:03:31Z",
+    "Quality_Filter": {
+      "fingerprint": "b6bea556e00669662e8d0f7ca2c4544786b405379100256cd94fed6e7e41420e",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2603.10039v2": {
+    "Title": "A Non-Foster Superconducting Broadband Matching Network",
+    "Date": "2026-10-27T06:36:19Z",
+    "Quality_Filter": {
+      "fingerprint": "1a53b240e8a4d2e495739b3ed98ffd59a1016c380a6819b4163cbc26f80f7d4d",
+      "reject": false
+    },
+    "Finding_Summary": "Using a Josephson junction in an impedance matching network, the study proposes a circuit that overcomes gain-bandwidth constraints to increase axion search scan rates.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2606.10564v3": {
+    "Title": "Dichotomous electronic system in a bilayer Ni$^{1+}$ nickelate",
+    "Date": "2026-10-27T04:18:37Z",
+    "Quality_Filter": {
+      "fingerprint": "bc5fe644e6c4ba86dad6b1e614068dc2af826f0e0eb55b033cfc602fc21c505e",
+      "reject": false
+    },
+    "Finding_Summary": "Using electronic structure analysis, the study finds that La3Ni2O5F introduces a partially occupied interstitial electron band E* forming a cylindrical Fermi surface and a two-fluid hole-electron dichotomy.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2605.04928v2": {
+    "Title": "Symmetry-resolved superconducting diode response",
+    "Date": "2026-10-27T03:35:39Z",
+    "Quality_Filter": {
+      "fingerprint": "9b3e06409fc37e4fa20a0723993e1520a9af6c7634e3b054063ecd6766a5aac3",
+      "reject": false
+    },
+    "Finding_Summary": "Using a tensorial framework relating critical-current angular harmonics to magnetic field, the study finds symmetry-dependent response tensors characterizing the superconducting diode effect.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.36482v1": {
+    "Title": "Nano-Nb Superconducting 3D Josephson Junctions Arrays in Cu-Normal Matrix: Superconducting Phase Coherence and Quantum Fluctuations Properties",
+    "Date": "2026-10-27T01:42:04Z",
+    "Quality_Filter": {
+      "fingerprint": "539ba8ed2be04f8c1bf2c1292ea5dd4fe27c79f91e22489aafbbac01fc015440",
+      "reject": true
+    }
   }
 }
