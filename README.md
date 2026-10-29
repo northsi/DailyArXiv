@@ -6,25 +6,16 @@ The subheadings represent search keywords. Only the most recent articles per key
 
 Results are displayed on this website after each scheduled update.
 
-Last update: 2026-10-29
+Last update: 2026-10-30
 
 ---
 
 ## 📋 Today's Overview
-*October 29, 2026*
+*October 30, 2026*
 
-### superconductivity OR superconducting (10 new today)
+### superconductivity OR superconducting (0 new today)
 
-1. **Optimal quantum discrimination at Liouvillian exceptional points**: Using a finite-dimensional Lindblad model and an optomechanical example at an exceptional point, the study finds that exceptional points offer no fundamental advantage in observation-time scaling, though tailored perturbations can shorten detection time.
-2. **Vortex Dynamics Driven Transverse Transport in Superconducting Thin Films**: Using longitudinal and transverse magnetotransport measurements on Hall-bar devices of Nb and Ni/Bi bilayer superconductors, the study finds the transverse voltage is quantitatively explained by vortex-flow dynamics rather than an exotic Hall-type mechanism.
-3. **Point-contact spectroscopy of electron-phonon interactions and anisotropy of superconducting energy gaps in $2H-NbS{{e}_{2}}$**: Using point-contact spectroscopy on 2H-NbSe2 along the c-axis and ab plane, the study finds the superconducting energy gaps are anisotropic, with three gaps identified in the ab plane and only two along the c direction.
-4. **Metamagnetic ripples in the UTe2 high magnetic field phase diagram**: Using pulsed magnetic field measurements tracking the metamagnetic transition field Hm near the b-a plane in UTe2, the study finds a ripple-like non-monotonic dependence of Hm on field orientation above 50 T with anomalous temperature dependence.
-5. **A Control Line Multiplexing Framework for Scalable Quantum Computing**: Using a 1:4 frequency-division multiplexing demonstration with polychromatic microwave pulses and band-pass filters, the study achieves parallel FDM CZ gate errors of (6.4±0.2)×10^-3 without significant multiplexing-induced degradation.
-6. **Self-organized hybrid scenario mediated by fishbone modes in the EAST tokamak**: Using EAST experiments, the study finds that fishbone modes drive low-frequency flows and m=0 current sheets, sustaining hybrid operation with internal transport barriers and stable MHD stability.
-7. **Magnetic Imaging with High Spatial Resolution Using a Single Niobium-Nitride-Based Three-Dimensional Nanobridge Junction**: Using a single NbN 3D nanobridge junction probe, the study finds magnetic imaging with 530 nm FWHM for an Abrikosov vortex and resolved 80 nm nanowire spacings.
-8. **A Non-Foster Superconducting Broadband Matching Network**: Using a Josephson junction in an impedance matching network, the study proposes a circuit that overcomes gain-bandwidth constraints to increase axion search scan rates.
-9. **Dichotomous electronic system in a bilayer Ni$^{1+}$ nickelate**: Using electronic structure analysis, the study finds that La3Ni2O5F introduces a partially occupied interstitial electron band E* forming a cylindrical Fermi surface and a two-fluid hole-electron dichotomy.
-10. **Symmetry-resolved superconducting diode response**: Using a tensorial framework relating critical-current angular harmonics to magnetic field, the study finds symmetry-dependent response tensors characterizing the superconducting diode effect.
+*No new papers passed screening today.*
 
 ---
 

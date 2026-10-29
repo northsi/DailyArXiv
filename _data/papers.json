@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "paper_count": 10,
-  "new_count": 10,
+  "new_count": 0,
   "topics": [
     {
       "keyword": "superconductivity OR superconducting",
@@ -13,7 +13,7 @@
           "finding": "Using a finite-dimensional Lindblad model and an optomechanical example at an exceptional point, the study finds that exceptional points offer no fundamental advantage in observation-time scaling, though tailored perturbations can shorten detection time.",
           "date": "2026-10-27",
           "last_author": "M. Bhattacharya",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Vortex Dynamics Driven Transverse Transport in Superconducting Thin Films",
@@ -22,7 +22,7 @@
           "finding": "Using longitudinal and transverse magnetotransport measurements on Hall-bar devices of Nb and Ni/Bi bilayer superconductors, the study finds the transverse voltage is quantitatively explained by vortex-flow dynamics rather than an exotic Hall-type mechanism.",
           "date": "2026-10-27",
           "last_author": "Dhavala Suri",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Point-contact spectroscopy of electron-phonon interactions and anisotropy of superconducting energy gaps in $2H-NbS{{e}_{2}}$",
@@ -31,7 +31,7 @@
           "finding": "Using point-contact spectroscopy on 2H-NbSe2 along the c-axis and ab plane, the study finds the superconducting energy gaps are anisotropic, with three gaps identified in the ab plane and only two along the c direction.",
           "date": "2026-10-27",
           "last_author": "V. V. Fisun",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Metamagnetic ripples in the UTe2 high magnetic field phase diagram",
@@ -40,7 +40,7 @@
           "finding": "Using pulsed magnetic field measurements tracking the metamagnetic transition field Hm near the b-a plane in UTe2, the study finds a ripple-like non-monotonic dependence of Hm on field orientation above 50 T with anomalous temperature dependence.",
           "date": "2026-10-27",
           "last_author": "Alexander G. Eaton",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "A Control Line Multiplexing Framework for Scalable Quantum Computing",
@@ -49,7 +49,7 @@
           "finding": "Using a 1:4 frequency-division multiplexing demonstration with polychromatic microwave pulses and band-pass filters, the study achieves parallel FDM CZ gate errors of (6.4±0.2)×10^-3 without significant multiplexing-induced degradation.",
           "date": "2026-10-27",
           "last_author": "Jian-Wei Pan",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Self-organized hybrid scenario mediated by fishbone modes in the EAST tokamak",
@@ -58,7 +58,7 @@
           "finding": "Using EAST experiments, the study finds that fishbone modes drive low-frequency flows and m=0 current sheets, sustaining hybrid operation with internal transport barriers and stable MHD stability.",
           "date": "2026-10-27",
           "last_author": "P. Li",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Magnetic Imaging with High Spatial Resolution Using a Single Niobium-Nitride-Based Three-Dimensional Nanobridge Junction",
@@ -67,7 +67,7 @@
           "finding": "Using a single NbN 3D nanobridge junction probe, the study finds magnetic imaging with 530 nm FWHM for an Abrikosov vortex and resolved 80 nm nanowire spacings.",
           "date": "2026-10-27",
           "last_author": "Lei Chen",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "A Non-Foster Superconducting Broadband Matching Network",
@@ -76,7 +76,7 @@
           "finding": "Using a Josephson junction in an impedance matching network, the study proposes a circuit that overcomes gain-bandwidth constraints to increase axion search scan rates.",
           "date": "2026-10-27",
           "last_author": "Chelsea Bartram",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Dichotomous electronic system in a bilayer Ni$^{1+}$ nickelate",
@@ -85,7 +85,7 @@
           "finding": "Using electronic structure analysis, the study finds that La3Ni2O5F introduces a partially occupied interstitial electron band E* forming a cylindrical Fermi surface and a two-fluid hole-electron dichotomy.",
           "date": "2026-10-27",
           "last_author": "W. E. Pickett",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Symmetry-resolved superconducting diode response",
@@ -94,7 +94,7 @@
           "finding": "Using a tensorial framework relating critical-current angular harmonics to magnetic field, the study finds symmetry-dependent response tensors characterizing the superconducting diode effect.",
           "date": "2026-10-27",
           "last_author": "Congjun Wu",
-          "is_new": true
+          "is_new": false
         }
       ]
     }
