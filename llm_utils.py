@@ -48,7 +48,7 @@ def _call_llm(
 
 QUALITY_FILTER_VERSION = 3
 FINDING_SUMMARY_VERSION = 2
-MAX_FINDING_WORDS = 40
+MAX_FINDING_WORDS = 60
 NUMBERED_SUMMARY_PATTERN = re.compile(r"\[(\d+)\]\s*([\s\S]*?)(?=\[\d+\]|$)")
 
 
@@ -182,7 +182,7 @@ def batch_summarize_findings(texts: List[str], batch_size: int = 5) -> List[str]
             if 0 <= idx < len(batch):
                 finding = " ".join(summary.split())
                 if len(finding.split()) > MAX_FINDING_WORDS:
-                    raise RuntimeError("Finding summary exceeds the 40-word limit")
+                    raise RuntimeError("Finding summary exceeds the 60-word limit")
                 results[batch_start + idx] = finding
         if any(not results[batch_start + i] for i in range(len(batch))):
             raise RuntimeError(

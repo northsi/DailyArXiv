@@ -58,9 +58,9 @@ class PaperOutputTests(unittest.TestCase):
                 llm_utils.batch_summarize_findings(["A", "B"])
 
     def test_overlong_findings_are_not_published(self):
-        response = "[1] " + " ".join(["word"] * 41)
+        response = "[1] " + " ".join(["word"] * 61)
         with patch("llm_utils._call_llm", return_value=response), patch("time.sleep"):
-            with self.assertRaisesRegex(RuntimeError, "40-word limit"):
+            with self.assertRaisesRegex(RuntimeError, "60-word limit"):
                 llm_utils.batch_summarize_findings(["abstract"])
 
     def test_filter_caches_decisions_and_rescreens_changed_abstract(self):
