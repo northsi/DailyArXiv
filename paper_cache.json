@@ -5272,5 +5272,150 @@
       "fingerprint": "539ba8ed2be04f8c1bf2c1292ea5dd4fe27c79f91e22489aafbbac01fc015440",
       "reject": true
     }
+  },
+  "https://arxiv.org/abs/2611.08475v1": {
+    "Title": "Direct transition from a fractional Chern insulator to a topological superconductor",
+    "Date": "2026-11-05T18:56:50Z",
+    "Quality_Filter": {
+      "fingerprint": "8f44a7ca212657f831e31d5317940b22d722b6380972061f74002fcfe1da6d27",
+      "reject": false
+    },
+    "Finding_Summary": "Using numerical simulations and a generalized theory of superconducting-vortex proliferation, the study finds a direct continuous transition from a Laughlin fractional Chern insulator to a c₋=3/2 topological superconductor driven by increasing bandwidth at ν=1/3.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2605.03139v2": {
+    "Title": "Thermal bottleneck in a freely suspended superconducting island on InAs nanowire",
+    "Date": "2026-11-05T17:31:58Z",
+    "Quality_Filter": {
+      "fingerprint": "d3a0b0471d7213ec510e80e41036f9e8666fac3157e745a743abad059b6b79db",
+      "reject": false
+    },
+    "Finding_Summary": "Using Joule spectroscopy with Johnson noise thermometry and mesoscopic heaters, the study finds a substantial thermal relaxation bottleneck via the surrounding ³He bath that causes phonon heating in suspended Al/InAs superconducting islands.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.08310v1": {
+    "Title": "Recovery gates as a resource in repetition-code process tomography: exhaustive gate-optimal designs for three, five and seven qubits",
+    "Date": "2026-11-05T17:12:00Z",
+    "Quality_Filter": {
+      "fingerprint": "10a81820ba17f075f9e95ee91629b89f87043ddce8cb8675e6c45e4df6ec1a77",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.08239v1": {
+    "Title": "Experimental Evidence for Type-I Superconductivity in $\\mathrm{OsB_2}$",
+    "Date": "2026-11-05T16:19:24Z",
+    "Quality_Filter": {
+      "fingerprint": "49ff309afdb02f99663e4ad8f80a91ef6c3595ccc44ed5a909c1877a6612a214",
+      "reject": false
+    },
+    "Finding_Summary": "Using AC susceptibility, specific heat, and field-ramped magnetization measurements, the study finds that OsB₂ is a rare nonelemental Type-I superconductor, evidenced by a differential paramagnetic effect peak, a field-induced first-order transition, and supercooling hysteresis.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2409.03747v2": {
+    "Title": "Hybrid Oscillator-Qubit Quantum Processors: Simulating Fermions, Bosons, and Gauge Fields",
+    "Date": "2026-11-05T15:14:43Z",
+    "Quality_Filter": {
+      "fingerprint": "dcfdfa6c33f4ec1d70b38fcb7e52dcbc48619bfc1e581b2ce5a6c42569caeaf9",
+      "reject": false
+    },
+    "Finding_Summary": "Using a hybrid qubit–bosonic-oscillator quantum-simulation framework with a universal bosonic gate set, the study finds exact decompositions of higher-order fermion-boson interactions and a nearly linear-scaling qubit algorithm for simulating a beamsplitter.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.08037v1": {
+    "Title": "Microscopic Origin and Josephson Signatures of $d$-Wave Superconductivity in Monolayer FeSe",
+    "Date": "2026-11-05T13:54:03Z",
+    "Quality_Filter": {
+      "fingerprint": "7f0d386b47f2f3d2581c91a4bfbdd9e952251f0318e9b0807473f2a04940bad2",
+      "reject": false
+    },
+    "Finding_Summary": "Using an experimentally constrained multiorbital tight-binding theory with spin-fluctuation and strong-coupling calculations, the study finds a robust nodeless d-wave pairing state with substantial Fe d_xy character and a symmetry-based selection rule for spatial Josephson tunneling.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.07989v1": {
+    "Title": "Pressure-Induced Phase Transition and Superconducting Properties of LiPdH$_2$: A First-Principles Study",
+    "Date": "2026-11-05T13:16:04Z",
+    "Quality_Filter": {
+      "fingerprint": "ba0e92ff8bf92a17b1e86a018d481669c74c79ad542f4af1baca8086b0fa8d70",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.07983v1": {
+    "Title": "Crosstalk-Induced Row Hammer Attacks on Quantum Random Access Codes",
+    "Date": "2026-11-05T13:13:56Z",
+    "Quality_Filter": {
+      "fingerprint": "60d932d9762904efd89a0c73c6860f69340deb1fc276d4d5a862a370eb0a96ac",
+      "reject": false
+    },
+    "Finding_Summary": "Using crosstalk-induced attacks across six IBM superconducting quantum processors and one IQM processor, the study finds that such attacks can be launched on all platforms, with measurement outcome flip probability in victim qubits reaching a maximum of 60%.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.07967v1": {
+    "Title": "Autler-townes energy-level engineering for high-quality all-microwave qubit gate",
+    "Date": "2026-11-05T13:00:40Z",
+    "Quality_Filter": {
+      "fingerprint": "39f5a610697fd44e6cb730b267b13a4dc71bd63f6a079e801ed1c1e207fa5ad4",
+      "reject": false
+    },
+    "Finding_Summary": "Using an energy-level engineering technique employing the Autler-Townes effect to manipulate qubit nonlinearity without perturbing the computational subspace, the study finds an experimentally validated fast (97 ns) and high-fidelity (99.40(9)%) CZ gate.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.07895v1": {
+    "Title": "Negative non-linear differential dissipation in mechanical quartz resonators",
+    "Date": "2026-11-05T12:17:20Z",
+    "Quality_Filter": {
+      "fingerprint": "4465fe9b31a85d812ab04af78561c51600b932e447eefc1ebc49af29c931815d",
+      "reject": false
+    },
+    "Finding_Summary": "Using a low-frequency (32.7 kHz) miniature quartz tuning fork at temperatures below 0.3 K, the study finds negative non-linear differential dissipation that fits well within the framework of an interacting TTLS bath.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2609.37296v2": {
+    "Title": "Leakage suppression for high-fidelity exchange gates and quantum simulation in superconducting circuits",
+    "Date": "2026-11-05T11:37:10Z",
+    "Quality_Filter": {
+      "fingerprint": "9a6a11b8cd0212e9f87822eb32d59f41c739668fd90cf6dc7d5a0b02087ac8d8",
+      "reject": false
+    },
+    "Finding_Summary": "Using parametric derivative removal by adiabatic gate (PDRAG) combining derivative shaping and finite-pulse calibration, the study finds simulations demonstrating 13-ns exchange operations at g/2π=100 MHz and a two-parameter fSim gate family with infidelity below 1.8×10⁻⁷.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.07802v1": {
+    "Title": "Multirobust Control Pulses Designed by Iterative Quantum Kolmogorov-Arnold-Moser Algorithm",
+    "Date": "2026-11-05T10:43:05Z",
+    "Quality_Filter": {
+      "fingerprint": "d8895a7753140d663c0071ab1bb99ef978bb0b323d20209e297651ce92924585",
+      "reject": false
+    },
+    "Finding_Summary": "Using a multi-robust quantum control strategy based on a reformulation of DRAG with the iterative quantum KAM algorithm, the study finds that two-level robustness is restored after only a few iterations, with resulting RDK pulses near optimal in energy.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.07768v1": {
+    "Title": "Observation of Inter-Transition Interference",
+    "Date": "2026-11-05T10:06:09Z",
+    "Quality_Filter": {
+      "fingerprint": "7a8354ad80793ff0d2d396a5117a0d806e7f3f89157685038285ab6e41ca0f86",
+      "reject": false
+    },
+    "Finding_Summary": "Using coherent microwave reflection spectroscopy of a superconducting Kerr parametric oscillator artificial atom, the study finds experimental evidence for inter-transition interference from dissipative coupling between transition coherences, which qualitatively modifies the measured spectral lineshapes.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2604.13553v2": {
+    "Title": "Anomalous Low-temperature Magnetotransport in Kagome Metal CsCr$_3$Sb$_5$ under Pressure",
+    "Date": "2026-11-05T09:49:35Z",
+    "Quality_Filter": {
+      "fingerprint": "fbae9c94a55827747b9579ecf11fd7c78067f72e1e6baddeb6791d48609f20e4",
+      "reject": true
+    }
   }
 }
