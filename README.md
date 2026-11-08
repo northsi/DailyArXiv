@@ -6,26 +6,16 @@ The subheadings represent search keywords. Only the most recent articles per key
 
 Results are displayed on this website after each scheduled update.
 
-Last update: 2026-11-06
+Last update: 2026-11-09
 
 ---
 
 ## 📋 Today's Overview
-*November 06, 2026*
+*November 09, 2026*
 
-### superconductivity OR superconducting (11 new today)
+### superconductivity OR superconducting (0 new today)
 
-1. **Direct transition from a fractional Chern insulator to a topological superconductor**: Using numerical simulations and a generalized theory of superconducting-vortex proliferation, the study finds a direct continuous transition from a Laughlin fractional Chern insulator to a c₋=3/2 topological superconductor driven by increasing bandwidth at ν=1/3.
-2. **Thermal bottleneck in a freely suspended superconducting island on InAs nanowire**: Using Joule spectroscopy with Johnson noise thermometry and mesoscopic heaters, the study finds a substantial thermal relaxation bottleneck via the surrounding ³He bath that causes phonon heating in suspended Al/InAs superconducting islands.
-3. **Experimental Evidence for Type-I Superconductivity in $\mathrm{OsB_2}$**: Using AC susceptibility, specific heat, and field-ramped magnetization measurements, the study finds that OsB₂ is a rare nonelemental Type-I superconductor, evidenced by a differential paramagnetic effect peak, a field-induced first-order transition, and supercooling hysteresis.
-4. **Hybrid Oscillator-Qubit Quantum Processors: Simulating Fermions, Bosons, and Gauge Fields**: Using a hybrid qubit–bosonic-oscillator quantum-simulation framework with a universal bosonic gate set, the study finds exact decompositions of higher-order fermion-boson interactions and a nearly linear-scaling qubit algorithm for simulating a beamsplitter.
-5. **Microscopic Origin and Josephson Signatures of $d$-Wave Superconductivity in Monolayer FeSe**: Using an experimentally constrained multiorbital tight-binding theory with spin-fluctuation and strong-coupling calculations, the study finds a robust nodeless d-wave pairing state with substantial Fe d_xy character and a symmetry-based selection rule for spatial Josephson tunneling.
-6. **Crosstalk-Induced Row Hammer Attacks on Quantum Random Access Codes**: Using crosstalk-induced attacks across six IBM superconducting quantum processors and one IQM processor, the study finds that such attacks can be launched on all platforms, with measurement outcome flip probability in victim qubits reaching a maximum of 60%.
-7. **Autler-townes energy-level engineering for high-quality all-microwave qubit gate**: Using an energy-level engineering technique employing the Autler-Townes effect to manipulate qubit nonlinearity without perturbing the computational subspace, the study finds an experimentally validated fast (97 ns) and high-fidelity (99.40(9)%) CZ gate.
-8. **Negative non-linear differential dissipation in mechanical quartz resonators**: Using a low-frequency (32.7 kHz) miniature quartz tuning fork at temperatures below 0.3 K, the study finds negative non-linear differential dissipation that fits well within the framework of an interacting TTLS bath.
-9. **Leakage suppression for high-fidelity exchange gates and quantum simulation in superconducting circuits**: Using parametric derivative removal by adiabatic gate (PDRAG) combining derivative shaping and finite-pulse calibration, the study finds simulations demonstrating 13-ns exchange operations at g/2π=100 MHz and a two-parameter fSim gate family with infidelity below 1.8×10⁻⁷.
-10. **Multirobust Control Pulses Designed by Iterative Quantum Kolmogorov-Arnold-Moser Algorithm**: Using a multi-robust quantum control strategy based on a reformulation of DRAG with the iterative quantum KAM algorithm, the study finds that two-level robustness is restored after only a few iterations, with resulting RDK pulses near optimal in energy.
-11. **Observation of Inter-Transition Interference**: Using coherent microwave reflection spectroscopy of a superconducting Kerr parametric oscillator artificial atom, the study finds experimental evidence for inter-transition interference from dissipative coupling between transition coherences, which qualitatively modifies the measured spectral lineshapes.
+*No new papers passed screening today.*
 
 ---
 

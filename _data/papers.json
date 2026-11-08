@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-09",
   "paper_count": 11,
-  "new_count": 11,
+  "new_count": 0,
   "topics": [
     {
       "keyword": "superconductivity OR superconducting",
@@ -13,7 +13,7 @@
           "finding": "Using numerical simulations and a generalized theory of superconducting-vortex proliferation, the study finds a direct continuous transition from a Laughlin fractional Chern insulator to a c₋=3/2 topological superconductor driven by increasing bandwidth at ν=1/3.",
           "date": "2026-11-05",
           "last_author": "Taige Wang",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Thermal bottleneck in a freely suspended superconducting island on InAs nanowire",
@@ -22,7 +22,7 @@
           "finding": "Using Joule spectroscopy with Johnson noise thermometry and mesoscopic heaters, the study finds a substantial thermal relaxation bottleneck via the surrounding ³He bath that causes phonon heating in suspended Al/InAs superconducting islands.",
           "date": "2026-11-05",
           "last_author": "V. S. Khrapai",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Experimental Evidence for Type-I Superconductivity in $\\mathrm{OsB_2}$",
@@ -31,7 +31,7 @@
           "finding": "Using AC susceptibility, specific heat, and field-ramped magnetization measurements, the study finds that OsB₂ is a rare nonelemental Type-I superconductor, evidenced by a differential paramagnetic effect peak, a field-induced first-order transition, and supercooling hysteresis.",
           "date": "2026-11-05",
           "last_author": "Yogesh Singh",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Hybrid Oscillator-Qubit Quantum Processors: Simulating Fermions, Bosons, and Gauge Fields",
@@ -40,7 +40,7 @@
           "finding": "Using a hybrid qubit–bosonic-oscillator quantum-simulation framework with a universal bosonic gate set, the study finds exact decompositions of higher-order fermion-boson interactions and a nearly linear-scaling qubit algorithm for simulating a beamsplitter.",
           "date": "2026-11-05",
           "last_author": "Steven M. Girvin",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Microscopic Origin and Josephson Signatures of $d$-Wave Superconductivity in Monolayer FeSe",
@@ -49,7 +49,7 @@
           "finding": "Using an experimentally constrained multiorbital tight-binding theory with spin-fluctuation and strong-coupling calculations, the study finds a robust nodeless d-wave pairing state with substantial Fe d_xy character and a symmetry-based selection rule for spatial Josephson tunneling.",
           "date": "2026-11-05",
           "last_author": "Kun Jiang",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Crosstalk-Induced Row Hammer Attacks on Quantum Random Access Codes",
@@ -58,7 +58,7 @@
           "finding": "Using crosstalk-induced attacks across six IBM superconducting quantum processors and one IQM processor, the study finds that such attacks can be launched on all platforms, with measurement outcome flip probability in victim qubits reaching a maximum of 60%.",
           "date": "2026-11-05",
           "last_author": "Akshata Shenoy H",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Autler-townes energy-level engineering for high-quality all-microwave qubit gate",
@@ -67,7 +67,7 @@
           "finding": "Using an energy-level engineering technique employing the Autler-Townes effect to manipulate qubit nonlinearity without perturbing the computational subspace, the study finds an experimentally validated fast (97 ns) and high-fidelity (99.40(9)%) CZ gate.",
           "date": "2026-11-05",
           "last_author": "Zhi-Rong Lin",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Negative non-linear differential dissipation in mechanical quartz resonators",
@@ -76,7 +76,7 @@
           "finding": "Using a low-frequency (32.7 kHz) miniature quartz tuning fork at temperatures below 0.3 K, the study finds negative non-linear differential dissipation that fits well within the framework of an interacting TTLS bath.",
           "date": "2026-11-05",
           "last_author": "Pertti Hakonen",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Leakage suppression for high-fidelity exchange gates and quantum simulation in superconducting circuits",
@@ -85,7 +85,7 @@
           "finding": "Using parametric derivative removal by adiabatic gate (PDRAG) combining derivative shaping and finite-pulse calibration, the study finds simulations demonstrating 13-ns exchange operations at g/2π=100 MHz and a two-parameter fSim gate family with infidelity below 1.8×10⁻⁷.",
           "date": "2026-11-05",
           "last_author": "Yang Yu",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Multirobust Control Pulses Designed by Iterative Quantum Kolmogorov-Arnold-Moser Algorithm",
@@ -94,7 +94,7 @@
           "finding": "Using a multi-robust quantum control strategy based on a reformulation of DRAG with the iterative quantum KAM algorithm, the study finds that two-level robustness is restored after only a few iterations, with resulting RDK pulses near optimal in energy.",
           "date": "2026-11-05",
           "last_author": "Stéphane Guérin",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Observation of Inter-Transition Interference",
@@ -103,7 +103,7 @@
           "finding": "Using coherent microwave reflection spectroscopy of a superconducting Kerr parametric oscillator artificial atom, the study finds experimental evidence for inter-transition interference from dissipative coupling between transition coherences, which qualitatively modifies the measured spectral lineshapes.",
           "date": "2026-11-05",
           "last_author": "Kunihiro Inomata",
-          "is_new": true
+          "is_new": false
         }
       ]
     }
