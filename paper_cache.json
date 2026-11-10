@@ -5556,5 +5556,152 @@
       "fingerprint": "07a2edf14b3659bc6b52e0d2b5e7c69454f7099f700af32445d449ed943f8c45",
       "reject": true
     }
+  },
+  "https://arxiv.org/abs/2611.12873v1": {
+    "Title": "Tetragonal-to-orthorhombic distortion in CeRh$_{2}$As$_{2}$",
+    "Date": "2026-11-09T18:57:10Z",
+    "Quality_Filter": {
+      "fingerprint": "69618a92e4611cc23e63c28119eeb993a2bc534febf3208edca9df5a8ea31af6",
+      "reject": false
+    },
+    "Finding_Summary": "Using longitudinal thermal-expansion measurements on an octagonal single crystal, the study finds a breaking of the fourfold in-plane symmetry below T₀, evidencing a tetragonal-to-orthorhombic distortion with orthorhombicity δ~10⁻⁷.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.12788v1": {
+    "Title": "Ambient-pressure superconductivity in bulk single crystals of La$_5$Ni$_4$O$_{10}$",
+    "Date": "2026-11-09T17:57:12Z",
+    "Quality_Filter": {
+      "fingerprint": "29239b8d79097bbc41319a429577a24e71afd28c98e9992bd415a33791250c43",
+      "reject": false
+    },
+    "Finding_Summary": "Using high-pressure high-temperature growth and topotactic reduction with CaH₂, the study finds that La₅Ni₄O₁₀ is a bulk ambient-pressure superconductor with T_c^onset ≈ 18 K and a shielding fraction above 60%.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.04982v3": {
+    "Title": "Ta-based S-I-S junctions for integrated superconducting electronics",
+    "Date": "2026-11-09T17:52:02Z",
+    "Quality_Filter": {
+      "fingerprint": "44c401b64721ccb5976cef2c2034ad5d9c24d3105200a8af0233fb28cc449a1e",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2605.25597v3": {
+    "Title": "Nitrogen-doped W0.75Re0.25 Superconducting Nanowire Single Photon Detectors",
+    "Date": "2026-11-09T17:28:25Z",
+    "Quality_Filter": {
+      "fingerprint": "cc8897a2a7535bd6dad96d0eb0ebe02e723c1beefe75417902d33eaa1c94a07c",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2605.28479v3": {
+    "Title": "Picometer control of a levitating milligram gravity sensor",
+    "Date": "2026-11-09T16:23:32Z",
+    "Quality_Filter": {
+      "fingerprint": "1296bc10d00a2335d3420c05b6060bf900ddc0af28643fa539b901ea0bf6493f",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2606.02730v2": {
+    "Title": "Anharmonic lattice dynamics and superconductivity in strained bulk and surface niobium",
+    "Date": "2026-11-09T16:16:06Z",
+    "Quality_Filter": {
+      "fingerprint": "cb338afc7228b4441a5596c505b43c7d0aec0996ad84888f6d6a5dbe4839e7eb",
+      "reject": false
+    },
+    "Finding_Summary": "Using first-principles calculations with machine-learning interatomic potentials and anharmonic phonon renormalization, the study finds that tensile strain raises bulk Nb's transition temperature from 9.5 K to 14.5 K at ~6% lattice expansion.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.12576v1": {
+    "Title": "All-to-all connectivity via adiabatic ZZ interactions in a superconducting flux qubit processor",
+    "Date": "2026-11-09T15:35:03Z",
+    "Quality_Filter": {
+      "fingerprint": "ead938cf5e7b739dc4c7511062d1f98c4789be4a7485e5daafbf5f042aee9220",
+      "reject": false
+    },
+    "Finding_Summary": "Using numerical simulations of a proposed baseband-driven adiabatic ZZ gate for cavity-coupled flux qubits, the study finds coherent gate errors below 10⁻⁴ over broad drive-frequency ranges.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.12569v1": {
+    "Title": "Contrasting one- and two-particle excitations in cuprate strange metals",
+    "Date": "2026-11-09T15:31:04Z",
+    "Quality_Filter": {
+      "fingerprint": "2e68d0d8ec8c866249655ec9195f43c4a2e49716630d176261aa79b6aa3c49cc",
+      "reject": false
+    },
+    "Finding_Summary": "Using reanalysis of EELS, optical plasmon, and RIXS data contrasted with ARPES, the study finds that marginal Fermi liquid self-energies describe the linear-in-energy damping of optical and acoustic plasmons.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2504.13744v2": {
+    "Title": "Observation of gyroscopic coupling in a non-spinning levitated ferromagnet",
+    "Date": "2026-11-09T15:31:01Z",
+    "Quality_Filter": {
+      "fingerprint": "4a8f0eb8c382ffdf29443721fdfcecf9a8cef356cf841cacb999497e86b6a358",
+      "reject": false
+    },
+    "Finding_Summary": "Using levitation of a non-spinning permanent ferromagnet in a superconducting trap, the study finds spin-rotation coupling between librational modes, enabling inference of the magnet's intrinsic angular momentum and gyromagnetic g-factor.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.12548v1": {
+    "Title": "Direct imaging of vortex lattices across fractional fillings in two-dimensional Josephson junction arrays",
+    "Date": "2026-11-09T15:19:19Z",
+    "Quality_Filter": {
+      "fingerprint": "a6e94643cb7c64d865df19d0fdcee07f75fff7d36213f0f38acc5d98559e7314",
+      "reject": false
+    },
+    "Finding_Summary": "Using scanning SQUID microscopy, the study directly images the predicted hierarchy of commensurate vortex lattices from filling factors 1/8 to 1/2 in two-dimensional Au-Nb Josephson junction arrays, including coexisting 4×4 and 2×4 orders at f = 1/4.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2606.00173v3": {
+    "Title": "Advances in electrical contacts to single crystals of emerging materials for transport measurements",
+    "Date": "2026-11-09T14:40:58Z",
+    "Quality_Filter": {
+      "fingerprint": "0e887a961b4f81d4321714ffa9efe4fa9766399b3c9efe7c09788590552f4be3",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.12481v1": {
+    "Title": "Universal two-qubit control across dilution refrigerators via a 10-km coherent optical link",
+    "Date": "2026-11-09T14:29:57Z",
+    "Quality_Filter": {
+      "fingerprint": "81499563e9e3a0b29f121f48a3d5b862330e167e4dae14a914d5dc7897e79f98",
+      "reject": false
+    },
+    "Finding_Summary": "Using a coherent optical link combining a laser, microwave-to-optical transducer, and photodiode to deliver control signals between dilution refrigerators over 10 km of fiber, the study entangles transmon and cavity qubits with a Bell-state fidelity of 80.6%.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.12476v1": {
+    "Title": "Scalable operating currents in amorphous W-N/FePt superconducting rectifiers",
+    "Date": "2026-11-09T14:22:42Z",
+    "Quality_Filter": {
+      "fingerprint": "1470285339a7acf8d1dc989719270f2c140987b0486ae59355c61e0c6cd3bf54",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.12454v1": {
+    "Title": "Real Topology on Symmetry-Invariant Loops Enforces Superconducting Pairing Zeros",
+    "Date": "2026-11-09T14:07:34Z",
+    "Quality_Filter": {
+      "fingerprint": "3dc4a1e3ac540a00ae5076496862ba1b8633a2af7c7a77391c84f02da7166309",
+      "reject": false
+    },
+    "Finding_Summary": "Using theoretical derivation of sufficient conditions and lower bounds, the study finds that one-dimensional real topology on antiunitary-symmetry-invariant loops enforces pairing zeros without Fermi-surface or global Bloch-band topology, with isolated zeros carrying odd vorticity.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.12415v1": {
+    "Title": "Gate-tunable supercurrent switching in a three-terminal quantum dot transistor",
+    "Date": "2026-11-09T13:46:35Z",
+    "Quality_Filter": {
+      "fingerprint": "1f474b27136777755c644c7add6416a3434f97aa858c7a98062f6289e367ebb5",
+      "reject": true
+    }
   }
 }
