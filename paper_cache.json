@@ -5417,5 +5417,144 @@
       "fingerprint": "fbae9c94a55827747b9579ecf11fd7c78067f72e1e6baddeb6791d48609f20e4",
       "reject": true
     }
+  },
+  "https://arxiv.org/abs/2611.09857v1": {
+    "Title": "Energy- and momentum-resolved Cooper-pair emission from a cuprate superconductor",
+    "Date": "2026-11-06T18:41:10Z",
+    "Quality_Filter": {
+      "fingerprint": "f6432b46c6189847000e929396cb37e9b00589159a9c62a6b0876859b2d69c27",
+      "reject": false
+    },
+    "Finding_Summary": "Using two-electron angle-resolved photoemission, the study finds a distinct zero-energy, zero-momentum Cooper-pair emission peak below the superconducting transition that disappears in the normal state.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2606.02371v2": {
+    "Title": "Phonon-driven nodal surface superconductivity of Fermi arcs",
+    "Date": "2026-11-06T18:17:58Z",
+    "Quality_Filter": {
+      "fingerprint": "c723ad27a05beb858b90896a7c60b684439f69f87e9063f9190d402ca227fd26",
+      "reject": false
+    },
+    "Finding_Summary": "Using a theoretical model of Fermi-arc electron interactions with surface and bulk phonons, the study finds that weak surface Coulomb screening produces nodal surface superconductivity, as observed in PtBi2.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.09814v1": {
+    "Title": "Arrival-time problem in the quantum information era - observation of a Zeno crossover in monitored arrival-time distributions",
+    "Date": "2026-11-06T18:01:07Z",
+    "Quality_Filter": {
+      "fingerprint": "1ad21d9c311e77f5cb18d718320a4758c02522848adfb9eabf08fe3304b1816d",
+      "reject": false
+    },
+    "Finding_Summary": "Using periodically monitored spin chains and quantum circuits on superconducting hardware, the study finds arrival-time distributions with quantum Zeno and low-monitoring regimes separated by an optimal monitoring period set by the single-particle bandwidth.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2605.15834v3": {
+    "Title": "Effective increase of a superconducting critical temperature due to a configurational entropy of impurities",
+    "Date": "2026-11-06T16:46:31Z",
+    "Quality_Filter": {
+      "fingerprint": "abe528b524d0ab3ac4f5d27406c200bb45330d66ba3396d6785c6634bf23a374",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.09581v1": {
+    "Title": "Scanning Probe Control, Quantum Dynamics, and Dispersive Readout of Suspended Carbon Nanotube Resonators",
+    "Date": "2026-11-06T15:18:03Z",
+    "Quality_Filter": {
+      "fingerprint": "d02bfd41bd071e17e2fc815d380505e5f6dea7078c4132def015f7727bf68dd5",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.09547v1": {
+    "Title": "Josephson current along the domain walls in Weyl fully compensated ferrimagnet Ti$_2$MnAl",
+    "Date": "2026-11-06T14:54:42Z",
+    "Quality_Filter": {
+      "fingerprint": "11fed64258b87481e263b9fcf521617c114e03253817d38c3eb2602146c9b280",
+      "reject": false
+    },
+    "Finding_Summary": "Using Josephson junctions between Nb leads and Ti2MnAl flakes, the study finds anisotropic critical-current behavior indicating that supercurrent is carried by chiral surface states along domain walls.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.09510v1": {
+    "Title": "Superconducting Fluctuation Driven Quantum Transport in Bi$_2$Sr$_2$CaCu$_2$O$_{8+δ}$ Thin Films",
+    "Date": "2026-11-06T14:27:03Z",
+    "Quality_Filter": {
+      "fingerprint": "3c2c30ba41a9b2ca1807994f7fa672955fb740baf5a8bcc8ca9d5635e453d19f",
+      "reject": false
+    },
+    "Finding_Summary": "Using magnetotransport measurements on BSCCO thin films, the study finds superconducting fluctuations dominate magnetoconductance across the transition regime, with a weak-antilocalization-like cusp only in a narrow window above Tc.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.09469v1": {
+    "Title": "Coexistence of antiferromagnetism and topological $s+d+id$ superconductivity in twisted cuprate bilayers",
+    "Date": "2026-11-06T13:46:54Z",
+    "Quality_Filter": {
+      "fingerprint": "f6c4b279edee09454b63e7916dd614a28247777ece901cda125d46b4fbe9c84a",
+      "reject": false
+    },
+    "Finding_Summary": "Using a microscopic t-J model of twisted cuprate bilayers, the study finds that a twist of θ~45° induces topological s+d+id superconductivity that coexists with antiferromagnetic order at low hole doping and shows a 2-fold ARPES symmetry.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.09320v1": {
+    "Title": "Thermodynamic Phase Diagrams in $λ$-(BETS)$_2$GaBr$_x$Cl$_{4-x}$ under Physical and Chemical Pressure",
+    "Date": "2026-11-06T11:11:47Z",
+    "Quality_Filter": {
+      "fingerprint": "fd64a1a39326add6b898ce50549049c2c924d0882d5658539b5c40e10f8d4ce6",
+      "reject": false
+    },
+    "Finding_Summary": "Using magnetic and transport measurements on λ-(BETS)₂GaBrₓCl₄₋ₓ crystals, the study finds a dome-like maximum of H_c1 at x=0.24 and proposes a double-dome pressure-temperature phase diagram with a local minimum near x=0.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.09311v1": {
+    "Title": "A Geometric Journey Through the Aharonov--Bohm Effect: Tonomura's Toroid, Pseudoscalar Phase, and Quantum Holonomy in Clifford Algebra",
+    "Date": "2026-11-06T11:03:40Z",
+    "Quality_Filter": {
+      "fingerprint": "39e5e7848ef86c972914862f4d5d501f7e3dd93501926f534129814309fafce9",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2606.27693v3": {
+    "Title": "On the generic structures of the protocols for quantum auction and quantum summation and their relation",
+    "Date": "2026-11-06T09:13:52Z",
+    "Quality_Filter": {
+      "fingerprint": "8f4cf6ca5eedab625125e4d245857f1a715d5e7a527c6ad0b75d5e2a4be0d1a5",
+      "reject": false
+    },
+    "Finding_Summary": "Using mutual reductions between single-item sealed-bid auctions and secure summation, the study finds an optimal O(S²log(1/δ))-round perfectly private reduction, executed on a superconducting processor for four-bidder instances.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.09105v1": {
+    "Title": "Parametric $\\mathrm{CZ}$ Gates in a Tunable Tripod Architecture with Fixed-Frequency Superconducting Qubits",
+    "Date": "2026-11-06T07:34:40Z",
+    "Quality_Filter": {
+      "fingerprint": "23eb58aa0f2889dedf4de7328a82acf10e1e01dab22c2508ae624e8d7e44f9f2",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2608.26099v3": {
+    "Title": "Exact quantum geometry from sublattice symmetry: Closed-form solution of the quarter-flux Harper-Hofstadter model",
+    "Date": "2026-11-06T07:17:49Z",
+    "Quality_Filter": {
+      "fingerprint": "43f322f078af62afcb6edb6bd497495f728bff666489c3af0ccbaad340c6268a",
+      "reject": false
+    },
+    "Finding_Summary": "Using a general QGT expression for sublattice-symmetric systems, the study finds that sublattice symmetry makes the quarter-flux Harper-Hofstadter Hamiltonian anti-block-diagonal, yielding analytic spectrum, eigenstates, Berry curvature, and quantum metric for all four bands.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.08913v1": {
+    "Title": "Time- and phase-resolved emulation of sign-selective counterdiabatic dynamics in a superconducting qutrit",
+    "Date": "2026-11-06T02:52:17Z",
+    "Quality_Filter": {
+      "fingerprint": "07a2edf14b3659bc6b52e0d2b5e7c69454f7099f700af32445d449ed943f8c45",
+      "reject": true
+    }
   }
 }
