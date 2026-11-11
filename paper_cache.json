@@ -5703,5 +5703,155 @@
       "fingerprint": "1f474b27136777755c644c7add6416a3434f97aa858c7a98062f6289e367ebb5",
       "reject": true
     }
+  },
+  "https://arxiv.org/abs/2611.14484v1": {
+    "Title": "Nonperturbative string dynamics in a (2+1)D lattice gauge theory on a superconducting quantum processor",
+    "Date": "2026-11-10T18:45:36Z",
+    "Quality_Filter": {
+      "fingerprint": "83d830ffb742855d75c5ec3469dc072ecac1e3d6443fa30d7f89a19cd8535229",
+      "reject": false
+    },
+    "Finding_Summary": "Using a 63-qubit superconducting quantum simulation of a (2+1)D Z2 lattice gauge theory, the study finds rapid charge and flux spreading in the deconfined regime and suppressed spreading at strong electric fields.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.10529v2": {
+    "Title": "Beyond the Mean Gap: What Transferred-Angle QAOA Retains on a Superconducting Processor",
+    "Date": "2026-11-10T18:42:54Z",
+    "Quality_Filter": {
+      "fingerprint": "7dbfa5cf36b75f6e29b11d378a74b772dd7295eb0f9b600cdf32864188917678",
+      "reject": false
+    },
+    "Finding_Summary": "Using depth-2 QAOA circuits on the IBM Heron processor, the study finds that at 12 qubits circuits retained 29–46% of mean-gap improvement but only 5–15% of the probability of the optimum.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.14422v1": {
+    "Title": "The energetic cost of loading classical data in quantum computers",
+    "Date": "2026-11-10T18:00:05Z",
+    "Quality_Filter": {
+      "fingerprint": "d91c0b5fa57a1a41fd037cd2a37444cd8f879c0eab1aa77f4b9ba8a7bf084443",
+      "reject": false
+    },
+    "Finding_Summary": "Using the metric-noise-resource framework applied to a superconducting bucket-brigade QRAM query with a 12-qubit address register, the study finds a query fidelity of 0.969 at a dynamic energy cost of 3.51×10⁻⁴ J.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.14391v1": {
+    "Title": "Implementing rapid reset of superconducting qubits with on-chip dissipation",
+    "Date": "2026-11-10T17:42:14Z",
+    "Quality_Filter": {
+      "fingerprint": "a35411d06949024aff3d744413efec5748753b8bda7316449b9fe3aeda429eeb",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2510.03256v3": {
+    "Title": "Signs of Possible High-Temperature Superconductivity in Graphite Intercalated with Lithium-Based Alloys",
+    "Date": "2026-11-10T17:40:31Z",
+    "Quality_Filter": {
+      "fingerprint": "c93bbdf8f48c8f243f559615aa96dbd57a7b1a0ab92f3dee80ee2935541ecf0b",
+      "reject": false
+    },
+    "Finding_Summary": "Using temperature-dependent measurements of magnetic moment, trapped flux, and resistance in lithium-alloy-intercalated graphite, the study reports possible superconductivity with critical temperatures of 240–350 K at ambient pressure.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2507.10661v3": {
+    "Title": "Optimal Calibration of Qubit Detuning and Crosstalk",
+    "Date": "2026-11-10T16:00:18Z",
+    "Quality_Filter": {
+      "fingerprint": "a46fa726ec2de93c24ae63ef8f6bffb935a16f2d9442733551c1553ee24f2dbe",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.14231v1": {
+    "Title": "From Growth to Devices: Oxygen-Controlled Superconductivity in BSCCO Thin Films",
+    "Date": "2026-11-10T15:44:31Z",
+    "Quality_Filter": {
+      "fingerprint": "0b0770f819e99a067aff26e26f4b34297a5125f75861364caa7439b624b7c029",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2602.18122v3": {
+    "Title": "Flux-Activated Resonant Control of a Bosonic Quantum Memory",
+    "Date": "2026-11-10T15:34:17Z",
+    "Quality_Filter": {
+      "fingerprint": "8bcbcae62a85a40aaa6bc9ef476c3dfa3cf6083d9bf6956dde99cfdc759ae38f",
+      "reject": false
+    },
+    "Finding_Summary": "Using resonant Jaynes-Cummings interactions in a bosonic cQED platform with a 3D cavity, the study finds deterministic preparation of Fock states and their superpositions within hundreds of nanoseconds.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.14185v1": {
+    "Title": "Thermodynamic signatures of a nearby quantum critical endpoint in UTe$_2$ under intense magnetic field",
+    "Date": "2026-11-10T15:06:49Z",
+    "Quality_Filter": {
+      "fingerprint": "a82867cb638797660a7de3fb06e20ea1652029d6cf857bac1157bee4825fe23c",
+      "reject": false
+    },
+    "Finding_Summary": "Using magnetization and magnetostriction experiments on UTe₂ under tilted magnetic fields up to 60 T, the study finds a quantum critical endpoint at θ_QCEP ≈ (70±10)° and μ₀H_QCEP ≈ (75±10) T terminating the metamagnetic transition line.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2606.16931v2": {
+    "Title": "Steering and Local Tunneling Signatures of Majorana Corner Modes in Altermagnetic Josephson Junctions",
+    "Date": "2026-11-10T14:11:42Z",
+    "Quality_Filter": {
+      "fingerprint": "81e91957190cac346b2fdc35cee0cabdd43e31c4d7ed1a0c328ec0078d1f1af7",
+      "reject": false
+    },
+    "Finding_Summary": "Using a proposed phase-biased altermagnetic Josephson junction with macroscopic phase difference and Néel-vector orientation as control knobs, the study finds that Majorana corner modes can be spatially reconfigured, yielding a control-correlated quantized zero-bias conductance response at the contacted corner.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.14114v1": {
+    "Title": "Cross-Platform Benchmarking of GHZ-State Generation in Quantum Processors via Cloud Services",
+    "Date": "2026-11-10T14:05:45Z",
+    "Quality_Filter": {
+      "fingerprint": "f265c240e41fb7f20c59f693746e666fdee569387c5fb8ff1dbb97442fe7b497",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.14101v1": {
+    "Title": "Particle-hole asymmetry and a fluctuating pair-density-wave state in a lightly doped Mott insulator on the square lattice",
+    "Date": "2026-11-10T13:56:16Z",
+    "Quality_Filter": {
+      "fingerprint": "93b303075d8c6df18127731ae2cb17ba922550f8b968e120923d2a16801ead0b",
+      "reject": false
+    },
+    "Finding_Summary": "Using large-scale DMRG and finite-size PEPS on the square-lattice t-J model at low doping, the study finds that the electron-like regime supports robust nearly uniform d-wave pairing, whereas the hole-like regime hosts a fluctuating plaquette pair-density wave with suppressed static pairing.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.10687v2": {
+    "Title": "Hidden Coherence and Controlled Quasihole Motion in a Fermionic Laughlin State on a Superconducting Quantum Processor",
+    "Date": "2026-11-10T13:44:10Z",
+    "Quality_Filter": {
+      "fingerprint": "7270250955e86791574d8b4c7a94d383a943f7a208c23bc9aa5e305c03c9cb18",
+      "reject": false
+    },
+    "Finding_Summary": "Using seven superconducting qubits to prepare a three-electron ν=1/3 Laughlin state on the Haldane sphere and reconstruct its many-body density matrix, the study finds vortex-dressed coherence extending over larger separations than electron coherence, plus a fractional quasihole charge response.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.13937v1": {
+    "Title": "Chiral magnon Kerr interaction from linear and nonlinear Meissner screening in ferromagnet--superconductor bilayers",
+    "Date": "2026-11-10T11:23:34Z",
+    "Quality_Filter": {
+      "fingerprint": "4545adf4e8350b44aea1e4dd2691fd8d5d76fcde9fc0a3a9d71303982a77c6e4",
+      "reject": false
+    },
+    "Finding_Summary": "Using a proposed superconducting gate to tune magnon Kerr interactions in ferromagnetic insulators, the study predicts for yttrium iron garnet gated by dirty niobium a significant renormalization of the Kerr effect, strongly chiral in the Damon-Eshbach configuration.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.13804v1": {
+    "Title": "Floquet first- and higher-order topological superconductors: A review",
+    "Date": "2026-11-10T09:34:51Z",
+    "Quality_Filter": {
+      "fingerprint": "6d447ded968f7f2c4da6b27fe244f01296eabe28b9131eb1b370a9233e50e04b",
+      "reject": true
+    }
   }
 }
