@@ -6,25 +6,16 @@ The subheadings represent search keywords. Only the most recent articles per key
 
 Results are displayed on this website after each scheduled update.
 
-Last update: 2026-11-12
+Last update: 2026-11-13
 
 ---
 
 ## 📋 Today's Overview
-*November 12, 2026*
+*November 13, 2026*
 
-### superconductivity OR superconducting (10 new today)
+### superconductivity OR superconducting (0 new today)
 
-1. **Nonperturbative string dynamics in a (2+1)D lattice gauge theory on a superconducting quantum processor**: Using a 63-qubit superconducting quantum simulation of a (2+1)D Z2 lattice gauge theory, the study finds rapid charge and flux spreading in the deconfined regime and suppressed spreading at strong electric fields.
-2. **Beyond the Mean Gap: What Transferred-Angle QAOA Retains on a Superconducting Processor**: Using depth-2 QAOA circuits on the IBM Heron processor, the study finds that at 12 qubits circuits retained 29–46% of mean-gap improvement but only 5–15% of the probability of the optimum.
-3. **The energetic cost of loading classical data in quantum computers**: Using the metric-noise-resource framework applied to a superconducting bucket-brigade QRAM query with a 12-qubit address register, the study finds a query fidelity of 0.969 at a dynamic energy cost of 3.51×10⁻⁴ J.
-4. **Signs of Possible High-Temperature Superconductivity in Graphite Intercalated with Lithium-Based Alloys**: Using temperature-dependent measurements of magnetic moment, trapped flux, and resistance in lithium-alloy-intercalated graphite, the study reports possible superconductivity with critical temperatures of 240–350 K at ambient pressure.
-5. **Flux-Activated Resonant Control of a Bosonic Quantum Memory**: Using resonant Jaynes-Cummings interactions in a bosonic cQED platform with a 3D cavity, the study finds deterministic preparation of Fock states and their superpositions within hundreds of nanoseconds.
-6. **Thermodynamic signatures of a nearby quantum critical endpoint in UTe$_2$ under intense magnetic field**: Using magnetization and magnetostriction experiments on UTe₂ under tilted magnetic fields up to 60 T, the study finds a quantum critical endpoint at θ_QCEP ≈ (70±10)° and μ₀H_QCEP ≈ (75±10) T terminating the metamagnetic transition line.
-7. **Steering and Local Tunneling Signatures of Majorana Corner Modes in Altermagnetic Josephson Junctions**: Using a proposed phase-biased altermagnetic Josephson junction with macroscopic phase difference and Néel-vector orientation as control knobs, the study finds that Majorana corner modes can be spatially reconfigured, yielding a control-correlated quantized zero-bias conductance response at the contacted corner.
-8. **Particle-hole asymmetry and a fluctuating pair-density-wave state in a lightly doped Mott insulator on the square lattice**: Using large-scale DMRG and finite-size PEPS on the square-lattice t-J model at low doping, the study finds that the electron-like regime supports robust nearly uniform d-wave pairing, whereas the hole-like regime hosts a fluctuating plaquette pair-density wave with suppressed static pairing.
-9. **Hidden Coherence and Controlled Quasihole Motion in a Fermionic Laughlin State on a Superconducting Quantum Processor**: Using seven superconducting qubits to prepare a three-electron ν=1/3 Laughlin state on the Haldane sphere and reconstruct its many-body density matrix, the study finds vortex-dressed coherence extending over larger separations than electron coherence, plus a fractional quasihole charge response.
-10. **Chiral magnon Kerr interaction from linear and nonlinear Meissner screening in ferromagnet--superconductor bilayers**: Using a proposed superconducting gate to tune magnon Kerr interactions in ferromagnetic insulators, the study predicts for yttrium iron garnet gated by dirty niobium a significant renormalization of the Kerr effect, strongly chiral in the Damon-Eshbach configuration.
+*No new papers passed screening today.*
 
 ---
 
