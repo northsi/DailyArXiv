@@ -5853,5 +5853,158 @@
       "fingerprint": "6d447ded968f7f2c4da6b27fe244f01296eabe28b9131eb1b370a9233e50e04b",
       "reject": true
     }
+  },
+  "https://arxiv.org/abs/2603.12236v2": {
+    "Title": "Thermalization Across Scales on a Digital Quantum Processor",
+    "Date": "2026-11-12T18:58:53Z",
+    "Quality_Filter": {
+      "fingerprint": "c6953d47019fa344ed19c92ddbebd33eae91c682853983e043aa8031af92d419",
+      "reject": false
+    },
+    "Finding_Summary": "Using digital quantum simulations with up to 100 superconducting qubits, the study finds the onset of thermalization across spatial scales in a disordered 2D Heisenberg Floquet model, reaching a regime where classical simulations fail due to volume-law entanglement.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.17295v1": {
+    "Title": "Traces of Vacuum Squeezing: A Superconducting Transmission-Line Analogue of Cosmological Particle Creation",
+    "Date": "2026-11-12T18:54:44Z",
+    "Quality_Filter": {
+      "fingerprint": "24d249be2728b83cd71c3a95cc32929c22ce239c2abe71f53f0c228af985fe34",
+      "reject": false
+    },
+    "Finding_Summary": "Using a theoretical superconducting-circuit analogue of a scalar field in a radiation-dominated Friedmann–Robertson–Walker universe, the study finds an exponentially suppressed particle spectrum governed by the Weber equation, with dissipation not erasing the cosmological signal.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.17268v1": {
+    "Title": "Observation of Genuine Multi-Time Quantum Memory",
+    "Date": "2026-11-12T18:46:04Z",
+    "Quality_Filter": {
+      "fingerprint": "2e27df6ee6c243906d22045647826ddb6e6d348a50d887f18cba7090318e731b",
+      "reject": false
+    },
+    "Finding_Summary": "Using an analytical three-time witness experimentally demonstrated on a superconducting-qubit platform with time-independent couplings, the study finds quantum memory that remains hidden from all pairwise tests and is detectable only when three or more times are considered jointly.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.17089v1": {
+    "Title": "Development of a Cryogenic Anti-Coincidence System Based on Scintillating Crystals Read Out with Kinetic Inductance Detectors for BULLKID-DM",
+    "Date": "2026-11-12T16:52:34Z",
+    "Quality_Filter": {
+      "fingerprint": "158d47e78f79f7b275ec87c30e110973ae2c5ea4a5943269b5f435e17e99e084",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.17001v1": {
+    "Title": "Reflection Zeros Set the Scattering Invariant of Finite Majorana Wires",
+    "Date": "2026-11-12T16:02:16Z",
+    "Quality_Filter": {
+      "fingerprint": "4320565d3e190695c8106b311f88a24bb8309b927242a5dc118f6da24109b660",
+      "reject": false
+    },
+    "Finding_Summary": "Using a theoretical analysis of the zero-energy electron reflection sign Q in finite Majorana wires, the study finds that Q counts reflectionless states, with Q=-1 exactly when the zero-bias conductance exceeds e²/h at zero temperature.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.16971v1": {
+    "Title": "Improved Low-Cost Quantum Error Mitigation with Benchmarked-Noise Zero-Noise Extrapolation (bnZNE)",
+    "Date": "2026-11-12T15:41:36Z",
+    "Quality_Filter": {
+      "fingerprint": "bea7285560a3ba14fd150aa861f8bcbf9ee313b58d0c74c8f169d6e67073198a",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2607.27009v2": {
+    "Title": "Embedded quantum computing for many-body surface reaction",
+    "Date": "2026-11-12T15:27:19Z",
+    "Quality_Filter": {
+      "fingerprint": "a8de3b08dadc7b5446ec0d16d821ba1e4cc7cc27c5a211045722354ca92d0264",
+      "reject": false
+    },
+    "Finding_Summary": "Using QC-DFET, a quantum-computing density-functional embedding framework run on the Zuchongzhi superconducting processor, the study finds it reproduces bidirectional H₂ barriers, the top-site preference and adsorption strength of CO, and the experimentally benchmarked formate hydrogenation barriers on Cu(111).",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.16912v1": {
+    "Title": "Symmetry-Controlled Criticality and Zeno Localization in a Monitored Quasiperiodic Superconductor",
+    "Date": "2026-11-12T15:03:19Z",
+    "Quality_Filter": {
+      "fingerprint": "902261b87626aa0048a8a4621df305944aa8f074221c093eebfb0330be559e1a",
+      "reject": false
+    },
+    "Finding_Summary": "Using topological entanglement entropy in quantum state diffusion simulations, the study finds a transition from a critical phase with (ln L)^2 entanglement scaling to an area-law phase, absent in the clean limit.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2610.40059v2": {
+    "Title": "Influence of pairing and correlations on transport properties in three-terminal superconducting nanostructure",
+    "Date": "2026-11-12T13:52:55Z",
+    "Quality_Filter": {
+      "fingerprint": "798ff4f709eb98d7431d72a3290bccf7b78ac013e7463888dd84429e7bc186b8",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2603.13114v2": {
+    "Title": "Experimental realization of a $\\cos(2\\varphi)$ transmon qubit",
+    "Date": "2026-11-12T13:35:48Z",
+    "Quality_Filter": {
+      "fingerprint": "000c616b35aaa13380f789ec7e676ff1cd82d9396ce9098e15de8e2a88efef71",
+      "reject": false
+    },
+    "Finding_Summary": "Using coherent control and single-shot readout of a 13.6 MHz cos 2φ qubit, the study finds Cooper-pair parity symmetry protects against dielectric loss, with T1 = 70 μs limited by flux noise.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.16705v1": {
+    "Title": "A superconducting quantum point contact in Ge",
+    "Date": "2026-11-12T12:21:40Z",
+    "Quality_Filter": {
+      "fingerprint": "0b70542d12b913ab31eb3ec6867a418244d09ca25102609c6a8eedd5cee679ed",
+      "reject": false
+    },
+    "Finding_Summary": "Using a gate-tunable Ge/SiGe superconducting quantum point contact in an asymmetric SQUID, the study finds a direct correspondence between conductance quantization and switching-current quantization.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2609.10655v2": {
+    "Title": "High-fidelity conditional-squeezing gate in superconducting circuits via refocusing",
+    "Date": "2026-11-12T12:08:12Z",
+    "Quality_Filter": {
+      "fingerprint": "759d10f306c86c79038b3b3e69b05b1660d31f6c9765bb59c42d75bb6b194791",
+      "reject": false
+    },
+    "Finding_Summary": "Using a refocusing protocol for a conditional-squeezing gate with a SQUID-terminated resonator, the study finds the gate outperforms the controlled-squeezing gate, reaching encoding fidelities above 0.99.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.16679v1": {
+    "Title": "Sign changing pairing in single layer FeSe/SrTiO3 revealed by nonmagnetic impurity bound states",
+    "Date": "2026-11-12T11:55:21Z",
+    "Quality_Filter": {
+      "fingerprint": "d8e2112859f1a2388990104ae2c204949c21f7d4fba6e82b570f27d2bd3ae7c2",
+      "reject": false
+    },
+    "Finding_Summary": "Using scanning tunneling microscopy/spectroscopy on single-layer FeSe/SrTiO3, the study finds non-magnetic Fe-vacancy defects induce in-gap bound states consistent with a sign-changing order parameter.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.16607v1": {
+    "Title": "Beauty and charm jet identification with end-to-end training on a superconducting quantum processor",
+    "Date": "2026-11-12T10:45:24Z",
+    "Quality_Filter": {
+      "fingerprint": "a311034624a1188375c937c1f35e2c03c07fcfd5ae48867cf90db3830e6422a0",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.16595v1": {
+    "Title": "Gatemon qubits based on in-situ ternary InAsSb/Al nanowire Josephson junctions",
+    "Date": "2026-11-12T10:26:47Z",
+    "Quality_Filter": {
+      "fingerprint": "6b643731a06694d13936585f156fa64a460035ea8c108c67e776ae5cdfcca75c",
+      "reject": false
+    },
+    "Finding_Summary": "Using gate-dependent microwave spectroscopy and coherent control measurements on gatemon qubits based on in-situ InAsSb/Al Josephson junctions, the study finds electrostatic tuning of the qubit transition over several gigahertz with coherent control, showing relaxation times of about 0.2–1 µs across five gatemons.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   }
 }
