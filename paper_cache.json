@@ -6145,5 +6145,125 @@
     "Finding_Summary": "Using angle-resolved multidimensional terahertz spectroscopy of the Josephson tunneling resonance in La1.83Sr0.17CuO4, the study measures a crossover at T ~ Tc between a mean-field optical nonlinearity and one mediated by short-range superconducting fluctuations.",
     "Finding_Language": "en",
     "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.23232v1": {
+    "Title": "Emergent Attraction and Competing Orders near the Van Hove Singularity in Rhombohedral $n$-layer Graphene",
+    "Date": "2026-11-17T18:59:59Z",
+    "Quality_Filter": {
+      "fingerprint": "86010385bf900af9d2d8fa184e633cb475eed54ef206ad2e3e1f2da731e9d1b7",
+      "reject": false
+    },
+    "Finding_Summary": "Using a patch renormalization-group approach with realistic band structures, the study finds that repulsive interactions generate competing charge-density-wave and pair-density-wave instabilities, with detuning from the van Hove singularity controlling which dominates.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.23165v1": {
+    "Title": "Teleportation of Logical Qubits using Lattice Surgery with Superconducting Circuits",
+    "Date": "2026-11-17T18:17:01Z",
+    "Quality_Filter": {
+      "fingerprint": "3cb481f971208e57ac565766f8da81687588ff7bf0dde18cdbafa442fa8f7610",
+      "reject": false
+    },
+    "Finding_Summary": "Using fault-tolerant lattice-surgery on two distance-three surface-code logical qubits in a 41-qubit superconducting circuit, the study finds that repeated stabilizer measurements after merging patches restore fault tolerance and increase teleported-state fidelity.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.23065v1": {
+    "Title": "Quasi-long-range order in the quantum XY model on Sierpiński gaskets",
+    "Date": "2026-11-17T16:56:09Z",
+    "Quality_Filter": {
+      "fingerprint": "f37d0a8d2815f9ee7d53f56b9b37c994c23b1cf23322490f0cfe780aae7fbc52",
+      "reject": false
+    },
+    "Finding_Summary": "Using vision-transformer neural quantum states optimized by variational Monte Carlo on Sierpiński gaskets up to 609 sites, the study finds the transverse correlator decays algebraically with η≈0.12–0.32, indicating quasi-long-range order survives at T=0.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.23060v1": {
+    "Title": "Atomic-scale Imaging of Time Reversal Breaking Supercurrents in $\\mathrm{Bi_2Sr_2CaCu_2O_8}$",
+    "Date": "2026-11-17T16:53:28Z",
+    "Quality_Filter": {
+      "fingerprint": "c87568bbffe1628af1017133684e920c69875318671a20bc46be4c3ed869221b",
+      "reject": false
+    },
+    "Finding_Summary": "Using dual artificial neural networks (VMAP) to image energy-resolved density of states in Bi2Sr2CaCu2O8, the study finds statistically repeatable supercurrent loop networks obeying Kirchhoff's law, with speeds of 1250–4000 m/s.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.23016v1": {
+    "Title": "Ab initio Engineering of Topological Superconductivity in Substrate-Supported Magnetic Chains",
+    "Date": "2026-11-17T16:25:04Z",
+    "Quality_Filter": {
+      "fingerprint": "119b12edbf5b0237e6e47c03e131bbe08fee55a7856dd84b3ad6d7de5c95acb8",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.22933v1": {
+    "Title": "Dynamical Decoupling via Continuous Unitary Design",
+    "Date": "2026-11-17T15:29:10Z",
+    "Quality_Filter": {
+      "fingerprint": "bf79736ff541a2668f01751798b280f69f052e02177b2f13b90aab97cae57ebc",
+      "reject": false
+    },
+    "Finding_Summary": "Using a continuous unitary-design dynamical decoupling framework validated on a superconducting quantum cloud platform, the study finds significantly extended coherence times and the highest robustness against Rabi-amplitude errors and detuning among tested sequences.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2601.07659v2": {
+    "Title": "From coherent to fermionized microwave photons in a superconducting transmission line",
+    "Date": "2026-11-17T13:57:34Z",
+    "Quality_Filter": {
+      "fingerprint": "1b78a0bbd0eeee23d2343f1809ab6c3b9f463083c250645d5df13e39b6d14b20",
+      "reject": false
+    },
+    "Finding_Summary": "Using superconducting transmission lines with Josephson-junction nonlinearity and tapered parameters, the study predicts adiabatic conversion of a coherent field into a Tonks-Girardeau gas of fermionized photons near its ground state.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.22546v1": {
+    "Title": "Multilevel Effects and the Limits of the Quantum Rabi Model in Ultrastrong Coupling system",
+    "Date": "2026-11-17T10:36:08Z",
+    "Quality_Filter": {
+      "fingerprint": "53765d105fb816f904ce42229a3534f2d2de73b8f757e34f42d9e340b5bc21e0",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2506.03250v3": {
+    "Title": "Phonon-mediated intrinsic topological superconductivity in Fermi arcs",
+    "Date": "2026-11-17T09:36:53Z",
+    "Quality_Filter": {
+      "fingerprint": "71ac6cb8443bb3035b8d6cc2471d207a4117a05b71d8fbb14ee6e944421a3e66",
+      "reject": false
+    },
+    "Finding_Summary": "Using an effective Weyl semimetal model with derived phonon spectrum and electron-phonon coupling under weak-coupling BCS theory, the study finds surface spinless chiral p-wave superconductivity in the Fermi arcs, yielding Majorana bound states in vortex cores.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.22462v1": {
+    "Title": "Orbital differentiation in a rare earth ion near half filling",
+    "Date": "2026-11-17T09:23:36Z",
+    "Quality_Filter": {
+      "fingerprint": "ea1ec88e7866dbeef9ed953c33056babb6910b4990a1fb912c23caeb8fd4233c",
+      "reject": false
+    },
+    "Finding_Summary": "Using full multiplet calculations with the Quanty crystal field software for SmN, the study finds orbital differentiation of the ground J=5/2 manifold into two subspaces with different orbital stiffness, violating Hund's rule.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.22315v1": {
+    "Title": "Circuit compilation in the quspect quantum SDK: selecting routings after coupling-constrained resynthesis",
+    "Date": "2026-11-17T07:13:44Z",
+    "Quality_Filter": {
+      "fingerprint": "b34e4d5e578039447dc328680551e93e7f77bbbc703fdff7b4bbd85bc49fd719",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.22260v1": {
+    "Title": "Logical error prediction and geometry selection for rectangular surface codes under biased circuit-level noise",
+    "Date": "2026-11-17T06:09:07Z",
+    "Quality_Filter": {
+      "fingerprint": "4dba735411f5644b7cdf7153ed55fb2d5b560e386f822c70e5bd957c28cb6cf1",
+      "reject": true
+    }
   }
 }
