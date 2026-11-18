@@ -6006,5 +6006,144 @@
     "Finding_Summary": "Using gate-dependent microwave spectroscopy and coherent control measurements on gatemon qubits based on in-situ InAsSb/Al Josephson junctions, the study finds electrostatic tuning of the qubit transition over several gigahertz with coherent control, showing relaxation times of about 0.2–1 µs across five gatemons.",
     "Finding_Language": "en",
     "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.22166v1": {
+    "Title": "Demonstration of a Qubit Control Scheme Compatible with Superconducting Digital Signals",
+    "Date": "2026-11-17T03:58:03Z",
+    "Quality_Filter": {
+      "fingerprint": "695b4a6d86e6144fe4fe1f18ae335e97166a3719f93a08811d1bff6128697991",
+      "reject": false
+    },
+    "Finding_Summary": "Using an arbitrary waveform generator at a fixed 25 GSa/s sampling rate to deliver bipolar high-speed pulse sequences on a common clock, the study experimentally demonstrates 40 ns single-qubit gates with 99.94% average fidelity and 120 ns CZ gates with 99.63% fidelity.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.22057v1": {
+    "Title": "QCap: a physics-corrected graph neural network for the capacitance matrix of any planar superconducting device layout",
+    "Date": "2026-11-17T01:34:18Z",
+    "Quality_Filter": {
+      "fingerprint": "90be937106a9ac65065b383e4bd49c57c1fd5c01460032bfd992f0b0e52a1e11",
+      "reject": false
+    },
+    "Finding_Summary": "Using a machine-learning model (QCap) with a design-embedding algorithm and a physics prior from method-of-moments simulation, the study predicts Maxwell capacitance matrices of arbitrary superconducting layouts with a median error of 0.177% versus Q3D simulations.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.22035v1": {
+    "Title": "Magic state cultivation with lattice-surgery escape on superconducting hardware",
+    "Date": "2026-11-17T00:56:04Z",
+    "Quality_Filter": {
+      "fingerprint": "36a98c676d58de387aa81eeaa258652673f4a34f605bc6020ad4e2cbd9a67a43",
+      "reject": false
+    },
+    "Finding_Summary": "Using two magic state cultivation variants implemented on a distance-5 code on an IBM Nighthawk processor with matching- or Tesseract-based decoding, the study finds the lattice-surgery escape achieves a logical error rate of about 0.14% per stabilizer round at around 11% average shot retainment.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.21999v1": {
+    "Title": "Transient Synchronization and Entanglement through Shared Dissipation in Circuit QED",
+    "Date": "2026-11-16T23:30:45Z",
+    "Quality_Filter": {
+      "fingerprint": "012348955e75103967e37ed6c063408b90b6f94edaf0ef032c0308ad1f492d66",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2511.22476v2": {
+    "Title": "Improved parameter initialization for the (local) unitary cluster Jastrow ansatz",
+    "Date": "2026-11-16T21:30:37Z",
+    "Quality_Filter": {
+      "fingerprint": "d1dc1bd2ac53535e2b4d82a9a32d68fe8bc9ec83a0b50df1ef36ae86fcf83751",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.21848v1": {
+    "Title": "High-resolution top-down nanopatterning of NbN thin films for superconducting metamaterials",
+    "Date": "2026-11-16T20:09:51Z",
+    "Quality_Filter": {
+      "fingerprint": "9f5702343244e24a21474facb9f5175eb658495a908de6c2205aa4b189c5faa6",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.21785v1": {
+    "Title": "Microwave-optical quantum transduction with quantum-well exciton polaritons",
+    "Date": "2026-11-16T19:09:48Z",
+    "Quality_Filter": {
+      "fingerprint": "091fd7edef029c14cf1913dd7d1f88416d5ee38983d95774dca0e5451a142675",
+      "reject": false
+    },
+    "Finding_Summary": "Using a proposed GaAs/AlGaAs stepped-quantum-well transducer design exploiting the quantum-confined Stark effect of quantum-well excitons strongly coupled to an optical cavity, the study predicts transduction efficiencies above 60% with fewer than 0.01 added noise quanta over a ~60 MHz bandwidth.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.21773v1": {
+    "Title": "Hidden convexity of the Eliashberg condensation energy: existence, uniqueness and continuity of the superconducting state",
+    "Date": "2026-11-16T19:04:28Z",
+    "Quality_Filter": {
+      "fingerprint": "b821442737d54c82cb851128d46808297c3b8cd0d1e74e3344b329231e870551",
+      "reject": false
+    },
+    "Finding_Summary": "Using convex-analytic and compactness arguments on the isotropic Eliashberg spin-chain functional, the study proves existence and uniqueness (up to gauge) of the minimizer and continuity of the transition, establishing the nonlinear part of the conjectured thermodynamic transition picture.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.21762v1": {
+    "Title": "Radiation Response of NbN Superconducting Nanowire Single-Photon Detectors Under $^{210}$Po Alpha-Particle Irradiation",
+    "Date": "2026-11-16T19:01:07Z",
+    "Quality_Filter": {
+      "fingerprint": "01f1fd5b6059a8800b34f6039c1ff3439875219939e283c02c241b2a0f6f1f7f",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.21593v1": {
+    "Title": "Electrostatic and magnetic control of the anomalous Josephson phase in ferromagnetic hybrid junctions",
+    "Date": "2026-11-16T18:57:00Z",
+    "Quality_Filter": {
+      "fingerprint": "5fd8de521e2724016555461b66569ca0a31d5c21e55522ca884b101699396a3b",
+      "reject": false
+    },
+    "Finding_Summary": "Using phase-sensitive measurements of Josephson junctions in InAs nanowires with epitaxial EuS and Al shells, the study finds a continuous, hysteretic anomalous phase shift that persists at zero applied field and depends on magnetic history.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.21578v1": {
+    "Title": "Resolving and Suppressing Temporally Correlated Noise in Quantum Error Correction",
+    "Date": "2026-11-16T18:49:49Z",
+    "Quality_Filter": {
+      "fingerprint": "86d26f6757e6db810631c013a81cd381947539686cb194310393846a6241c05d",
+      "reject": false
+    },
+    "Finding_Summary": "Using the surface code stability experiment on a 105-qubit Willow superconducting processor, the study realizes a timelike block suppression factor of μ_T = 1.47 ± 0.25 when scaling from 3×3 to 7×7 patches.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.21536v1": {
+    "Title": "Failure of Mean-Field Critical Scaling and Two Distinct Dissipation Regimes in La$_2$SmNi$_2$O$_{7-δ}$",
+    "Date": "2026-11-16T18:25:39Z",
+    "Quality_Filter": {
+      "fingerprint": "03d09936120d39e1b51dbda75b87e7ac4d630e6031171b1169c903b5a731e9ea",
+      "reject": false
+    },
+    "Finding_Summary": "Using critical scaling and vortex dynamics analysis within the Ullah–Dorsey framework on a La2SmNi2O7−δ single crystal under pressure, the study finds that neither two- nor three-dimensional scaling collapses near TcMF, possibly due to the multiband composite order parameter.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.21450v1": {
+    "Title": "Experimental simulation of a Hilbert-space inner-product change",
+    "Date": "2026-11-16T17:37:14Z",
+    "Quality_Filter": {
+      "fingerprint": "159e4a5f8066c4fb4e9fedc5687f53bd4afe2bfac8953109a11b3f36cc574714",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.21708v1": {
+    "Title": "Probing Phase Fluctuations in Cuprates by Multidimensional Josephson Spectroscopy",
+    "Date": "2026-11-16T17:30:49Z",
+    "Quality_Filter": {
+      "fingerprint": "de050c030b64cf414c8af1d726ce860bd0be004b70ac710376bec73634019880",
+      "reject": false
+    },
+    "Finding_Summary": "Using angle-resolved multidimensional terahertz spectroscopy of the Josephson tunneling resonance in La1.83Sr0.17CuO4, the study measures a crossover at T ~ Tc between a mean-field optical nonlinearity and one mediated by short-range superconducting fluctuations.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   }
 }
