@@ -6265,5 +6265,152 @@
       "fingerprint": "4dba735411f5644b7cdf7153ed55fb2d5b560e386f822c70e5bd957c28cb6cf1",
       "reject": true
     }
+  },
+  "https://arxiv.org/abs/2611.24886v1": {
+    "Title": "CREST: A Hardware-Aware GNN-Based Framework for High-Fidelity and Robust Superconducting Quantum Compilation",
+    "Date": "2026-11-18T18:31:37Z",
+    "Quality_Filter": {
+      "fingerprint": "d3275a798d869ab6dada4eaaafb863abecfe2cda587eca316dba40c70e98fcb4",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2604.01983v3": {
+    "Title": "Toward chemically accurate quantum simulations on quantum hardware: A quantum-HPC hybrid approach",
+    "Date": "2026-11-18T18:28:51Z",
+    "Quality_Filter": {
+      "fingerprint": "1155ae0b5a0a7c0d17bb9478697b06e931295caa0dc8e85917daafb02cde4f8a",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.37840v2": {
+    "Title": "Ground-state energy estimation compiled on cat qubits: 6 808 qubits for FeMoco-54 in 23.6 hours",
+    "Date": "2026-11-18T18:02:26Z",
+    "Quality_Filter": {
+      "fingerprint": "5198857ec925331db710934b1a0503fa6f7755c3545b1a7ed82751280c92e0dc",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.24624v1": {
+    "Title": "Instanton tunnelling as a verifiable benchmark for digital quantum simulation: circuit structure, classical simulability and hardware reproducibility",
+    "Date": "2026-11-18T15:38:37Z",
+    "Quality_Filter": {
+      "fingerprint": "3f5be1d6476714eeac4d31db6c68c8fb1f56878ede401d6c4426da1ddac67df3",
+      "reject": false
+    },
+    "Finding_Summary": "Using unary-encoded digital quantum simulation with a second-order Trotter circuit on two superconducting processors, the study finds full transfer at N=8, recovering the lattice splitting to a few percent.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2605.18970v2": {
+    "Title": "Signatures of Gaussian superconducting fluctuations in nonlocal noise magnetometry",
+    "Date": "2026-11-18T15:29:11Z",
+    "Quality_Filter": {
+      "fingerprint": "2c455846a357ea70ad8438ce1259327cff44f307214109ed59d367cbdf575b42",
+      "reject": false
+    },
+    "Finding_Summary": "Using time-dependent Ginzburg-Landau theory, the study calculates the two-point magnetic noise spectrum from Gaussian superconducting fluctuations in two-dimensional systems, both in equilibrium and under a uniform electric field.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.24531v1": {
+    "Title": "$1/N$ corrections to $\\langle TJJ\\rangle$ and $\\langle TTT\\rangle$ in QED$_3$, QED$_3$--GNY and scalar QED$_3$",
+    "Date": "2026-11-18T14:46:02Z",
+    "Quality_Filter": {
+      "fingerprint": "408a83b9434b7449604c259344f677288ab6a628fb46af0b21c8e345838c27e7",
+      "reject": false
+    },
+    "Finding_Summary": "Using large-flavor computations in QED₃, QED₃-Gross-Neveu-Yukawa, and critical scalar QED₃, the study finds analytic subleading corrections to conformal collider parameters from four-particle production, independently reproduced via squashed-sphere free-energy derivatives.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2512.16385v3": {
+    "Title": "Instantaneous velocity during quantum tunnelling",
+    "Date": "2026-11-18T13:48:34Z",
+    "Quality_Filter": {
+      "fingerprint": "4d9746490d7e0f8aeb06cc66b03ca23a2e10cd7e7d977ae267dac45540d2bb89",
+      "reject": false
+    },
+    "Finding_Summary": "Using a dynamical framework of tunneling, the study finds that in-barrier particle velocity decreases continuously from an initially large value at the wavepacket's rising edge, resolving the lower-energy–\"higher-speed\" paradox.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2507.10661v5": {
+    "Title": "Optimal Calibration of Qubit Detuning and Crosstalk",
+    "Date": "2026-11-18T13:03:38Z",
+    "Quality_Filter": {
+      "fingerprint": "a46fa726ec2de93c24ae63ef8f6bffb935a16f2d9442733551c1553ee24f2dbe",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.24288v1": {
+    "Title": "Reconciling Models for Infinite-Layer Nickelate Superconductors: Role of Interstitial-$s$ Band or $A$-Pocket",
+    "Date": "2026-11-18T12:02:02Z",
+    "Quality_Filter": {
+      "fingerprint": "69f0be8ed1d2e93a1851a6aee9e5c4d4bff26cce668e516c38086b9c6a24b504",
+      "reject": false
+    },
+    "Finding_Summary": "Using DFT+DMFT, the study finds that six-band models including the interstitial-s band recover Mottness physics, while the s band's influence on d_{x²−y²} correlations is negligible, supporting a single-band Hubbard description of superconductivity.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.23065v2": {
+    "Title": "Quasi-long-range order in the quantum XY model on Sierpiński gaskets",
+    "Date": "2026-11-18T09:11:11Z",
+    "Quality_Filter": {
+      "fingerprint": "8aeda4901dc6e3bc394bff4fe198ccf1b13e2c7ae251c9cfe6e36ed5e3f8b7fc",
+      "reject": false
+    },
+    "Finding_Summary": "Using vision-transformer neural quantum states optimized by variational Monte Carlo on Sierpiński gaskets up to 609 sites, the study finds that the transverse two-point correlator decays algebraically with η≈0.12–0.32, indicating quasi-long-range superconducting order survives at T=0.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.23060v2": {
+    "Title": "Atomic-scale Imaging of Time Reversal Breaking Supercurrents in $\\mathrm{Bi_2Sr_2CaCu_2O_8}$",
+    "Date": "2026-11-18T09:10:32Z",
+    "Quality_Filter": {
+      "fingerprint": "a43fbdef695f1e16ae22a05e96fda5609175ad63a48f7b33188b50c868c9c78b",
+      "reject": false
+    },
+    "Finding_Summary": "Using dual artificial neural networks (VMAP) to image energy-resolved density of states in Bi₂Sr₂CaCu₂O₈, the study finds statistically repeatable networks of supercurrent loops (1250–4000 m/s) that satisfy Kirchhoff's law at junctions.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2609.24657v2": {
+    "Title": "Circuit Hypernetworks for Quantum-Augmented Diffusion Language Models",
+    "Date": "2026-11-18T08:02:00Z",
+    "Quality_Filter": {
+      "fingerprint": "b37f86d23183fe251e3452047cbabba46094462b5f98ed5c3c0e03aabb296e0f",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2603.04566v4": {
+    "Title": "Universal Hamiltonian control in a planar trimon circuit",
+    "Date": "2026-11-18T06:25:36Z",
+    "Quality_Filter": {
+      "fingerprint": "96913817c9047f010569b9497fb75043071f4b5b86b319595810e0c8846137de",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.23895v1": {
+    "Title": "DIVO: a direct divertor configuration plasma start-up scheme aimed at tokamak fusion reactors",
+    "Date": "2026-11-18T05:47:24Z",
+    "Quality_Filter": {
+      "fingerprint": "9d3307c482dc78be68fdc3a8ea164362f1ed869610d90939a1559a6f9807eac9",
+      "reject": false
+    },
+    "Finding_Summary": "Using a novel divertor-geometry-only (DIVO) start-up scheme with non-inductive electron cyclotron wave-generated plasma on the EAST tokamak, the study finds this scheme reduces impurity sources compared to conventional limiter start-up and is robust across varying conditions.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.23888v1": {
+    "Title": "Imaging chiral snake states in a qubit array with programmable gauge fields",
+    "Date": "2026-11-18T05:40:14Z",
+    "Quality_Filter": {
+      "fingerprint": "0f932d04f28e84209a5464ac5781bd8a46ce33d761326d94564879c22d009ef0",
+      "reject": false
+    },
+    "Finding_Summary": "Using digital simulation of the Harper–Hofstadter model with programmable synthetic magnetic fields on a 49-qubit superconducting processor, the study finds that at a field reversal, bonding and antibonding states propagate in opposite directions, yielding a chiral displacement of nearly one lattice spacing after ten Trotter rounds.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   }
 }
