@@ -6412,5 +6412,158 @@
     "Finding_Summary": "Using digital simulation of the Harper–Hofstadter model with programmable synthetic magnetic fields on a 49-qubit superconducting processor, the study finds that at a field reversal, bonding and antibonding states propagate in opposite directions, yielding a chiral displacement of nearly one lattice spacing after ten Trotter rounds.",
     "Finding_Language": "en",
     "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.26506v1": {
+    "Title": "When the Noise Gets Noisy: Quantum Error Correction with Disordered Noise and Misinformed Decoding",
+    "Date": "2026-11-19T17:55:21Z",
+    "Quality_Filter": {
+      "fingerprint": "1105fa1b5cd685caff5709e4d757e82d21e10891afa594cefcc1e1818636aeeb",
+      "reject": false
+    },
+    "Finding_Summary": "Using numerical modeling of surface-code decoding with disordered noise treated as random variables, the study finds decoding performance is set by noise-distribution entropy (threshold) and Bhattacharyya coefficients (sub-threshold decay), matching theory across noise settings.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2605.03859v2": {
+    "Title": "Nonuniform superconducting states from Majorana flat bands",
+    "Date": "2026-11-19T17:20:29Z",
+    "Quality_Filter": {
+      "fingerprint": "c37b37746fd89fcaca460baddfba7f5a36466aa1c6410e45c586d95878cb62f8",
+      "reject": false
+    },
+    "Finding_Summary": "Using self-consistent calculations of the superconducting order parameter for a magnetic-adatom topological superconductor with a Majorana flat band, the study finds the uniform superconducting solution never survives at zero temperature, giving way to pair density waves or phase crystals.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.26447v1": {
+    "Title": "Scaling classical hardware for accurate real-time quantum error correction",
+    "Date": "2026-11-19T17:16:21Z",
+    "Quality_Filter": {
+      "fingerprint": "ce2c707fbd9d8bfb936c83b4ca2878c9c56aa0c12dae471d6959425db44172f1",
+      "reject": false
+    },
+    "Finding_Summary": "Using an FPGA-co-designed streaming neural decoder (Rapids), the study finds it decodes each distance-19 surface-code syndrome round in under a microsecond with a logical error rate 240 times lower than existing real-time hardware decoders.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.26371v1": {
+    "Title": "Quantum Zeno Effect with a Superposed Measurement Schedule in Relational Time",
+    "Date": "2026-11-19T16:34:35Z",
+    "Quality_Filter": {
+      "fingerprint": "4ae742ae1e490f2dc89054a4d2555ae21f84df8fe99e0e7014df913bfdd69d70",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.26360v1": {
+    "Title": "Are superfluidity and superconductivity related to the spontaneous breaking of $U(1)$ symmetry?",
+    "Date": "2026-11-19T16:29:15Z",
+    "Quality_Filter": {
+      "fingerprint": "36d282a32865f6187ef7b855563d94cfd3dd3a97b481709f66dbe41d3a6d5b1a",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2610.37839v2": {
+    "Title": "Shor's algorithm compiled on cat qubits: 22 593 qubits for RSA-2048 in 3.14 days",
+    "Date": "2026-11-19T16:23:32Z",
+    "Quality_Filter": {
+      "fingerprint": "fc4db939f5adcd95e670e61285d0e8e219626af4f86f7dc76e61661513f95661",
+      "reject": false
+    },
+    "Finding_Summary": "Using end-to-end resource estimation compiling Shor's algorithm onto superconducting cat-qubit architectures, the study finds factoring RSA-2048 requires about 23,000 cat qubits and 3.14 days under stated noise assumptions.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.26327v1": {
+    "Title": "Quantum Metric Control of Topological Superconductivity and Incommensurate Charge Density Wave in an Interacting Lieb-Kitaev Chain Model",
+    "Date": "2026-11-19T16:10:28Z",
+    "Quality_Filter": {
+      "fingerprint": "722c7fc2965a17a66c875779a7179352336c18ec2ca587f1a9e0cd6ee578316e",
+      "reject": false
+    },
+    "Finding_Summary": "Using low-energy effective theory and DMRG calculations on an interacting spinless Lieb-Kitaev chain in the nearly flat-band regime, the study finds a topological superconducting phase, an incommensurate charge-density-wave phase, and a commensurate charge-density-wave phase, with interactions enhanced by quantum metric driving a discontinuous incommensurate-to-commensurate transition.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2507.02653v3": {
+    "Title": "Ultracold Mechanical Quantum Sensor for Tests of New Physics",
+    "Date": "2026-11-19T16:05:17Z",
+    "Quality_Filter": {
+      "fingerprint": "06b92d2ad0638beec7809f60e90ea4d84bc91711bedb59b506448723c49ece96",
+      "reject": false
+    },
+    "Finding_Summary": "Using excited-state population measurements of GHz mechanical modes in a high-overtone bulk acoustic wave resonator, the study finds a first-excited-state population as low as (1.2±5.5)×10⁻⁵, corresponding to an effective temperature of 25.2 mK.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2604.27881v2": {
+    "Title": "Unusual critical currents in quasi-one-dimensional superconducting aluminum two-width structures in a magnetic field",
+    "Date": "2026-11-19T15:04:58Z",
+    "Quality_Filter": {
+      "fingerprint": "5241545e7f7c4e68f76d5316271caeb2213b40006da6e68f022a75480bad3459",
+      "reject": false
+    },
+    "Finding_Summary": "Using critical switching and retrapping current measurements on thin-film quasi-one-dimensional superconducting aluminum two-width structures, the study finds that the switching current versus field is nonlocal and poorly described by classical Ginzburg-Landau theory.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.26223v1": {
+    "Title": "Resonant filling for long-pulse operation of EuXFEL using iterative learning based feed forward",
+    "Date": "2026-11-19T15:00:59Z",
+    "Quality_Filter": {
+      "fingerprint": "0abdce4343d7697527b671e06b0a33669423c30f53d02af72e11b9a2d6282123",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2607.07339v2": {
+    "Title": "Encoding Orbital-Projected Densities of States in Graph Neural Networks for Materials Property Prediction",
+    "Date": "2026-11-19T14:00:50Z",
+    "Quality_Filter": {
+      "fingerprint": "5c4455b9c8c24096daa2a023661c79aa95cf5028ddc3f65b3ae6019498092bab",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2608.24322v2": {
+    "Title": "Josephson effect in bipolar magnetic semiconductors",
+    "Date": "2026-11-19T12:46:15Z",
+    "Quality_Filter": {
+      "fingerprint": "169325c1cfd7eb8d67b077b18167e473c8b370a1c70fbdf2e84f8c07f9d4cb69",
+      "reject": false
+    },
+    "Finding_Summary": "Using theoretical modeling of a one-dimensional Josephson junction incorporating a bipolar magnetic semiconductor, the study finds that intrinsic exchange splitting enables purely electrical gate-tunable control of the 0–π transition without an external magnetic field.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.25858v1": {
+    "Title": "Nonmagnetic Impurity Effects on Majorana Braiding Quantum Gates in Vortex Cores",
+    "Date": "2026-11-19T10:10:05Z",
+    "Quality_Filter": {
+      "fingerprint": "a8054eff176e2d4f89ed4db0bf7cb4b769b6657377dd92243946f5e1649bfb54",
+      "reject": false
+    },
+    "Finding_Summary": "Using time-dependent many-body simulations, the study finds that strong attractive nonmagnetic impurities suppress the topological gap and degrade geometric-phase quantization in two-MZM Majorana braiding, while repulsive impurities cause no comparable damage.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2608.28485v2": {
+    "Title": "Gauge invariance, collective modes, and the justification of normal-state subtraction in Dirac superconductors",
+    "Date": "2026-11-19T09:55:21Z",
+    "Quality_Filter": {
+      "fingerprint": "722da8c48a58072944e105207b417e3dc8cd2ac76832522733f9b617ea627a24",
+      "reject": false
+    },
+    "Finding_Summary": "Using analytical Bethe–Salpeter equation calculations for a massive-Dirac model with s-wave pairing, the study finds that the vertex correction exactly cancels the bare longitudinal response under normal-state subtraction, yielding the gauge-invariance-required vanishing longitudinal response.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.25792v1": {
+    "Title": "Current-driven resistive switching in high-field heavy fermion metal UTe2",
+    "Date": "2026-11-19T09:22:14Z",
+    "Quality_Filter": {
+      "fingerprint": "702e93f6a8dd8cfe389746e6569177c7bcf7af0e136168979161dbe6e5e63e2e",
+      "reject": false
+    },
+    "Finding_Summary": "Using focused-ion-beam-fabricated microstructures reaching current densities of 30–60 kA/cm², the study finds a current-induced high-resistivity state above a critical current density of order 10 kA/cm² in both the paramagnetic and field-polarized regimes, revealing unexpected commonality between these states.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   }
 }
