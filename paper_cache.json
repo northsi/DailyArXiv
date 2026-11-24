@@ -6565,5 +6565,153 @@
     "Finding_Summary": "Using focused-ion-beam-fabricated microstructures reaching current densities of 30–60 kA/cm², the study finds a current-induced high-resistivity state above a critical current density of order 10 kA/cm² in both the paramagnetic and field-polarized regimes, revealing unexpected commonality between these states.",
     "Finding_Language": "en",
     "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.28627v1": {
+    "Title": "A High-Frequency Flux-Driven DC-SQUID Threshold Detector at the Single-Microwave-Photon Energy Scale: A Numerical Feasibility Study",
+    "Date": "2026-11-21T07:24:47Z",
+    "Quality_Filter": {
+      "fingerprint": "0ea04c33337e52e29756a8f8659a29db1d62c35e1115686d054dc51cc89f3920",
+      "reject": false
+    },
+    "Finding_Summary": "Using numerical RCSJ simulations of a high-frequency flux-driven DC-SQUID, the study finds that flux drive reduces thermal-noise impact and enables statistical discrimination of weak microwave pulses at the single-photon energy scale.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.28479v1": {
+    "Title": "Curling Superconducting Vortices by Nematic Fluxon-Skyrmion Interaction",
+    "Date": "2026-11-21T01:56:55Z",
+    "Quality_Filter": {
+      "fingerprint": "3aeac33333ae2347b2145fbe0ae045adaad560a8d2956fc6d0bffa6b82e5e171",
+      "reject": false
+    },
+    "Finding_Summary": "Using a type-II superconductor/chiral magnet heterostructure, the study finds an even-in-field Hall-like signal enhanced by about two orders of magnitude, with polarity reversing between orthogonal current directions.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.28313v1": {
+    "Title": "Oscillatory superconducting proximity effects in a buried Pt interlayer detected by FMR",
+    "Date": "2026-11-20T21:00:23Z",
+    "Quality_Filter": {
+      "fingerprint": "8b4db9cb25443a1a47cdc51fb4bac02c2422d57fb2689d86eefb32832f37133e",
+      "reject": false
+    },
+    "Finding_Summary": "Using broadband ferromagnetic resonance on NbN/Pt/Py and NbN/Cu/Py trilayers, the study finds that spin-pumping damping reduction probes superconducting proximity, with Pt showing non-monotonic thickness dependence suppressed above 5 nm, explained by coexisting superconducting and magnetic proximity effects.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.28219v1": {
+    "Title": "Foliated surface codes for optimal skip-gate leakage correction",
+    "Date": "2026-11-20T19:00:09Z",
+    "Quality_Filter": {
+      "fingerprint": "3f8eafedc4efe068b8c6e8ad2b7356a298cd2cecf8b41b33ede1c3dc2cf1f4ef",
+      "reject": false
+    },
+    "Finding_Summary": "Using numerical simulations, the study finds that the foliated surface code is optimal against both space- and time-like skip-gate leakage errors, whereas the best SWAP-based surface code is suboptimal against time-like leakage.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.12788v2": {
+    "Title": "Ambient-pressure superconductivity in bulk single crystals of La$_5$Ni$_4$O$_{10}$",
+    "Date": "2026-11-20T17:58:47Z",
+    "Quality_Filter": {
+      "fingerprint": "8199b4308ddd25576db8e5034a9b8f44e7e0d52b595c52f19fd0a7f7ee064343",
+      "reject": false
+    },
+    "Finding_Summary": "Using high-pressure high-temperature growth and topotactic reduction with CaH2, the study finds that bulk La5Ni4O10 is an ambient-pressure superconductor with Tc onset ≈18.7 K and a specific-heat jump confirming bulk pairing.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2503.08645v2": {
+    "Title": "Mitigating transients in flux-control signals in a superconducting quantum processor",
+    "Date": "2026-11-20T17:37:01Z",
+    "Quality_Filter": {
+      "fingerprint": "187a7e1a45bd3fbf53b9203632b298d95473372363c582171cea5212b99af707",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.27884v1": {
+    "Title": "Thermo-electric Response Bound on Fluctuations in Coherent Transport",
+    "Date": "2026-11-20T17:26:19Z",
+    "Quality_Filter": {
+      "fingerprint": "6caf322ac4caece3bb73e93847f996eb724c9dbbc2ced6e74f38e337377d510a",
+      "reject": false
+    },
+    "Finding_Summary": "Using a Cramér-Rao-type inequality within the Floquet-Nambu scattering formalism, the study finds an accessible lower bound on current noise in coherent electron transport expressed via reservoir temperature and chemical-potential responses, tight for quantum point contacts and normal-superconductor junctions.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.27837v1": {
+    "Title": "Voltage-Controlled Dielectric Cavity Magnonics in Epitaxial Fe Films on SrTiO3 Single Crystal Substrates",
+    "Date": "2026-11-20T16:55:09Z",
+    "Quality_Filter": {
+      "fingerprint": "3d19850fd03e686d66731487e93c7ce0fa844ecbeb7855cbda92c238596a7dc5",
+      "reject": false
+    },
+    "Finding_Summary": "Using a hybrid heterostructure combining an intrinsic dielectric microwave cavity with a ferromagnetic medium, the study finds magnon-photon coupling rates of 0.1–1 GHz with voltage-tunable hybrid mode spectra at cryogenic temperatures.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2609.16320v2": {
+    "Title": "Probing proximity-induced superconductivity in bilayer graphene using gate-defined quantum dots",
+    "Date": "2026-11-20T16:46:55Z",
+    "Quality_Filter": {
+      "fingerprint": "80a6b7f1b109c412b5b8e03f0ef83324a8459c582482f601b23f057ab33fca61",
+      "reject": false
+    },
+    "Finding_Summary": "Using electrostatic gates to define tunnel barriers and quantum dots in bilayer graphene proximitized by NbSe$_2$, the study finds a proximity-induced superconducting gap of up to 80 μeV whose local density of states remains suppressed beyond 1 μm.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2607.24521v2": {
+    "Title": "Thermal Quantum Correlations in Coupled Andreev Spin Qubits with Tunable Superconducting Phase and Spin Orbit Interaction",
+    "Date": "2026-11-20T15:31:29Z",
+    "Quality_Filter": {
+      "fingerprint": "6043e7a821e48f1de893a249fb11f14ae4da30e18d166d4274fc02bcd6dc56bd",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.27703v1": {
+    "Title": "Single-realization Pauli twirling for suppressing coherent error accumulation in structured quantum circuits",
+    "Date": "2026-11-20T15:08:40Z",
+    "Quality_Filter": {
+      "fingerprint": "c5e067ecd0ee217e7845229410c668bf4b091762b338bd2a9016a782717df80b",
+      "reject": false
+    },
+    "Finding_Summary": "Using a single-realization framework with simulations and IBM hardware experiments, the study finds that independent Pauli dressing bounds error-generator variance at O(L) versus Θ(L²) growth in bare circuits, yielding fidelity improvements when transported generators have large off-diagonal covariance.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.27702v1": {
+    "Title": "Full-chip constrained quantum annealing via self-calibrating spin-susceptibility control",
+    "Date": "2026-11-20T15:08:03Z",
+    "Quality_Filter": {
+      "fingerprint": "4d2ad6a7d701c57d27b642e346fda224b9f5d0d2980d2bad4b561063a1ef429c",
+      "reject": false
+    },
+    "Finding_Summary": "Using the SelfCal-QSQN closed-loop primal-dual scheme on D-Wave Advantage and Advantage2 processors, the study finds 83.3% full-chip exact feasibility and 6.1–20.1-fold reductions in high-constraint error over K-scaled first-order updates.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2608.18950v2": {
+    "Title": "A State-of-the-art Squeezed-Light Source for Hybrid Quantum Photonics: Current Performance and Remaining Challenges",
+    "Date": "2026-11-20T14:15:48Z",
+    "Quality_Filter": {
+      "fingerprint": "67808c4e8de5838ee4f110d3225fc044eed6b0c718af36da3aa397709c87f035",
+      "reject": false
+    },
+    "Finding_Summary": "Using a single-pass periodically poled Type-II KTP waveguide, the study finds a bright 1546 nm single-mode squeezed-vacuum source with a measured effective mode number of 1.24.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2609.12233v3": {
+    "Title": "Continuous-Wave Operation at 30 MV/m of a Superconducting Radio-Frequency Gun Cryomodule with an Exchangeable Cathode Plug",
+    "Date": "2026-11-20T13:13:03Z",
+    "Quality_Filter": {
+      "fingerprint": "08a4c4e523d114b04677af231b307070f7cac8da9abae1c09f579e802252277c",
+      "reject": false
+    },
+    "Finding_Summary": "Using a prototype 185.7 MHz SRF electron gun cryomodule with an exchangeable cathode plug, the study finds continuous-wave RF operation at 30 MV/m cathode field with no measurable degradation after plug reinsertion.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   }
 }
