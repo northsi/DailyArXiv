@@ -6713,5 +6713,136 @@
     "Finding_Summary": "Using a prototype 185.7 MHz SRF electron gun cryomodule with an exchangeable cathode plug, the study finds continuous-wave RF operation at 30 MV/m cathode field with no measurable degradation after plug reinsertion.",
     "Finding_Language": "en",
     "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.31242v1": {
+    "Title": "Quantum-geometry-tuned Mott transition and emergent heavy fermions in a topological flat band",
+    "Date": "2026-11-23T18:59:56Z",
+    "Quality_Filter": {
+      "fingerprint": "7023d7b751c07d3764d2b3aa52fc859fdf0add47021339bcfc3c2425ff4a7340",
+      "reject": false
+    },
+    "Finding_Summary": "Using single-site dynamical mean-field theory on coherent orbitals, the study finds an insulator-to-metal transition tuned by the Berry-curvature fraction s², with a heavy Fermi liquid giving way to a pseudogap metal proposed as the parent state of superconductivity in twisted bilayer graphene.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.31137v1": {
+    "Title": "Anomalous Field-induced Coherence beyond Single-ion Kondo Physics",
+    "Date": "2026-11-23T18:07:26Z",
+    "Quality_Filter": {
+      "fingerprint": "7f41199bd4e0628608dbb25b71539fefc440c712f6c68ad8d37534d9b7c25a65",
+      "reject": false
+    },
+    "Finding_Summary": "Using transport and thermodynamic measurements on Ce₂Rh₃Ga₅, the study finds that a magnetic field restores coherent T² resistivity and produces large negative magnetoresistance, indicating a field-sensitive scattering contribution beyond single-ion Kondo physics.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.09857v2": {
+    "Title": "Energy- and momentum-resolved Cooper-pair emission from a cuprate superconductor",
+    "Date": "2026-11-23T18:04:13Z",
+    "Quality_Filter": {
+      "fingerprint": "f6432b46c6189847000e929396cb37e9b00589159a9c62a6b0876859b2d69c27",
+      "reject": false
+    },
+    "Finding_Summary": "Using two-electron angle-resolved photoemission, the study finds a distinct zero-binding-energy, zero-momentum two-electron peak below the superconducting transition, with anomalous broadening along the relative-energy axis.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.17268v2": {
+    "Title": "Observation of Genuine Multi-Time Quantum Memory",
+    "Date": "2026-11-23T17:52:44Z",
+    "Quality_Filter": {
+      "fingerprint": "6ce278788acf4afd46370da6cd03e668c06131f889a85ad734796aedb150d777",
+      "reject": false
+    },
+    "Finding_Summary": "Using an analytical three-time witness demonstrated on a superconducting-qubit platform, the study finds genuine quantum memory that remains hidden from all pairwise tests, establishing a strict hierarchy of quantum memory effects.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.31086v1": {
+    "Title": "Optimization of Piezo Operation for Superconducting TESLA Cavities at EuXFEL",
+    "Date": "2026-11-23T17:34:39Z",
+    "Quality_Filter": {
+      "fingerprint": "f091e20d25204c8915d8bdb43834c29cb21c8683120e8771b4eefa963bc140d3",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2604.18582v3": {
+    "Title": "Magnetism and symmetry of superconducting gap in LaFeAsO from dynamical mean-field theory",
+    "Date": "2026-11-23T16:42:26Z",
+    "Quality_Filter": {
+      "fingerprint": "065980f152bd0b9e0f060ff4ff2a6c434e39be331d7b48ba8964351e9ed934af",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.06761v2": {
+    "Title": "Near-Quantum-Limited Readout for the Princeton Axion Search using a sub-GHz Kinetic Inductance Traveling Wave Parametric Amplifier",
+    "Date": "2026-11-23T15:55:07Z",
+    "Quality_Filter": {
+      "fingerprint": "f0dbe9e1c04bc282238f9fdd23652ad88018c616157a6e989f96747d7fc395c2",
+      "reject": false
+    },
+    "Finding_Summary": "Using a kinetic inductance traveling-wave parametric amplifier, the study finds over 30 dB gain across 300–700 MHz with system noise of 2.5–3.5 quanta.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.30809v1": {
+    "Title": "Gallium at germanium surfaces: links to superconducting films and correlated adatom lattices",
+    "Date": "2026-11-23T15:05:11Z",
+    "Quality_Filter": {
+      "fingerprint": "8ea7e0fb9052ded8f29f958587d57d4f62a050c29089df8491788b86375e6ec3",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.30781v1": {
+    "Title": "Perfect Spin-to-Charge Signal Conversion via Inverse Spin Hall Effect in a Superconductor",
+    "Date": "2026-11-23T14:47:18Z",
+    "Quality_Filter": {
+      "fingerprint": "f9155ba76ef208eb7fd59b431b10f145d038e9daab27d59ba91c0c4c361846e9",
+      "reject": false
+    },
+    "Finding_Summary": "Using a nonlocal spin-valve geometry with a superconductor, the study finds that superconductivity enables near-unity spin-to-charge conversion despite a small spin Hall angle.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2609.35178v2": {
+    "Title": "t-J model at 50",
+    "Date": "2026-11-23T14:01:59Z",
+    "Quality_Filter": {
+      "fingerprint": "254b095f1b4b8d563cfdf7e0820920c7b367de8b38a108ca4d84d5271678d01a",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.30395v1": {
+    "Title": "Neutron Spin Resonance as Probe of Triplet Pair Density Waves in CeCoIn$_5$",
+    "Date": "2026-11-23T09:57:27Z",
+    "Quality_Filter": {
+      "fingerprint": "d35e8be1d33ceaa5f61637db722a87cb933c44bd33eece862feb0b15b54d0005",
+      "reject": false
+    },
+    "Finding_Summary": "Using inelastic neutron scattering and symmetry analysis on CeCoIn5 under in-plane magnetic field, the study finds a third high-field resonance mode and interprets the modes as collective condensate modes involving singlet-triplet excitations.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.30368v1": {
+    "Title": "Critical Topology: A New Perspective for Phase Transitions",
+    "Date": "2026-11-23T09:37:50Z",
+    "Quality_Filter": {
+      "fingerprint": "e74ad458482551590e17941d4a4512273a531c2434bf12bfe64677b5ee8751df",
+      "reject": false
+    },
+    "Finding_Summary": "This review identifies open theoretical and experimental questions on critical topology and calls for realizing many-body critical topology in platforms such as Rydberg atom arrays and superconducting quantum processors.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.30315v1": {
+    "Title": "Spin-controlled thermophase and noise-optimized thermometry in multiorbital quantum dots",
+    "Date": "2026-11-23T08:58:44Z",
+    "Quality_Filter": {
+      "fingerprint": "1f13bea86615ce384c4fedebc4b58542e2176c1c728379e3eae32f297d972a63",
+      "reject": false
+    },
+    "Finding_Summary": "Using a two-orbital quantum dot Josephson junction with Rashba spin-orbit coupling and Zeeman splitting, the study finds projected noise-equivalent temperatures of order 10 μK/√Hz for phase-based thermometry.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   }
 }
