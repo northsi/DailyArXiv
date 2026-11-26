@@ -6844,5 +6844,161 @@
     "Finding_Summary": "Using a two-orbital quantum dot Josephson junction with Rashba spin-orbit coupling and Zeeman splitting, the study finds projected noise-equivalent temperatures of order 10 μK/√Hz for phase-based thermometry.",
     "Finding_Language": "en",
     "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.33112v1": {
+    "Title": "Robust growth of $α$-tantalum on sapphire at room temperature using atomically thin titanium seed layer",
+    "Date": "2026-11-24T18:44:13Z",
+    "Quality_Filter": {
+      "fingerprint": "72b7df17b9a9587a5b4def59d4a8e83ac8775bb73a097f8d3fbd03e4b7699f9f",
+      "reject": false
+    },
+    "Finding_Summary": "Using room-temperature α-Ta growth on sapphire with an ultrathin Ti seed layer and CPW resonator measurements, the study finds TLS-limited quality factors comparable to state-of-the-art Ta-on-sapphire resonators.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.33041v1": {
+    "Title": "Multistable Thermoelectric Josephson Automata",
+    "Date": "2026-11-24T17:52:00Z",
+    "Quality_Filter": {
+      "fingerprint": "0c3e932cfb17150a99090cf5527fada3788711367679a00e82826362b5e3f389",
+      "reject": false
+    },
+    "Finding_Summary": "Using gap-asymmetric superconducting tunnel junctions sharing a heated island, the study finds an automaton whose elements convert heat into electrical power (up to 2.6 pW) and lock into opposite voltages encoding the sweep direction even at zero bias.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.32988v1": {
+    "Title": "Topological Anderson Superconductor in Landau Levels",
+    "Date": "2026-11-24T17:17:39Z",
+    "Quality_Filter": {
+      "fingerprint": "7de8a2b89f36d6167ce0888557581f2388d325bab7655fc72a44e5f2e3717246",
+      "reject": false
+    },
+    "Finding_Summary": "Using self-consistent Bogoliubov-de Gennes solutions with Anderson-type on-site disorder, the study predicts that topological superconductivity percolates in the transition region, forming a topological Anderson superconducting state.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.32916v1": {
+    "Title": "From Fermions to Vortices: Microscopic Simulations of Phase Ordering in a d-Wave Superconductor",
+    "Date": "2026-11-24T16:32:02Z",
+    "Quality_Filter": {
+      "fingerprint": "aa4926e3590cb9f6d6e623a9a347cb099b3735383f707282851ad61fe358bb82",
+      "reject": false
+    },
+    "Finding_Summary": "Using the adiabatic variational principle mapping bond-pairing fields onto constrained Bogoliubov-de Gennes states, the study resolves phase coherence emerging through vortex-antivortex annihilation and recovers two-dimensional phase-ordering kinetics.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2607.26689v2": {
+    "Title": "Scanning Gate Microscopy Modulation of Supercurrent in Graphene Josephson Junctions",
+    "Date": "2026-11-24T16:11:23Z",
+    "Quality_Filter": {
+      "fingerprint": "f67b50c32cbb9042a24eb2c302f9ec7bb4ef6f3fb97f90c318754f796c4259e0",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2606.17673v2": {
+    "Title": "Graphene Josephson diodes from asymmetric disorder",
+    "Date": "2026-11-24T15:14:21Z",
+    "Quality_Filter": {
+      "fingerprint": "fc1ad7b52b59c20dcfa453e703fb0f8434647c36073a61f34038dad1e7fce437",
+      "reject": false
+    },
+    "Finding_Summary": "Using graphene Josephson junctions in a mT out-of-plane magnetic field, the study finds supercurrent rectification exceeding 20% efficiency, enhanced near Fraunhofer pattern nodes, consistent with long-range scattering potentials as the symmetry-breaking mechanism.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.32379v1": {
+    "Title": "Magnetoelectric response to a Néel domain wall in spin-orbit coupled superconducting films: Spontaneous currents, vortex pinning, and vortex-antivortex nucleation",
+    "Date": "2026-11-24T10:45:33Z",
+    "Quality_Filter": {
+      "fingerprint": "661ce366e3c1ffc5d48e202bdc269706ce7c231fc0e673ddb50c9a7300937b07",
+      "reject": false
+    },
+    "Finding_Summary": "Using analytical modeling of a Néel domain wall in a Rashba spin-orbit-coupled superconducting film, the study finds that the wall acts as an extended magnetoelectric source producing vorticity-selective vortex pinning and, at strong coupling, energetically favorable vortex-antivortex pairs without an applied field.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2607.15110v2": {
+    "Title": "Local magnetic correlations and light-sensitive centers in the Cr2AlC MAX phase",
+    "Date": "2026-11-24T10:37:13Z",
+    "Quality_Filter": {
+      "fingerprint": "c259858b0ca3344355b95b842879a1894ad4f3c41452f20dd1e7174bd2d24117",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.31896v1": {
+    "Title": "Moiré-Induced Interlayer Electron-Phonon Coupling in Graphene/hBN Superlattices",
+    "Date": "2026-11-24T03:55:50Z",
+    "Quality_Filter": {
+      "fingerprint": "30dadfdb9783c3a2cbf7ea14bff711226e83de522a825f0b172891845f61fcc5",
+      "reject": false
+    },
+    "Finding_Summary": "Using Fourier-transform infrared photocurrent spectroscopy, the study finds a Fano resonance from coupling between moiré flat-band excitations and the nominally silent hBN out-of-plane optical phonon in graphene-based moiré superlattices.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.31861v1": {
+    "Title": "Superconductivity with valley-imbalanced Fermi surfaces in thick rhombohedral graphene",
+    "Date": "2026-11-24T03:01:06Z",
+    "Quality_Filter": {
+      "fingerprint": "cbf78dc625d3f8bfedb099cff8b107d150f09d49d115d78bb0085d66939b118a",
+      "reject": false
+    },
+    "Finding_Summary": "Using quantum oscillations and transport measurements on hBN-aligned 17-layer rhombohedral graphene, the study finds in-plane-field-enhanced superconductivity in a valley-imbalanced, spin-polarized parent metal, motivating a magnon-assisted equal-spin intervalley pairing scenario.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.31597v1": {
+    "Title": "Majorana flat bands from mirror-particle-hole antisymmetry",
+    "Date": "2026-11-23T21:43:38Z",
+    "Quality_Filter": {
+      "fingerprint": "268531115dc2ed3acf9c52497493de2c8ac745973b726759d2502949be38fbf3",
+      "reject": false
+    },
+    "Finding_Summary": "Using symmetry analysis and a four-band model of a helical p-wave superconductor with Rashba coupling in an in-plane exchange field, the study finds that a gapped class-D superconductor without chiral symmetry can host a mirror-protected Majorana flat band, with a closed-form phase diagram confirmed by the spectral localizer on finite flakes.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2508.12056v2": {
+    "Title": "Voltage-tunable Josephson diode at zero applied field",
+    "Date": "2026-11-23T21:26:17Z",
+    "Quality_Filter": {
+      "fingerprint": "fda5f25b8df589a8429be36596ece82a5bd91485610ad7aea17dbbc5ff3ebb1f",
+      "reject": false
+    },
+    "Finding_Summary": "Using gate-tunable Josephson junctions of spin-orbit-coupled nanowires with epitaxial ferromagnetic insulator and superconductor shells, the study finds a nonreciprocal Josephson diode effect whose efficiency depends strongly on back-gate voltage and persists at zero field in a remanent magnetization state.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2603.12391v2": {
+    "Title": "Hybrid Analog-Digital Simulation of the Abelian Higgs model",
+    "Date": "2026-11-23T19:34:24Z",
+    "Quality_Filter": {
+      "fingerprint": "2473fb0d6bf7820fe0152b6d56fafe0324548b74188854993031c122c7ed49ef",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.31371v1": {
+    "Title": "Tunneling signatures of the Lifshitz transition in a superconducting vortex",
+    "Date": "2026-11-23T19:00:02Z",
+    "Quality_Filter": {
+      "fingerprint": "9e3435864776eea31e643e5bdddf5817961089e7317d006d72856145f14a26d2",
+      "reject": false
+    },
+    "Finding_Summary": "Using Bogoliubov-de Gennes equations solved numerically in the quantum limit, the study finds that the lowest vortex miniband crosses the Fermi level at a threshold field B*, producing a spin-polarized one-dimensional Fermi sea and a van Hove zero-bias conductance peak.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.31366v1": {
+    "Title": "Locality from Nonlocality: Symmetry Relocalization and Gauging of Lattice Dirac Fermions",
+    "Date": "2026-11-23T19:00:01Z",
+    "Quality_Filter": {
+      "fingerprint": "f83b0f49f2e1c30236919d8d405792e6024689e2fbe12403175fac6afd10b216",
+      "reject": false
+    },
+    "Finding_Summary": "Using nonlocal canonical transformations (symmetry relocalization) and bosonization, the study finds that nonlocal compact symmetries of free lattice Dirac fermions can be made onsite while retaining sufficient locality for exact or emergent local gauging in 1D, 2D, and 3D.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   }
 }
