@@ -7000,5 +7000,167 @@
     "Finding_Summary": "Using nonlocal canonical transformations (symmetry relocalization) and bosonization, the study finds that nonlocal compact symmetries of free lattice Dirac fermions can be made onsite while retaining sufficient locality for exact or emergent local gauging in 1D, 2D, and 3D.",
     "Finding_Language": "en",
     "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.34937v1": {
+    "Title": "A microscopic continuum model for moiré transition metal dichalcogenides",
+    "Date": "2026-11-25T18:59:36Z",
+    "Quality_Filter": {
+      "fingerprint": "674a7aa2974c4b12741e990b8960166e9eaef52545b3de171e8be82e357b6a5d",
+      "reject": false
+    },
+    "Finding_Summary": "Using a microscopic derivation of a continuum model retaining monolayer valence and conduction bands, the study finds an angle-independent description that reproduces moiré bands as a perturbation of a chiral model with a magic angle and predicts a strongly different orbital magnetic moment.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2604.05264v2": {
+    "Title": "Stability and superstructural ordering of alkali-triel-pnictide clathrates A$_8$T$_{27}$Pn$_{19}$",
+    "Date": "2026-11-25T17:22:49Z",
+    "Quality_Filter": {
+      "fingerprint": "b96fbeecc27df7b602dd3f5bd2fb585b87be10d2f615bb3c7cedd81560ef23eb",
+      "reject": false
+    },
+    "Finding_Summary": "Using high-throughput density functional theory and first-principles molecular dynamics, the study finds that all alkali guests are fully ionized and that clathrate stability correlates with guest ionization potential, while targeted synthesis yielded four new ternary phases but not the predicted clathrates.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.34683v1": {
+    "Title": "Experimental Quantum Hardware Benchmarks of Flat Non-Clifford Hypergraph States, Antipodal Obstructions, and Nonlocal Games on IBM Heron r2",
+    "Date": "2026-11-25T16:45:22Z",
+    "Quality_Filter": {
+      "fingerprint": "c8868c0b5ef8eac693c6d6a2a089405edcc8f7ef431eb4822178368bf0fac66a",
+      "reject": false
+    },
+    "Finding_Summary": "Using non-Clifford hypergraph states on two 156-qubit IBM Heron r2 processors, the study finds barrier-protected non-Clifford coherence up to entangled 16-qubit states and a calibration-aware Mermin-Peres win rate of 96.85%.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.34474v1": {
+    "Title": "Noise threshold for learning with quantum memory",
+    "Date": "2026-11-25T14:40:44Z",
+    "Quality_Filter": {
+      "fingerprint": "ec28c1445b35912d9cc5e2ae5c88c49cefb8c98ace38b9ec530f212cbe4ed9e5",
+      "reject": false
+    },
+    "Finding_Summary": "Using Pauli memory noise analysis and a superconducting processor, the study finds the quantum memory advantage is governed by λ_X²+λ_Y²+λ_Z², with a three-qubit repetition code converting a shrinking advantage into a growing one.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.34471v1": {
+    "Title": "Signatures of multiorbital density waves in the electronic Raman response of bilayer nickelates",
+    "Date": "2026-11-25T14:39:32Z",
+    "Quality_Filter": {
+      "fingerprint": "c0660f93706b1f3605e603370c3129e10fa5d8b19b29ec7733c0afc54936dbff",
+      "reject": false
+    },
+    "Finding_Summary": "Using a two-orbital bilayer model of the double stripe spin-density-wave state, the study finds orbital-selective Raman peaks at distinct energy scales in the B2g and B1g channels, showing SDW Raman peak positions cannot be identified with a single gap.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.27702v2": {
+    "Title": "Full-chip constrained quantum annealing via self-calibrating spin-susceptibility control",
+    "Date": "2026-11-25T14:35:24Z",
+    "Quality_Filter": {
+      "fingerprint": "533d61e3ceac17f209d53fa26d01c0656007fa374dc707ef61619934eac5de77",
+      "reject": false
+    },
+    "Finding_Summary": "Using a hardware-native quantum-classical primal-dual workflow (SelfCal-QSQN) on D-Wave processors, the study finds raw QPU constraint violation of 0.108 ± 0.017 at 4,560 qubits, reaching 83.3% exact feasibility after 1-bit polish.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.34429v1": {
+    "Title": "Native higher-order optimization with entropy quantum computing",
+    "Date": "2026-11-25T14:16:10Z",
+    "Quality_Filter": {
+      "fingerprint": "eb4f6c3c11f229029cd88a7d31ef524e3dedaebbc787aa10d471516dd45bf8c8",
+      "reject": false
+    },
+    "Finding_Summary": "Using the Dirac-3S entropy quantum computing system on six cubic and quartic industrial instances, the study finds all ran natively and returned feasible solutions, but the advantage is expressibility and mapping cost, not solution quality.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2511.04222v2": {
+    "Title": "Predicted high-$T_{\\rm c}$ superconductivity above 130 K in metastable cubic MH$_4$ compounds at ambient pressure",
+    "Date": "2026-11-25T12:12:05Z",
+    "Quality_Filter": {
+      "fingerprint": "ac2496e4b9b0b3a7d7defd1101ae309a7a248e2a1c270ea7be1c3931dd1c5273",
+      "reject": false
+    },
+    "Finding_Summary": "Using high-throughput first-principles calculations, the study finds bcc PtHg4-type MH4 compounds PtH4, AuH4, and PdH4 with superconducting critical temperatures of 84 K, 89 K, and 133 K at ambient pressure.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.34235v1": {
+    "Title": "Ancilla-Assisted Accelerated Readout of Transmon Qubits",
+    "Date": "2026-11-25T11:58:14Z",
+    "Quality_Filter": {
+      "fingerprint": "682f7acce62d6f9c02e18bc7fcda9a136432b6e57ca0ec5691f8b71b99926900",
+      "reject": false
+    },
+    "Finding_Summary": "Using analytical dispersive-approximation results extended by branch analysis with realistic noise and gate times, the study finds an ancillary-transmon scheme approximately doubles the resonator frequency shift, reducing measurement duration by a factor of about 0.6.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.34135v1": {
+    "Title": "Real-Time Cryo-CMOS Photon-Number Readout from a Single SNSPD",
+    "Date": "2026-11-25T10:34:33Z",
+    "Quality_Filter": {
+      "fingerprint": "8a9c4eaeff7bbd05729ee7428fd18309d427df76f66c3b2f501a49e60da67394",
+      "reject": false
+    },
+    "Finding_Summary": "Using a cryogenic electronic circuit operating close to the SNSPD that isolates single-photon detection events directly from the detector signal, the study finds photon-number readout latency reduced to 13.9 ± 0.3 ns.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2605.11565v2": {
+    "Title": "Stability and quasi-normal ringing in analogue black-white holes in SNAIL-based traveling-wave parametric amplifiers",
+    "Date": "2026-11-25T06:35:33Z",
+    "Quality_Filter": {
+      "fingerprint": "9da773a5ad3f50d083bf5995912342c86c0278051d49db59b864e2200c27a3de",
+      "reject": false
+    },
+    "Finding_Summary": "Using supersymmetric quantum mechanics and numerical/semi-analytic quasi-normal-mode calculations in the dispersionless effective theory of a SNAIL-TWPA circuit, the study finds no normalizable negative modes and derives QNM frequencies that set the timescale at which nonlinear dispersion becomes effective.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.33854v1": {
+    "Title": "Reproducible distributions of energy-relaxation times in superconducting qubits from broadband SWAP spectroscopy",
+    "Date": "2026-11-25T06:29:17Z",
+    "Quality_Filter": {
+      "fingerprint": "8b706b9ed88d5e2665b7e47ebf9fe2dc9ff9d2eabb520e8664ef20d7b2b68e11",
+      "reject": false
+    },
+    "Finding_Summary": "Using SWAP spectroscopy to sweep a flux-tunable qubit's frequency over several GHz and pooling the quality factor Q = 2πf01T1, the study finds the broadband cumulative Q distribution is reproducible across four thermal cycles over 326 days, with medians spreading an order of magnitude less than single-frequency repeats.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.33803v1": {
+    "Title": "Superconductivity from a Cooper surface instability in a nodal Bose metal",
+    "Date": "2026-11-25T05:32:13Z",
+    "Quality_Filter": {
+      "fingerprint": "57fb4983fc1710f8aedb3a2a821dff42baebd6a415afae1c93ec4ceac02754b9",
+      "reject": false
+    },
+    "Finding_Summary": "Using the exactly solvable normal state of a momentum-space t–J model, the study finds a nodal Bose metal with Cooper surfaces where pair addition/removal costs no energy, whose logarithmic pair-susceptibility divergence lets arbitrarily weak attraction stabilize a correlated nodal d-wave superconductor.",
+    "Finding_Language": "en",
+    "Finding_Version": 2
+  },
+  "https://arxiv.org/abs/2611.33723v1": {
+    "Title": "Superconductivity from the Berry connection from many-electron wave functions: $U(1)$ gauge fluctuation, gauge invariance, and superconductivity",
+    "Date": "2026-11-25T03:36:07Z",
+    "Quality_Filter": {
+      "fingerprint": "4c99da2472c66865cc6fd0e1cb1e2ed62c27fb0b2c005d1765c0903ec3bdc04c",
+      "reject": true
+    }
+  },
+  "https://arxiv.org/abs/2611.33717v1": {
+    "Title": "Crystal-Symmetry-Dependent Field-Free Superconducting Diode Effect in CoPt/Nb Heterostructures",
+    "Date": "2026-11-25T03:28:27Z",
+    "Quality_Filter": {
+      "fingerprint": "d2031b9082d4d029512a2eb40e1f02282493f95c224f6730cfc9e9d414036297",
+      "reject": false
+    },
+    "Finding_Summary": "Using epitaxial",
+    "Finding_Language": "en",
+    "Finding_Version": 2
   }
 }
